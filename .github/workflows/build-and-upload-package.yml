@@ -4,7 +4,7 @@ run-name: 'Package: ${{ github.ref_name }}_${{ github.run_id }}_${{ github.run_a
 
 on:
   push:
-    branches: ['master']
+    branches: ['main']
   workflow_dispatch:
 
 permissions:
@@ -40,10 +40,14 @@ jobs:
         name: Package
         run: |
           mkdir -p package
-          cp -r cloudformation forge-files scripts README.md package/
+          [ -d cloudformation ] && cp -r cloudformation package/
+          [ -d forge-files ] && cp -r forge-files package/
+          [ -d container ] && cp -r container package/
+          [ -d generated_data ] && cp -r generated_data package/
+          [ -f README.md ] && cp README.md package/
           cd package
           zip -r ../${{ steps.package-default-version.outputs.version }}.zip ./
-          cd .. 
+          cd ..
 
       - id: package-upload
         name: Upload Package
