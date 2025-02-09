@@ -31,10 +31,8 @@ jobs:
         name: Package
         run: |
           mkdir -p package
-          cp -r cloudformation/ forge-files/ scripts/ README.md package/
-          cd package
-          zip -r ../${{ steps.package-default-version.outputs.version }}.zip ./
-          cd ..
+          cp -r cloudformation/ forge-files/ README.md package/
+          zip -r ${{ steps.package-default-version.outputs.version }}.zip package/
 
       - id: package-upload
         name: Upload Package
