@@ -8,7 +8,7 @@ git add .
 git commit -m "Initial commit"
 
 # Add the remote repository (replace <username> and <repository> with your GitHub username and repository name)
-git remote add origin https://github.com/<username>/<repository>.git
+git remote add origin https://github.com/jaingit1/risk-assessment-medical-stop-loss.git
 
 # Push the changes to the remote repository
 git push -u origin master
