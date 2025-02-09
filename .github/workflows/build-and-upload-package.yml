@@ -1,0 +1,42 @@
+name: Package/Upload
+
+run-name: 'Package: ${{ github.ref_name }}_${{ github.run_id }}_${{ github.run_attempt }}'
+
+on:
+  push:
+    branches: ['main']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+  actions: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+
+    outputs:
+      build-number: ${{ steps.package-default-version.outputs.version }}
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - id: package-default-version
+        name: Get Default Version outputs
+        run: echo "::set-output name=version::$(date +'%Y%m%d%H%M%S')"
+
+      - id: package-create
+        name: Package
+        run: |
+          mkdir -p package
+          cp -r cloudformation/ forge-files/ README.md
+          zip -r ${{ steps.package-default-version.outputs.version }}.zip package/
+
+      - id: package-upload
+        name: Upload Package
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{ steps.package-default-version.outputs.version }}
+          path: ${{ steps.package-default-version.outputs.version }}.zip
