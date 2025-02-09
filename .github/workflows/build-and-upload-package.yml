@@ -36,7 +36,7 @@ jobs:
 
       - id: package-upload
         name: Upload Package
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ steps.package-default-version.outputs.version }}
           path: ${{ steps.package-default-version.outputs.version }}.zip
