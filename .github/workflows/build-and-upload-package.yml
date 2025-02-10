@@ -42,8 +42,6 @@ jobs:
           mkdir -p package
           [ -d cloudformation ] && cp -r cloudformation package/
           [ -d forge-files ] && cp -r forge-files package/
-          [ -d container ] && cp -r container package/
-          [ -d generated_data ] && cp -r generated_data package/
           [ -f README.md ] && cp README.md package/
           cd package
           zip -r ../${{ steps.package-default-version.outputs.version }}.zip ./
