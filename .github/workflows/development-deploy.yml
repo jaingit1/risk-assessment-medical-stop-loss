@@ -79,19 +79,19 @@ jobs:
       #     echo "Listing extracted files in package directory:"
       #     ls -la package
 
-      # - name: Set Environment Variables
-      #   run: |
-      #     if [ "${{ github.event.inputs.environment }}" == "development" ]; then
-      #       echo "AWS_ACCOUNT_ID=${{ secrets.AWS_ACCOUNT_ID }}" >> $GITHUB_ENV
-      #       echo "ARTIFACT_KEY=${{ vars.ARTIFACT_KEY }}" >> $GITHUB_ENV
-      #       echo "DEPLOYMENT_KEY=${{ vars.DEPLOYMENT_KEY }}" >> $GITHUB_ENV
-      #       echo "ENVIRONMENT_KEY=${{ vars.ENVIRONMENT_KEY }}" >> $GITHUB_ENV
-      #     elif [ "${{ github.event.inputs.environment }}" == "test" ]; then
-      #       echo "AWS_ACCOUNT_ID=${{ secrets.AWS_ACCOUNT_ID }}" >> $GITHUB_ENV
-      #       echo "ARTIFACT_KEY=${{ vars.ARTIFACT_KEY }}" >> $GITHUB_ENV
-      #       echo "DEPLOYMENT_KEY=${{ vars.DEPLOYMENT_KEY }}" >> $GITHUB_ENV
-      #       echo "ENVIRONMENT_KEY=${{ vars.ENVIRONMENT_KEY }}" >> $GITHUB_ENV
-      #     fi
+      - name: Set Environment Variables
+        run: |
+          if [ "${{ github.event.inputs.environment }}" == "development" ]; then
+            echo "AWS_ACCOUNT_ID=${{ secrets.AWS_ACCOUNT_ID }}" >> $GITHUB_ENV
+            echo "ARTIFACT_KEY=${{ vars.ARTIFACT_KEY }}" >> $GITHUB_ENV
+            echo "DEPLOYMENT_KEY=${{ vars.DEPLOYMENT_KEY }}" >> $GITHUB_ENV
+            echo "ENVIRONMENT_KEY=${{ vars.ENVIRONMENT_KEY }}" >> $GITHUB_ENV
+          elif [ "${{ github.event.inputs.environment }}" == "test" ]; then
+            echo "AWS_ACCOUNT_ID=${{ secrets.AWS_ACCOUNT_ID }}" >> $GITHUB_ENV
+            echo "ARTIFACT_KEY=${{ vars.ARTIFACT_KEY }}" >> $GITHUB_ENV
+            echo "DEPLOYMENT_KEY=${{ vars.DEPLOYMENT_KEY }}" >> $GITHUB_ENV
+            echo "ENVIRONMENT_KEY=${{ vars.ENVIRONMENT_KEY }}" >> $GITHUB_ENV
+          fi
 
       # - name: Deploy Package
       #   run: |
