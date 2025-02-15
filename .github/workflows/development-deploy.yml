@@ -25,7 +25,15 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
+      
+      - name: Log artifact path
+        run: echo "Artifact path $(pwd)/package"
 
+      - name: List Available Artifacts
+        run: |
+          echo "Listing available artifacts:"
+          gh api -H "Accept: application/vnd.github+json" /repos/jaingit1/risk-assessment-medical-stop-loss/actions/runs/${{ github.run_id }}/artifacts
+      
       - name: Download Artifact
         uses: actions/download-artifact@v4
         with:
