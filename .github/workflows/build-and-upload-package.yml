@@ -54,16 +54,16 @@ jobs:
           echo "Contents of package directory:"
           ls -la package
           cd package
-          zip -r ${{ env.version }}.zip ./
+          zip -r ../${{ env.version }}.zip ./
           echo "Contents of package zip file:"
-          unzip -l ${{ env.version }}.zip
+          unzip -l ../${{ env.version }}.zip
 
       - id: package-upload
         name: Upload Package
         uses: actions/upload-artifact@v4
         with:
           name: ${{ env.version }}
-          path: package/${{ env.version }}.zip
+          path: ${{ env.version }}.zip
           retention-days: 30
 
       - name: Confirm Upload
