@@ -85,3 +85,12 @@ jobs:
               AppName=${{ env.ARTIFACT_KEY }}-ecr-repository \
               AppEnv=${{ env.ENVIRONMENT_KEY }} \
               AppVersion=${{ env.build-number}} \
+        
+      - name: Delete CloudFormation Stack
+        run: |
+          aws cloudformation delete-stack --stack-name ${{ env.ARTIFACT_KEY }}-ecr-repository-${{ env.ENVIRONMENT_KEY }}
+
+      - name: Wait for Stack Deletion
+        run: |
+          aws cloudformation wait stack-delete-complete --stack-name ${{ env.ARTIFACT_KEY }}-ecr-repository-${{ env.ENVIRONMENT_KEY }}
+          echo "Stack deletion completed."
