@@ -14,9 +14,9 @@ on:
       build-number:
         description: 'Build number'
         required: true
-      # run-id:
-      #   description: 'Run ID'
-      #   required: true
+      run-id:
+        description: 'Run ID'
+        required: true
 
 jobs:
   deploy:
@@ -31,7 +31,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Log build number and run ID
-        run: echo "Downloading artifact with name ${{ github.event.inputs.build-number }} from run ID ${{ github.run_id }}"
+        run: echo "Downloading artifact with name ${{ github.event.inputs.build-number }} from run ID ${{ github.event.inputs.run-id }}"
 
       - name: Wait for Artifact to be Available
         run: sleep 30
@@ -39,10 +39,15 @@ jobs:
       - name: List Available Artifacts
         run: |
           echo "Listing available artifacts:"
-          gh api -H "Accept: application/vnd.github+json" /repos/jaingit1/risk-assessment-medical-stop-loss/actions/runs/${{ github.run_id }}/artifacts
+          gh api -H "Accept: application/vnd.github+json" /repos/jaingit1/risk-assessment-medical-stop-loss/actions/runs/${{ github.event.inputs.run-id }}/artifacts
 
       - name: Create Package Directory
         run: mkdir -p ./package
+
+      - name: Check Package Directory
+        run: |
+          echo "Artifact path: $(pwd)/package"
+          ls -la $(pwd)/package
 
       - name: Download Artifact
         uses: actions/download-artifact@v4
@@ -50,10 +55,7 @@ jobs:
           name: ${{ github.event.inputs.build-number }}  # Use the artifact name, not the path
           path: ./package
 
-      - name: Check Package Directory
-        run: |
-          echo "Artifact path: $(pwd)/package"
-          ls -la $(pwd)/package
+      
 
       - name: List downloaded files
         run: |
