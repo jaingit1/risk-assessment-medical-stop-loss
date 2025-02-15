@@ -33,8 +33,8 @@ jobs:
       - name: Log build number and run ID
         run: echo "Downloading artifact with name ${{ github.event.inputs.build-number }} from run ID ${{ github.event.inputs.run-id }}"
 
-      - name: Wait for Artifact to be Available
-        run: sleep 30
+      # - name: Wait for Artifact to be Available
+      #   run: sleep 30
 
       - name: List Available Artifacts
         run: |
@@ -55,35 +55,35 @@ jobs:
 
       
 
-      - name: List downloaded files
-        run: |
-          echo "Listing package directory contents:"
-          ls -l ./package
+      # - name: List downloaded files
+      #   run: |
+      #     echo "Listing package directory contents:"
+      #     ls -l ./package
 
-      - name: Extract Artifact
-        run: |
-          cd package
-          unzip -o ../${{ github.event.inputs.build-number }}.zip
-          cd ..
+      # - name: Extract Artifact
+      #   run: |
+      #     cd package
+      #     unzip -o ../${{ github.event.inputs.build-number }}.zip
+      #     cd ..
 
-      - name: Set Environment Variables
-        run: |
-          if [ "${{ github.event.inputs.environment }}" == "development" ]; then
-            echo "AWS_ACCOUNT_ID=${{ secrets.AWS_ACCOUNT_ID }}" >> $GITHUB_ENV
-            echo "ARTIFACT_KEY=${{ vars.ARTIFACT_KEY }}" >> $GITHUB_ENV
-            echo "DEPLOYMENT_KEY=${{ vars.DEPLOYMENT_KEY }}" >> $GITHUB_ENV
-            echo "ENVIRONMENT_KEY=${{ vars.ENVIRONMENT_KEY }}" >> $GITHUB_ENV
-          elif [ "${{ github.event.inputs.environment }}" == "test" ]; then
-            echo "AWS_ACCOUNT_ID=${{ secrets.AWS_ACCOUNT_ID }}" >> $GITHUB_ENV
-            echo "ARTIFACT_KEY=${{ vars.ARTIFACT_KEY }}" >> $GITHUB_ENV
-            echo "DEPLOYMENT_KEY=${{ vars.ARTIFACT_KEY }}" >> $GITHUB_ENV
-            echo "ENVIRONMENT_KEY=${{ vars.ENVIRONMENT_KEY }}" >> $GITHUB_ENV
-          fi
+      # - name: Set Environment Variables
+      #   run: |
+      #     if [ "${{ github.event.inputs.environment }}" == "development" ]; then
+      #       echo "AWS_ACCOUNT_ID=${{ secrets.AWS_ACCOUNT_ID }}" >> $GITHUB_ENV
+      #       echo "ARTIFACT_KEY=${{ vars.ARTIFACT_KEY }}" >> $GITHUB_ENV
+      #       echo "DEPLOYMENT_KEY=${{ vars.DEPLOYMENT_KEY }}" >> $GITHUB_ENV
+      #       echo "ENVIRONMENT_KEY=${{ vars.ENVIRONMENT_KEY }}" >> $GITHUB_ENV
+      #     elif [ "${{ github.event.inputs.environment }}" == "test" ]; then
+      #       echo "AWS_ACCOUNT_ID=${{ secrets.AWS_ACCOUNT_ID }}" >> $GITHUB_ENV
+      #       echo "ARTIFACT_KEY=${{ vars.ARTIFACT_KEY }}" >> $GITHUB_ENV
+      #       echo "DEPLOYMENT_KEY=${{ vars.ARTIFACT_KEY }}" >> $GITHUB_ENV
+      #       echo "ENVIRONMENT_KEY=${{ vars.ENVIRONMENT_KEY }}" >> $GITHUB_ENV
+      #     fi
 
-      - name: Deploy Package
-        run: |
-          # Add your deployment commands here
-          echo "Deploying package with build number: ${{ github.event.inputs.build-number }}"
-          # Example deployment commands:
-          # aws cloudformation deploy ...
-          # kubectl apply -f ...
+      # - name: Deploy Package
+      #   run: |
+      #     # Add your deployment commands here
+      #     echo "Deploying package with build number: ${{ github.event.inputs.build-number }}"
+      #     # Example deployment commands:
+      #     # aws cloudformation deploy ...
+      #     # kubectl apply -f ...
