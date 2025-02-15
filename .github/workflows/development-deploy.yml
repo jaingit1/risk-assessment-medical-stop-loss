@@ -58,7 +58,7 @@ jobs:
             "https://api.github.com/repos/jaingit1/risk-assessment-medical-stop-loss/actions/artifacts/$ARTIFACT_ID/zip"
 
       - name: Extract Artifact
-        run: unzip artifact.zip
+        run: unzip -o artifact.zip
      
       # - name: Download Artifact
       #   uses: actions/download-artifact@v4
