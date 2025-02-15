@@ -1,4 +1,4 @@
-name: Package/Upload
+name: Build and upload Package
 
 run-name: 'Package: ${{ github.ref_name }}_${{ github.run_id }}_${{ github.run_attempt }}'
 
@@ -6,6 +6,15 @@ on:
   push:
     branches: ['master']
   workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Select the environment'
+        required: true
+        default: 'development'
+        type: choice
+        options:
+          - development
+          - test
 
 permissions:
   contents: read
@@ -15,6 +24,8 @@ permissions:
 jobs:
   package:
     runs-on: ubuntu-latest
+    env:
+      AWS_REGION: ${{ secrets.AWS_REGION }}
 
     outputs:
       build-number: ${{ steps.package-default-version.outputs.version }}
@@ -53,3 +64,20 @@ jobs:
         with:
           name: ${{ steps.package-default-version.outputs.version }}
           path: ${{ steps.package-default-version.outputs.version }}.zip
+      
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Set Environment Variables
+        run: |
+          if [ "${{ github.event.inputs.environment }}" == "development" ]; then
+            echo "AWS_ACCOUNT_ID=${{ secrets.development.AWS_ACCOUNT_ID }}" >> $GITHUB_ENV
+            echo "ARTIFACT_KEY=${{ vars.development.ARTIFACT_KEY }}" >> $GITHUB_ENV
+            echo "DEPLOYMENT_KEY=${{ vars.development.DEPLOYMENT_KEY }}" >> $GITHUB_ENV
+            echo "ENVIRONMENT_KEY=${{ vars.development.ENVIRONMENT_KEY }}" >> $GITHUB_ENV
+          elif [ "${{ github.event.inputs.environment }}" == "test" ]; then
+            echo "AWS_ACCOUNT_ID=${{ secrets.test.AWS_ACCOUNT_ID }}" >> $GITHUB_ENV
+            echo "ARTIFACT_KEY=${{ vars.test.ARTIFACT_KEY }}" >> $GITHUB_ENV
+            echo "DEPLOYMENT_KEY=${{ vars.test.DEPLOYMENT_KEY }}" >> $GITHUB_ENV
+            echo "ENVIRONMENT_KEY=${{ vars.test.ENVIRONMENT_KEY }}" >> $GITHUB_ENV
+          fi
