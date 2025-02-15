@@ -44,12 +44,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: ${{ github.event.inputs.build-number }}
-          path: ./package
+          path: ./
 
       - name: List downloaded files
         run: |
           echo "Listing package directory contents:"
-          ls -l ./package
+          ls -l ./
 
       - name: Extract Artifact
         run: |
