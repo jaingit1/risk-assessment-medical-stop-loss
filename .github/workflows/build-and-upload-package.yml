@@ -52,7 +52,7 @@ jobs:
           [ -d forge-files ] && cp -r forge-files package/
           [ -f README.md ] && cp README.md package/
           cd package
-          zip -r ../${{ steps.package-default-version.outputs.version }}.zip ./
+          zip -r ../${{ env.version }}.zip ./
           cd ..
 
       - id: package-upload
