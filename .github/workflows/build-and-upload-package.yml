@@ -66,3 +66,8 @@ jobs:
           name: ${{ env.version }}  # Use the build number for the artifact name
           path: ${{ env.version }}.zip
           retention-days: 30
+      
+      - name: Confirm Upload
+        run: |
+          echo "Uploaded artifact name: ${{ env.version }}"
+          ls -la
