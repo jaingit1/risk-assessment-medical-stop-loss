@@ -79,7 +79,7 @@ jobs:
         run: |
           aws cloudformation deploy \
             --stack-name ${{ env.ARTIFACT_KEY }}-ecr-repository-${{ env.ENVIRONMENT_KEY }} \
-            --template-file forge-files/development-risk-assessment-ecr-repository.yml \
+            --template-file cloudformation/risk-assessment-ecr-repository-development.yml \
             --capabilities CAPABILITY_NAMED_IAM \
             --parameter-overrides \
               AppName=${{ env.ARTIFACT_KEY }}-ecr-repository \

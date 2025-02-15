@@ -10,7 +10,6 @@ Parameters:
     Type: String
     Description: Deployment environment (e.g., dev, staging, prod)
 
-
 Resources:
   MyECRRepository: 
     Type: AWS::ECR::Repository
