@@ -1,4 +1,4 @@
-name: Deploy Package
+name: Deploy Artifacts
 
 on:
   workflow_dispatch:
@@ -35,6 +35,7 @@ jobs:
       ARTIFACT_KEY: ${{ vars.ARTIFACT_KEY }}
       DEPLOYMENT_KEY: ${{ vars.DEPLOYMENT_KEY }}
       ENVIRONMENT_KEY: ${{ vars.ENVIRONMENT_KEY }}
+      build-number: ${{ github.event.inputs.build-number }}
 
     steps:
       - name: Check out repository code
@@ -66,4 +67,21 @@ jobs:
           echo "ARTIFACT_KEY=${{env.ARTIFACT_KEY}}" >> $GITHUB_ENV
           echo "DEPLOYMENT_KEY=${{env.DEPLOYMENT_KEY}}" >> $GITHUB_ENV
           echo "ENVIRONMENT_KEY=${{env.ENVIRONMENT_KEY}}" >> $GITHUB_ENV
-          
+      
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Deploy CloudFormation Stack
+        run: |
+          aws cloudformation deploy \
+            --stack-name ${{ env.ARTIFACT_KEY }}-ecr-repository-${{ env.ENVIRONMENT_KEY }} \
+            --template-file forge-files/development-risk-assessment-ecr-repository.yml \
+            --capabilities CAPABILITY_NAMED_IAM \
+            --parameter-overrides \
+              AppName=${{ env.ARTIFACT_KEY }}-ecr-repository-${{ env.ENVIRONMENT_KEY }} \
+              AppEnv=${{ env.ENVIRONMENT_KEY }} \
+              AppVersion=${ env.build-number}} \
