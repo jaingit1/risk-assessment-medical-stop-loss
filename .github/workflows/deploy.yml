@@ -107,6 +107,7 @@ jobs:
       
       - name: Delete CloudFormation Stack
         run: |
+          aws ecr batch-delete-image --repository-name ${{ env.ARTIFACT_KEY }}-ecr-repository --image-ids $(aws ecr list-images --repository-name ${{ env.ARTIFACT_KEY }}-ecr-repository --query 'imageIds[*]' --output json --region $AWS_REGION)
           aws cloudformation delete-stack --stack-name ${{ env.ARTIFACT_KEY }}-ecr-repository-${{ env.ENVIRONMENT_KEY }}
 
       - name: Wait for Stack Deletion
