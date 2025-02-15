@@ -84,4 +84,4 @@ jobs:
             --parameter-overrides \
               AppName=${{ env.ARTIFACT_KEY }}-ecr-repository-${{ env.ENVIRONMENT_KEY }} \
               AppEnv=${{ env.ENVIRONMENT_KEY }} \
-              AppVersion=${ env.build-number}} \
+              AppVersion=${{ env.build-number}} \
