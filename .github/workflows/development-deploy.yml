@@ -62,14 +62,8 @@ jobs:
      
       - name: Set Environment Variables
         run: |
-          if [ "${{ github.event.inputs.environment }}" == "development" ]; then
-            echo "AWS_ACCOUNT_ID=${{ secrets.AWS_ACCOUNT_ID_DEV }}" >> $GITHUB_ENV
-            echo "ARTIFACT_KEY=${{ vars.ARTIFACT_KEY_DEV }}" >> $GITHUB_ENV
-            echo "DEPLOYMENT_KEY=${{ vars.DEPLOYMENT_KEY_DEV }}" >> $GITHUB_ENV
-            echo "ENVIRONMENT_KEY=${{ vars.ENVIRONMENT_KEY_DEV }}" >> $GITHUB_ENV
-          elif [ "${{ github.event.inputs.environment }}" == "test" ]; then
-            echo "AWS_ACCOUNT_ID=${{ secrets.AWS_ACCOUNT_ID_TEST }}" >> $GITHUB_ENV
-            echo "ARTIFACT_KEY=${{ vars.ARTIFACT_KEY_TEST }}" >> $GITHUB_ENV
-            echo "DEPLOYMENT_KEY=${{ vars.DEPLOYMENT_KEY_TEST }}" >> $GITHUB_ENV
-            echo "ENVIRONMENT_KEY=${{ vars.ENVIRONMENT_KEY_TEST }}" >> $GITHUB_ENV
-          fi
+          echo "AWS_ACCOUNT_ID=${{ env.AWS_ACCOUNT_ID }}" >> $GITHUB_ENV
+          echo "ARTIFACT_KEY=${{ env.ARTIFACT_KEY_DEV }}" >> $GITHUB_ENV
+          echo "DEPLOYMENT_KEY=${{ env.DEPLOYMENT_KEY_DEV }}" >> $GITHUB_ENV
+          echo "ENVIRONMENT_KEY=${{ env.ENVIRONMENT_KEY_DEV }}" >> $GITHUB_ENV
+          
