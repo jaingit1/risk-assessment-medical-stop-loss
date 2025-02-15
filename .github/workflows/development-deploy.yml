@@ -50,12 +50,12 @@ jobs:
         run: |
           ARTIFACT_ID=$(curl -s -H "Authorization: ${{ secrets.ACTIONS_PAT }}" \
             -H "Accept: application/vnd.github.v3+json" \
-            "https://api.github.com/repos/OWNER/REPO/actions/artifacts" \
+            "https://api.github.com/repos/jaingit1/risk-assessment-medical-stop-loss/actions/artifacts" \
             | jq -r '.artifacts[0].id')
 
           curl -L -H "Authorization: token ${{ secrets.ACTIONS_PAT }}" \
             -o artifact.zip \
-            "https://api.github.com/repos/OWNER/REPO/actions/artifacts/$ARTIFACT_ID/zip"
+            "https://api.github.com/repos/jaingit1/risk-assessment-medical-stop-loss/actions/artifacts/$ARTIFACT_ID/zip"
 
       - name: Extract Artifact
         run: unzip artifact.zip
