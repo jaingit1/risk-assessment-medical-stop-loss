@@ -54,10 +54,9 @@ jobs:
           echo "Contents of package directory:"
           ls -la package
           cd package
-          zip -r ../${{ env.version }}.zip ./
-          cd ..
-          echo "Contents of zip file:"
-          unzip -l ${{ env.version }}.zip
+          # zip -r ../${{ env.version }}.zip ./
+          zip -r ${GITHUB_WORKSPACE}/package/${{ env.version }}.zip ./
+          
 
       - id: package-upload
         name: Upload Package
