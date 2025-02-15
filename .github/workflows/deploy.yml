@@ -86,11 +86,30 @@ jobs:
               AppEnv=${{ env.ENVIRONMENT_KEY }} \
               AppVersion=${{ env.build-number}} \
         
-      - name: Delete CloudFormation Stack
+      
+      - name: Get ECR Repository URI
+        id: ecr-uri
         run: |
-          aws cloudformation delete-stack --stack-name ${{ env.ARTIFACT_KEY }}-ecr-repository-${{ env.ENVIRONMENT_KEY }}
+          ECR_URI=$(aws ecr describe-repositories --repository-names ${{ env.ARTIFACT_KEY }}-ecr-repository --query 'repositories[0].repositoryUri' --output text)
+          echo "ECR_URI=$ECR_URI" >> $GITHUB_ENV
 
-      - name: Wait for Stack Deletion
+      - name: Login to Amazon ECR
+        run: aws ecr get-login-password --region ${{ env.AWS_REGION }} | docker login --username AWS --password-stdin $ECR_URI
+
+
+      - name: Build and tag Docker image
         run: |
-          aws cloudformation wait stack-delete-complete --stack-name ${{ env.ARTIFACT_KEY }}-ecr-repository-${{ env.ENVIRONMENT_KEY }}
-          echo "Stack deletion completed."
+          docker build -t ${{ env.ARTIFACT_KEY }}-ecr-repository:latest ./container
+          docker tag ${{ env.ARTIFACT_KEY }}-ecr-repository:latest $ECR_URI:latest
+
+      - name: Push Docker image to ECR
+        run: docker push $ECR_URI:latest
+      
+      # - name: Delete CloudFormation Stack
+      #   run: |
+      #     aws cloudformation delete-stack --stack-name ${{ env.ARTIFACT_KEY }}-ecr-repository-${{ env.ENVIRONMENT_KEY }}
+
+      # - name: Wait for Stack Deletion
+      #   run: |
+      #     aws cloudformation wait stack-delete-complete --stack-name ${{ env.ARTIFACT_KEY }}-ecr-repository-${{ env.ENVIRONMENT_KEY }}
+      #     echo "Stack deletion completed."
