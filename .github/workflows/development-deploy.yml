@@ -45,13 +45,13 @@ jobs:
       - name: Check Package Directory
         run: |
           echo "Artifact path: $(pwd)/package"
-          ls -la $(pwd)/package
+          ls -la package
 
       - name: Download Artifact
         uses: actions/download-artifact@v4
         with:
           name: ${{ github.event.inputs.build-number }}  # Use the artifact name, not the path
-          path: ./package
+          path: package
 
       
 
