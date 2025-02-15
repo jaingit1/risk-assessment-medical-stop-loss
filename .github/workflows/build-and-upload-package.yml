@@ -42,7 +42,7 @@ jobs:
 
       - id: package-default-version
         name: Get Default Version outputs
-        run: echo "version=${GITHUB_RUN_ID}" >> $GITHUB_ENV
+        run: echo "version=${{ github.ref_name }}_${{ github.run_id }}_${{ github.run_attempt }}" >> $GITHUB_ENV
 
       - id: package-create
         name: Package
