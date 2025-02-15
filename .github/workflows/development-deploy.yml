@@ -31,7 +31,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Log build number and run ID
-        run: echo "Downloading artifact with name: ${{ github.event.inputs.build-number }} from run ID: ${{ github.event.inputs.run-id }}"
+        run: echo "Downloading artifact with name ${{ github.event.inputs.build-number }} from run ID ${{ github.event.inputs.run-id }}"
 
       - name: Wait for Artifact to be Available
         run: sleep 30
