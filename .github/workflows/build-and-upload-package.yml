@@ -47,16 +47,24 @@ jobs:
       - id: package-create
         name: Package
         run: |
+          # Create the package directory
           mkdir -p package
-          [ -d cloudformation ] && cp -r cloudformation package/
-          [ -d forge-files ] && cp -r forge-files package/
+
+          # Copy files and directories without adding them to nested directories
+          [ -d cloudformation ] && cp -r cloudformation/* package/
+          [ -d forge-files ] && cp -r forge-files/* package/
           [ -f README.md ] && cp README.md package/
+
+          # Display the contents of the package directory
           echo "Contents of package directory:"
           ls -la package
-          cd package
-          zip -r ../${{ env.version }}.zip ./
+
+          # Create a zip file, including the contents of the package directory without nesting
+          zip -r ${{ env.version }}.zip package/*
+
+          # Display the contents of the created zip file
           echo "Contents of package zip file:"
-          unzip -l ../${{ env.version }}.zip
+          unzip -l ${{ env.version }}.zip
 
       - id: package-upload
         name: Upload Package
