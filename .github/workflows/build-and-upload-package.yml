@@ -61,6 +61,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ env.version }}
+          path: ./
           retention-days: 30
 
       - name: Confirm Upload
