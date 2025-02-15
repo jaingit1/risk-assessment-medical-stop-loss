@@ -33,7 +33,7 @@ jobs:
       - name: List downloaded files
         run: |
           echo "Listing package directory contents:"
-          ls -la $(pwd)/package
+          ls -la $(pwd)
 
       - name: List Available Artifacts
         run: |
