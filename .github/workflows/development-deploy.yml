@@ -20,7 +20,7 @@ on:
   
 permissions:
   contents: read
-  id-token: read
+  id-token: write
   actions: write
 
 jobs:
@@ -46,13 +46,27 @@ jobs:
           echo "Listing available artifacts:"
           gh api -H "Accept: application/vnd.github+json" /repos/jaingit1/risk-assessment-medical-stop-loss/actions/runs/${{ github.event.inputs.run-id }}/artifacts
 
-      - name: Download Artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: ${{ github.event.inputs.build-number }}
-          path: .
-          repository: jaingit1/risk-assessment-medical-stop-loss
-          run-id: ${{ github.event.inputs.run-id }}
+      - name: Download Artifact Manually
+        run: |
+          ARTIFACT_ID=$(curl -s -H "Authorization: ${{ secrets.ACTIONS_PAT }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/repos/OWNER/REPO/actions/artifacts" \
+            | jq -r '.artifacts[0].id')
+
+          curl -L -H "Authorization: token ${{ secrets.ACTIONS_PAT }}" \
+            -o artifact.zip \
+            "https://api.github.com/repos/OWNER/REPO/actions/artifacts/$ARTIFACT_ID/zip"
+
+      - name: Extract Artifact
+        run: unzip artifact.zip
+     
+      # - name: Download Artifact
+      #   uses: actions/download-artifact@v4
+      #   with:
+      #     name: ${{ github.event.inputs.build-number }}
+      #     path: .
+      #     repository: jaingit1/risk-assessment-medical-stop-loss
+      #     run-id: ${{ github.event.inputs.run-id }}
 
       # - name: Check Package Directory
       #   run: |
