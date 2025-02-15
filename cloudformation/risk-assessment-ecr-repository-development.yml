@@ -1,0 +1,46 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: CloudFormation template to create an Amazon ECR repository
+
+Parameters:
+  AppName:
+    Type: String
+    Description: Name of the CloudFormation stack
+
+  AppEnv:
+    Type: String
+    Description: Deployment environment (e.g., dev, staging, prod)
+
+
+Resources:
+  MyECRRepository: 
+    Type: AWS::ECR::Repository
+    Properties:
+      RepositoryName: !Ref AppName
+      ImageScanningConfiguration:
+        ScanOnPush: true
+      LifecyclePolicy:
+        LifecyclePolicyText: |
+          {
+            "rules": [
+              {
+                "rulePriority": 1,
+                "description": "Expire images older than 30 days",
+                "selection": {
+                  "tagStatus": "untagged",
+                  "countType": "sinceImagePushed",
+                  "countUnit": "days",
+                  "countNumber": 30
+                },
+                "action": {
+                  "type": "expire"
+                }
+              }
+            ]
+          }
+      EncryptionConfiguration:
+        EncryptionType: AES256
+
+Outputs:
+  ECRRepositoryURI:
+    Description: URI of the created ECR repository
+    Value: !GetAtt MyECRRepository.RepositoryUri

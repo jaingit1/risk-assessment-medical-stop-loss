@@ -82,6 +82,6 @@ jobs:
             --template-file forge-files/development-risk-assessment-ecr-repository.yml \
             --capabilities CAPABILITY_NAMED_IAM \
             --parameter-overrides \
-              AppName=${{ env.ARTIFACT_KEY }}-ecr-repository-${{ env.ENVIRONMENT_KEY }} \
+              AppName=${{ env.ARTIFACT_KEY }}-ecr-repository \
               AppEnv=${{ env.ENVIRONMENT_KEY }} \
               AppVersion=${{ env.build-number}} \
