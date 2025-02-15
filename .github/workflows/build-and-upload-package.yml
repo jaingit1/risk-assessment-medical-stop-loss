@@ -51,9 +51,13 @@ jobs:
           [ -d cloudformation ] && cp -r cloudformation package/
           [ -d forge-files ] && cp -r forge-files package/
           [ -f README.md ] && cp README.md package/
+          echo "Contents of package directory:"
+          ls -la package
           cd package
           zip -r ../${{ env.version }}.zip ./
           cd ..
+          echo "Contents of zip file:"
+          unzip -l ${{ env.version }}.zip
 
       - id: package-upload
         name: Upload Package
