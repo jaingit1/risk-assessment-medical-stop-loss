@@ -41,17 +41,11 @@ jobs:
           echo "Listing available artifacts:"
           gh api -H "Accept: application/vnd.github+json" /repos/jaingit1/risk-assessment-medical-stop-loss/actions/runs/${{ github.event.inputs.run-id }}/artifacts
 
-
-      - name: Check Package Directory
-        run: |
-          echo "Artifact path: $(pwd)/package"
-          ls -la package
-
       - name: Download Artifact
         uses: actions/download-artifact@v4
         with:
           name: ${{ github.event.inputs.build-number }}  # Use the artifact name, not the path
-          path: package
+          path: .
 
       
 
