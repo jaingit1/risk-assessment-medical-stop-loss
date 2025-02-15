@@ -31,10 +31,10 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Log build number and run ID
-        run: echo "Downloading artifact with name ${{ github.event.inputs.build-number }} from run ID ${{ github.event.inputs.run-id }}"
+        run: echo "Downloading artifact with name: ${{ github.event.inputs.build-number }} from run ID: ${{ github.event.inputs.run-id }}"
 
-      # - name: Wait for Artifact to be Available
-      #   run: sleep 30
+      - name: Wait for Artifact to be Available
+        run: sleep 30
 
       - name: List Available Artifacts
         run: |
@@ -44,21 +44,21 @@ jobs:
       - name: Download Artifact
         uses: actions/download-artifact@v4
         with:
-          name: ${{ github.event.inputs.build-number }}  # Use the artifact name, not the path
+          name: ${{ github.event.inputs.build-number }}
           path: .
+          repository: jaingit1/risk-assessment-medical-stop-loss
+          run-id: ${{ github.event.inputs.run-id }}
 
-      
-
-      # - name: List downloaded files
+      # - name: Check Package Directory
       #   run: |
-      #     echo "Listing package directory contents:"
-      #     ls -l ./package
+      #     echo "Artifact path: $(pwd)"
+      #     ls -la $(pwd)
 
       # - name: Extract Artifact
       #   run: |
-      #     cd package
-      #     unzip -o ../${{ github.event.inputs.build-number }}.zip
-      #     cd ..
+      #     unzip -o ${{ github.event.inputs.build-number }}.zip -d package
+      #     echo "Listing extracted files in package directory:"
+      #     ls -la package
 
       # - name: Set Environment Variables
       #   run: |
@@ -70,7 +70,7 @@ jobs:
       #     elif [ "${{ github.event.inputs.environment }}" == "test" ]; then
       #       echo "AWS_ACCOUNT_ID=${{ secrets.AWS_ACCOUNT_ID }}" >> $GITHUB_ENV
       #       echo "ARTIFACT_KEY=${{ vars.ARTIFACT_KEY }}" >> $GITHUB_ENV
-      #       echo "DEPLOYMENT_KEY=${{ vars.ARTIFACT_KEY }}" >> $GITHUB_ENV
+      #       echo "DEPLOYMENT_KEY=${{ vars.DEPLOYMENT_KEY }}" >> $GITHUB_ENV
       #       echo "ENVIRONMENT_KEY=${{ vars.ENVIRONMENT_KEY }}" >> $GITHUB_ENV
       #     fi
 
