@@ -26,14 +26,15 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: ${{ github.event.inputs.environment }} 
 
     env:
       AWS_REGION: ${{ secrets.AWS_REGION }}
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
       ARTIFACT_KEY: ${{ vars.ARTIFACT_KEY }}
-      DEPLOYMENT_KEY: ${{ vars.development.DEPLOYMENT_KEY }}
-      ENVIRONMENT_KEY: ${{ vars.DEVELOPMENT_ENVIRONMENT_KEY }}
+      DEPLOYMENT_KEY: ${{ vars.DEPLOYMENT_KEY }}
+      ENVIRONMENT_KEY: ${{ vars.ENVIRONMENT_KEY }}
 
     steps:
       - name: Check out repository code
