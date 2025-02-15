@@ -54,7 +54,7 @@ jobs:
           echo "Contents of package directory:"
           ls -la package
           cd package
-          zip -r ${{ env.version }}.zip .
+          zip -r ./${{ env.version }}.zip .
 
       - id: package-upload
         name: Upload Package
