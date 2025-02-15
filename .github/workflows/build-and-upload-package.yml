@@ -57,18 +57,16 @@ jobs:
           zip -r ${{ env.version }}.zip ./
           echo "Contents of package zip file:"
           unzip -l ${{ env.version }}.zip
-          mv ${{ env.version }}.zip ${GITHUB_WORKSPACE}/package/
-          
 
       - id: package-upload
         name: Upload Package
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ env.version }}  # Use the build number for the artifact name
+          name: ${{ env.version }}
           path: package/${{ env.version }}.zip
           retention-days: 30
-      
+
       - name: Confirm Upload
         run: |
           echo "Uploaded artifact name: ${{ env.version }}"
-          ls -la
+          ls -la package
