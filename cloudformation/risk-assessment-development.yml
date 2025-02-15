@@ -1,0 +1,215 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: AWS CloudFormation Template for Risk Assessment Model Deployment on EKS using ECR
+
+Parameters:
+  AppEnv:
+    Description: The environment of the application
+    Type: String
+    MinLength: '1'
+    MaxLength: '16'
+    AllowedPattern: '[a-zA-Z-]*'
+  AppName:
+    Description: The name of the application
+    Type: String
+    MinLength: '1'
+  AppVersion:
+    Description: The version of the application
+    Type: String
+    MinLength: '1'
+  VpcCidr:
+    Description: The CIDR block for the VPC
+    Type: String
+    Default: '10.0.0.0/16'
+  PrivateSubnet1Cidr:
+    Description: The CIDR block for the first private subnet
+    Type: String
+    Default: '10.0.1.0/24'
+  PrivateSubnet2Cidr:
+    Description: The CIDR block for the second private subnet
+    Type: String
+    Default: '10.0.2.0/24'
+  ClusterName:
+    Description: The name of the EKS cluster
+    Type: String
+    Default: 'risk-assessment-eks-cluster'
+
+Resources:
+  # VPC
+  VPC:
+    Type: 'AWS::EC2::VPC'
+    Properties:
+      CidrBlock: !Ref VpcCidr
+      EnableDnsSupport: true
+      EnableDnsHostnames: true
+      Tags:
+        - Key: Name
+          Value: !Sub '${AppName}-${AppEnv}-vpc'
+
+  # Private Subnet 1
+  PrivateSubnet1:
+    Type: 'AWS::EC2::Subnet'
+    Properties:
+      VpcId: !Ref VPC
+      CidrBlock: !Ref PrivateSubnet1Cidr
+      MapPublicIpOnLaunch: false
+      Tags:
+        - Key: Name
+          Value: !Sub '${AppName}-${AppEnv}-private-subnet-1'
+
+  # Private Subnet 2
+  PrivateSubnet2:
+    Type: 'AWS::EC2::Subnet'
+    Properties:
+      VpcId: !Ref VPC
+      CidrBlock: !Ref PrivateSubnet2Cidr
+      MapPublicIpOnLaunch: false
+      Tags:
+        - Key: Name
+          Value: !Sub '${AppName}-${AppEnv}-private-subnet-2'
+
+  # Route Table for private subnets
+  PrivateRouteTable:
+    Type: 'AWS::EC2::RouteTable'
+    Properties:
+      VpcId: !Ref VPC
+      Tags:
+        - Key: Name
+          Value: !Sub '${AppName}-${AppEnv}-private-rtb'
+
+  # Associate private subnets with route table
+  PrivateSubnet1RouteTableAssociation:
+    Type: 'AWS::EC2::SubnetRouteTableAssociation'
+    Properties:
+      SubnetId: !Ref PrivateSubnet1
+      RouteTableId: !Ref PrivateRouteTable
+
+  PrivateSubnet2RouteTableAssociation:
+    Type: 'AWS::EC2::SubnetRouteTableAssociation'
+    Properties:
+      SubnetId: !Ref PrivateSubnet2
+      RouteTableId: !Ref PrivateRouteTable
+
+  # ECR Repository for Docker Images
+  ECRRepository:
+    Type: 'AWS::ECR::Repository'
+    Properties:
+      RepositoryName: !Sub '${AppName}-${AppEnv}-repository'
+
+  # IAM Role for EKS Cluster
+  EKSClusterRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: [ "eks.amazonaws.com" ]
+            Action: [ "sts:AssumeRole" ]
+      Policies:
+        - PolicyName: EKSClusterPolicy
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - 'ec2:Describe*'
+                  - 'ecr:GetDownloadUrlForLayer'
+                  - 'ecr:BatchCheckLayerAvailability'
+                  - 'ecr:BatchGetImage'
+                  - 'ecr:PutImage'
+                  - 'logs:*'
+                Resource: '*'
+
+  # Amazon EKS Cluster
+  EKSCluster:
+    Type: 'AWS::EKS::Cluster'
+    Properties:
+      Name: !Ref ClusterName
+      RoleArn: !GetAtt EKSClusterRole.Arn
+      ResourcesVpcConfig:
+        SubnetIds:
+          - !Ref PrivateSubnet1
+          - !Ref PrivateSubnet2
+        SecurityGroupIds:
+          - !Ref EKSSecurityGroup
+
+  # Security Group for the EKS cluster
+  EKSSecurityGroup:
+    Type: 'AWS::EC2::SecurityGroup'
+    Properties:
+      GroupDescription: Enable communication between cluster nodes and allow HTTP access
+      VpcId: !Ref VPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: -1
+          SourceSecurityGroupId: !Ref EKSSecurityGroup
+
+  # Node Group for EKS Cluster
+  EKSNodeGroup:
+    Type: 'AWS::EKS::Nodegroup'
+    Properties:
+      ClusterName: !Ref EKSCluster
+      NodeRole: !GetAtt EKSNodeGroupRole.Arn
+      Subnets:
+        - !Ref PrivateSubnet1
+        - !Ref PrivateSubnet2
+      ScalingConfig:
+        MinSize: 1
+        MaxSize: 3
+        DesiredSize: 1
+      AmiType: AL2_x86_64
+      InstanceTypes:
+        - t3.micro
+      DiskSize: 20
+      Labels:
+        Name: !Ref ClusterName
+
+  # IAM Role for Node Group
+  EKSNodeGroupRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: [ "ec2.amazonaws.com" ]
+            Action: [ "sts:AssumeRole" ]
+      Policies:
+        - PolicyName: EKSNodeGroupPolicy
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - 'ec2:Describe*'
+                  - 'ecr:GetDownloadUrlForLayer'
+                  - 'ecr:BatchCheckLayerAvailability'
+                  - 'ecr:BatchGetImage'
+                  - 'logs:*'
+                Resource: '*'
+
+Outputs:
+  VpcId:
+    Description: 'VPC ID'
+    Value: !Ref VPC
+
+  ECRRepositoryUri:
+    Description: 'URI of the ECR repository'
+    Value: !GetAtt ECRRepository.RepositoryUri
+
+  EKSClusterName:
+    Description: 'Name of the EKS cluster'
+    Value: !Ref EKSCluster
+
+  EKSClusterArn:
+    Description: 'ARN of the EKS cluster'
+    Value: !GetAtt EKSCluster.Arn

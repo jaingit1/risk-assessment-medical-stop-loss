@@ -1,0 +1,16 @@
+cloudformation:
+  capabilities:
+    - CAPABILITY_IAM
+  external_files:
+    - 'cloudformation/${env.ARTIFACT_KEY}-${env.ENVIRONMENT_KEY}.yml'
+  config:
+    - template: '${env.ARTIFACT_KEY}-${env.ENVIRONMENT_KEY}.yml'
+    - stack_name: '${env.ARTIFACT_KEY}-${env.DEPLOYMENT_KEY}'
+  parameters:
+    - AppName: '${env.ARTIFACT_KEY}'
+    - AppEnv: '${env.ENVIRONMENT_KEY}'
+    - AppVersion: '${inputs.build-number}'
+    - SupportEmail: jain.vibhorjv@hotmail.com
+  tags:
+    - Name: '${env.ARTIFACT_KEY}-${env.DEPLOYMENT_KEY}'
+    - lm_app: 'aws-${env.ARTIFACT_KEY}'
