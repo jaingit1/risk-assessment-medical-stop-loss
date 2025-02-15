@@ -20,7 +20,7 @@ on:
   
 permissions:
   contents: read
-  id-token: write
+  id-token: read
   actions: write
 
 jobs:
