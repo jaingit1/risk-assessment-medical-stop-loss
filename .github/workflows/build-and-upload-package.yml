@@ -27,7 +27,7 @@ jobs:
     env:
       AWS_REGION: ${{ secrets.AWS_REGION }}
       DEPLOYMENT_KEY: ${{ vars.DEPLOYMENT_KEY }}
-      ENVIRONMENT_KEY: ${{ env.ENVIRONMENT_KEY }}
+      ENVIRONMENT_KEY: ${{ VARS.ENVIRONMENT_KEY }}
 
 
     outputs:
