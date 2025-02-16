@@ -28,6 +28,9 @@ Resources:
       CidrBlock: "10.0.1.0/24"
       MapPublicIpOnLaunch: true
       AvailabilityZone: !Select [ 0, !GetAZs "" ]
+    Tags:
+      - Key: kubernetes.io/role/elb
+        Value: "1"
 
   PublicSubnet2:
     Type: AWS::EC2::Subnet
@@ -36,6 +39,9 @@ Resources:
       CidrBlock: "10.0.2.0/24"
       MapPublicIpOnLaunch: true
       AvailabilityZone: !Select [ 1, !GetAZs "" ]
+    Tags:
+      - Key: kubernetes.io/role/elb
+        Value: "1"
 
   InternetGateway:
     Type: AWS::EC2::InternetGateway
@@ -78,6 +84,33 @@ Resources:
           - !Ref PublicSubnet2
         SecurityGroupIds:
           - !Ref EKSSecurityGroup
+
+  # Create a Route Table for the VPC
+  RiskAssessmentRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref RiskAssessmentVPC
+
+  # Create a route in the Route Table to allow internet access
+  RiskAssessmentInternetRoute:
+    Type: AWS::EC2::Route
+    Properties:
+      RouteTableId: !Ref RiskAssessmentRouteTable
+      DestinationCidrBlock: "0.0.0.0/0"
+      GatewayId: !Ref InternetGateway
+
+  # Associate the Route Table with the Public Subnets
+  RiskAssessmentPublicSubnet1RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnet1
+      RouteTableId: !Ref RiskAssessmentRouteTable
+
+  RiskAssessmentPublicSubnet2RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnet2
+      RouteTableId: !Ref RiskAssessmentRouteTable
 
 Outputs:
   ClusterName:
