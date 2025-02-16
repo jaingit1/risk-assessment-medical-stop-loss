@@ -14,7 +14,11 @@ Resources:
   MyECRRepository: 
     Type: AWS::ECR::Repository
     Properties:
-      RepositoryName: !Ref AppName
+      RepositoryName:
+        Fn::Join:
+          - "-"
+          - [ !Ref AppName, !Ref AppEnv ]
+          
       ImageScanningConfiguration:
         ScanOnPush: true
       LifecyclePolicy:

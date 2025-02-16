@@ -1,4 +1,4 @@
-name: Build and upload Package
+name: Build Artifacts
 
 run-name: 'Package: ${{ github.ref_name }}_${{ github.run_id }}_${{ github.run_attempt }}'
 
@@ -6,15 +6,6 @@ on:
   push:
     branches: ['master']
   workflow_dispatch:
-    # inputs:
-    #   environment:
-    #     description: 'Select the environment'
-    #     required: true
-    #     default: 'development'
-    #     type: choice
-    #     options:
-    #       - development
-    #       - test
 
 permissions:
   contents: read
