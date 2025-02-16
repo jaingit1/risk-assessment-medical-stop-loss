@@ -28,9 +28,9 @@ Resources:
       CidrBlock: "10.0.1.0/24"
       MapPublicIpOnLaunch: true
       AvailabilityZone: !Select [ 0, !GetAZs "" ]
-    Tags:
-      - Key: kubernetes.io/role/elb
-        Value: "1"
+      Tags:
+        - Key: kubernetes.io/role/elb
+          Value: "1"
 
   PublicSubnet2:
     Type: AWS::EC2::Subnet
@@ -39,9 +39,9 @@ Resources:
       CidrBlock: "10.0.2.0/24"
       MapPublicIpOnLaunch: true
       AvailabilityZone: !Select [ 1, !GetAZs "" ]
-    Tags:
-      - Key: kubernetes.io/role/elb
-        Value: "1"
+      Tags:
+        - Key: kubernetes.io/role/elb
+          Value: "1"
 
   InternetGateway:
     Type: AWS::EC2::InternetGateway
