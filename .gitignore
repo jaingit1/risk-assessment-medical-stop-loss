@@ -1,3 +1,6 @@
+# data
+generated_data/
+
 # Python bytecode files
 *.pyc
 *.pyo
@@ -25,9 +28,6 @@ artifacts/
 
 # Secrets
 secrets/
-
-# data
-generated_data/
 
 #mlflow artifacts and runs
 mlartifacts/
