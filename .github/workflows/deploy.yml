@@ -99,23 +99,23 @@ jobs:
           echo "ECR_URI=$ECR_URI" >> $GITHUB_ENV  # Set environment variable
           echo "::set-output name=ECR_URI::$ECR_URI"  # Store as job output
 
-      - name: Deploy CloudFormation Stack for EKS
-        run: |
-          aws cloudformation deploy \
-            --stack-name ${{ env.EKS_CLUSTER_NAME }} \
-            --template-file cloudformation/risk-assessment-eks-stack.yml \
-            --capabilities CAPABILITY_NAMED_IAM \
-            --parameter-overrides \
-              ClusterName=${{ env.EKS_CLUSTER_NAME }} \
-              NodeInstanceType=${{ env.NODE_INSTANCE_TYPE }} \
-              ECRImageURI=${{ env.ECR_IMAGE_URI }}
+      # - name: Deploy CloudFormation Stack for EKS
+      #   run: |
+      #     aws cloudformation deploy \
+      #       --stack-name ${{ env.EKS_CLUSTER_NAME }} \
+      #       --template-file cloudformation/risk-assessment-eks-stack.yml \
+      #       --capabilities CAPABILITY_NAMED_IAM \
+      #       --parameter-overrides \
+      #         ClusterName=${{ env.EKS_CLUSTER_NAME }} \
+      #         NodeInstanceType=${{ env.NODE_INSTANCE_TYPE }} \
+      #         ECRImageURI=${{ env.ECR_IMAGE_URI }}
 
-      - name: Wait for EKS Cluster to be Ready
-        run: |
-          until aws eks describe-cluster --name ${{ env.EKS_CLUSTER_NAME }} --query 'cluster.status' --output text | grep -q 'ACTIVE'; do
-            echo "Waiting for EKS cluster to be active..."
-            sleep 30
-          done
+      # - name: Wait for EKS Cluster to be Ready
+      #   run: |
+      #     until aws eks describe-cluster --name ${{ env.EKS_CLUSTER_NAME }} --query 'cluster.status' --output text | grep -q 'ACTIVE'; do
+      #       echo "Waiting for EKS cluster to be active..."
+      #       sleep 30
+      #     done
 
   deploy-app:
     needs: deploy-eks
@@ -147,7 +147,7 @@ jobs:
         run: |
           sed -i "s|<ECR_URI>|$ECR_URI|g" k8s/deployment.yml
           sed -i "s|<IMAGE_TAG>|${{ env.IMAGE_TAG }}|g" k8s/deployment.yml
-          sed -i "s|<ENVIRONMENT>|${{ github.event.inputs.environment }}g" k8s/deployment.yml
+          sed -i "s|<ENVIRONMENT>|${{ github.event.inputs.environment }}|g" k8s/deployment.yml
           kubectl apply -f k8s/deployment.yml
           kubectl apply -f k8s/service.yml
 
