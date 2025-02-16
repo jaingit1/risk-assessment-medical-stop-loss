@@ -5,7 +5,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load the trained model
-model = joblib.load('risk_assessment_model_pipeline.pkl') # for running locall use path to pickle fiule as /contaner/risk_assessment_model_pipeline.pkl
+model = joblib.load('risk_assessment_model_pipeline.pkl') # for running locally use path to pickle fiule as /contaner/risk_assessment_model_pipeline.pkl
 
 @app.route('/predict', methods=['POST'])
 def predict():
