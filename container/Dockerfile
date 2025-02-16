@@ -15,6 +15,8 @@ COPY app.py .
 COPY risk_assessment_model_pipeline.pkl .
 
 # Expose the port that the Flask app runs on
+# Make port 80 available to the world outside this container
+EXPOSE 80
 EXPOSE 5000
 
 # Define the command to run the Flask app
