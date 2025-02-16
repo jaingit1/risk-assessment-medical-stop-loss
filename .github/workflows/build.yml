@@ -41,6 +41,7 @@ jobs:
           mkdir -p package
           [ -d cloudformation ] && cp -r cloudformation package/
           [ -d container ] && cp -r container package/
+          [ -d k8s ] && cp -r k8s package/
           [ -f README.md ] && cp README.md package/
           echo "Contents of package directory:"
           ls -la package
