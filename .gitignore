@@ -26,6 +26,9 @@ artifacts/
 # Secrets
 secrets/
 
+# data
+generated_data/
+
 #mlflow artifacts and runs
 mlartifacts/
 mlruns/

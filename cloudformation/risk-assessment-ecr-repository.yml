@@ -2,23 +2,20 @@ AWSTemplateFormatVersion: '2010-09-09'
 Description: CloudFormation template to create an Amazon ECR repository
 
 Parameters:
-  AppName:
+  RepositoryName:
     Type: String
-    Description: Name of the CloudFormation stack
+    Description: Name of the CloudFormation stack & Repository
 
-  AppEnv:
-    Type: String
-    Description: Deployment environment (e.g., dev, staging, prod)
 
 Resources:
   MyECRRepository: 
     Type: AWS::ECR::Repository
     Properties:
-      RepositoryName:
-        Fn::Join:
-          - "-"
-          - [ !Ref AppName, !Ref AppEnv ]
-          
+      RepositoryName: !Ref RepositoryName
+        # Fn::Join:
+        #   - "-"
+        #   - [ !Ref AppName, !Ref AppEnv ]
+
       ImageScanningConfiguration:
         ScanOnPush: true
       LifecyclePolicy:

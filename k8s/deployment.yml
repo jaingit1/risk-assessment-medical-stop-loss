@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: risk-assessment-app
+  labels:
+    app: risk-assessment
+spec:
+  replicas: 2  # Number of replicas
+  selector:
+    matchLabels:
+      app: risk-assessment
+  template:
+    metadata:
+      labels:
+        app: risk-assessment
+    spec:
+      containers:
+        - name: risk-assessment-container
+          image: <ECR_URI>:<IMAGE_TAG>  # Replaced dynamically in GitHub Actions
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: "250m"   # Minimum 0.25 vCPU
+              memory: "512Mi" # Minimum 512MB RAM
+            limits:
+              cpu: "500m"   # Max 0.5 vCPU
+              memory: "1Gi"  # Max 1GB RAM
+          env:
+            - name: ENVIRONMENT
+              value: "<ENVIRONMENT>"  # Placeholder to be replaced dynamically
