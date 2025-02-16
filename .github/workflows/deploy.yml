@@ -103,7 +103,7 @@ jobs:
         run: |
           aws cloudformation deploy \
             --stack-name ${{ env.EKS_CLUSTER_NAME }} \
-            --template-file cloudformation/rsk-assessment-eks-stack.yml \
+            --template-file cloudformation/risk-assessment-eks-stack.yml \
             --capabilities CAPABILITY_NAMED_IAM \
             --parameter-overrides \
               ClusterName=${{ env.EKS_CLUSTER_NAME }} \
