@@ -15,6 +15,8 @@ git push -u origin master
 
 
 # Run the docker image pushed to aws ecr locally
-aws ecr get-login-password --region <your-region> | docker login --username AWS --password-stdin <your-account-id>.dkr.ecr.<your-region>.amazonaws.com
-docker pull <your-account-id>.dkr.ecr.<your-region>.amazonaws.com/<your-repo-name>:latest
-docker run -p 5000:5000 <your-account-id>.dkr.ecr.<your-region>.amazonaws.com/<your-repo-name>:latest
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 445567073878.dkr.ecr.us-east-1.amazonaws.com
+
+docker pull 445567073878.dkr.ecr.us-east-1.amazonaws.com/risk-assessment-ecr-repository:latest
+
+docker run -p 5000:5000 445567073878.dkr.ecr.us-east-1.amazonaws.com/risk-assessment-ecr-repository:latest
