@@ -78,7 +78,7 @@ jobs:
     env:
       AWS_REGION: ${{ secrets.AWS_REGION }}
       EKS_CLUSTER_NAME: risk-assessment-eks-cluster-${{ github.event.inputs.environment }}
-      NODE_INSTANCE_TYPE: "t3.medium"  # Updated default node type
+      NODE_INSTANCE_TYPE: "t2.micro"  # Updated default node type
       ECR_IMAGE_URI: ""  # Will be populated dynamically
 
     steps:
@@ -169,20 +169,20 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
 
-      - name: Delete Old Images in ECR
-        run: |
-          image_ids=$(aws ecr list-images --repository-name ${{ env.ECR_REPO_NAME }} --query 'imageIds[*]' --output json --region ${{ env.AWS_REGION }})
-          if [ "$image_ids" != "[]" ]; then
-            aws ecr batch-delete-image --repository-name ${{ env.ECR_REPO_NAME }} --image-ids "$image_ids"
-          fi
+      # - name: Delete Old Images in ECR
+      #   run: |
+      #     image_ids=$(aws ecr list-images --repository-name ${{ env.ECR_REPO_NAME }} --query 'imageIds[*]' --output json --region ${{ env.AWS_REGION }})
+      #     if [ "$image_ids" != "[]" ]; then
+      #       aws ecr batch-delete-image --repository-name ${{ env.ECR_REPO_NAME }} --image-ids "$image_ids"
+      #     fi
 
-      - name: Delete CloudFormation Stack (EKS and ECR)
-        run: |
-          aws cloudformation delete-stack --stack-name ${{ env.ECR_REPO_NAME }}
-          aws cloudformation delete-stack --stack-name ${{ env.EKS_CLUSTER_NAME }}
+      # - name: Delete CloudFormation Stack (EKS and ECR)
+      #   run: |
+      #     aws cloudformation delete-stack --stack-name ${{ env.ECR_REPO_NAME }}
+      #     aws cloudformation delete-stack --stack-name ${{ env.EKS_CLUSTER_NAME }}
 
-      - name: Wait for Stack Deletion
-        run: |
-          aws cloudformation wait stack-delete-complete --stack-name ${{ env.ECR_REPO_NAME }}
-          aws cloudformation wait stack-delete-complete --stack-name ${{ env.EKS_CLUSTER_NAME }}
-          echo "Stack deletion completed."
+      # - name: Wait for Stack Deletion
+      #   run: |
+      #     aws cloudformation wait stack-delete-complete --stack-name ${{ env.ECR_REPO_NAME }}
+      #     aws cloudformation wait stack-delete-complete --stack-name ${{ env.EKS_CLUSTER_NAME }}
+      #     echo "Stack deletion completed."
