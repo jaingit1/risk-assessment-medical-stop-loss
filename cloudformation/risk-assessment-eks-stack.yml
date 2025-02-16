@@ -113,6 +113,7 @@ Resources:
       RouteTableId: !Ref RiskAssessmentRouteTable
 
   # Create Node Group for EKS
+   # Create Node Group for EKS
   RiskAssessmentNodeGroup:
     Type: AWS::EKS::Nodegroup
     Properties:
@@ -124,9 +125,6 @@ Resources:
         - !Ref PublicSubnet2
       InstanceTypes:
         - !Ref NodeInstanceType
-      DesiredSize: 2
-      MaxSize: 3
-      MinSize: 1
       ScalingConfig:
         MinSize: 1
         MaxSize: 3
