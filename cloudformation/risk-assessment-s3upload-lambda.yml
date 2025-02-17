@@ -63,6 +63,16 @@ Resources:
     Description: "S3 bucket that stores uploaded objects and triggers Lambda function on new object creation."
     Properties:
       BucketName: !Sub '${EnvironmentName}-risk-assessment-bucket'
+      CorsConfiguration:
+      CorsRules:
+        - AllowedOrigins:
+            - '*'
+          AllowedMethods:
+            - PUT
+            - POST
+            - GET
+          AllowedHeaders:
+            - '*'
       PublicAccessBlockConfiguration:
         BlockPublicAcls: false
         BlockPublicPolicy: false
@@ -174,6 +184,17 @@ Resources:
                 'cognito-identity.amazonaws.com:aud': !Ref CognitoIdentityPool
               'ForAnyValue:StringLike':
                 'cognito-identity.amazonaws.com:amr': unauthenticated
+      Policies:
+        - PolicyName: 'CognitoS3UploadPolicy'
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - 's3:PutObject'
+                  - 's3:PutObjectAcl'
+                Resource:
+                  - !Sub 'arn:aws:s3:::${S3Bucket}/*'
 
   IdentityPoolRoleAttachment:
     Type: 'AWS::Cognito::IdentityPoolRoleAttachment'
