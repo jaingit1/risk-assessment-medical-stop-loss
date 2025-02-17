@@ -82,12 +82,12 @@ jobs:
     - name: Upload HTML file to S3 for static website hosting
       run: |
         # Upload the modified HTML file to the S3 bucket
-        aws s3 cp static_website/index.html s3://${{ env.S3_BUCKET_NAME }}/index.html --acl public-read
+        aws s3 cp static_website/index.html s3://${{ env.S3_BUCKET_NAME }}/index.html
     
     - name: Upload HTML file to S3 for static website hosting
       run: |
         # Upload the modified HTML file to the S3 bucket
-        aws s3 cp static_website/error.html s3://${{ env.S3_BUCKET_NAME }}/error.html --acl public-read
+        aws s3 cp static_website/error.html s3://${{ env.S3_BUCKET_NAME }}/error.html
 
     - name: Set up Static Website Hosting
       run: |
