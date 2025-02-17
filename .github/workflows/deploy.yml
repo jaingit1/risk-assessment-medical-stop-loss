@@ -42,32 +42,32 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
 
-      - name: Deploy CloudFormation Stack for ECR
-        run: |
-          aws cloudformation deploy \
-            --stack-name ${{ env.ECR_REPO_NAME }} \
-            --template-file cloudformation/risk-assessment-ecr-repository.yml \
-            --capabilities CAPABILITY_NAMED_IAM \
-            --parameter-overrides \
-              RepositoryName=${{ env.ECR_REPO_NAME }}
+      # - name: Deploy CloudFormation Stack for ECR
+      #   run: |
+      #     aws cloudformation deploy \
+      #       --stack-name ${{ env.ECR_REPO_NAME }} \
+      #       --template-file cloudformation/risk-assessment-ecr-repository.yml \
+      #       --capabilities CAPABILITY_NAMED_IAM \
+      #       --parameter-overrides \
+      #         RepositoryName=${{ env.ECR_REPO_NAME }}
 
-      - name: Get ECR Repository URI
-        id: ecr-uri
-        run: |
-          ECR_URI=$(aws ecr describe-repositories --repository-names ${{ env.ECR_REPO_NAME }} --query 'repositories[0].repositoryUri' --output text)
-          echo "ECR_URI=$ECR_URI" >> $GITHUB_ENV
+      # - name: Get ECR Repository URI
+      #   id: ecr-uri
+      #   run: |
+      #     ECR_URI=$(aws ecr describe-repositories --repository-names ${{ env.ECR_REPO_NAME }} --query 'repositories[0].repositoryUri' --output text)
+      #     echo "ECR_URI=$ECR_URI" >> $GITHUB_ENV
 
-      - name: Login to Amazon ECR
-        run: aws ecr get-login-password --region ${{ env.AWS_REGION }} | docker login --username AWS --password-stdin $ECR_URI
+      # - name: Login to Amazon ECR
+      #   run: aws ecr get-login-password --region ${{ env.AWS_REGION }} | docker login --username AWS --password-stdin $ECR_URI
 
-      - name: Build and Tag Docker Image
-        run: |
-          docker build -t ${{ env.ECR_REPO_NAME }}:latest ./container
-          docker tag ${{ env.ECR_REPO_NAME }} $ECR_URI:latest
+      # - name: Build and Tag Docker Image
+      #   run: |
+      #     docker build -t ${{ env.ECR_REPO_NAME }}:latest ./container
+      #     docker tag ${{ env.ECR_REPO_NAME }} $ECR_URI:latest
 
-      - name: Push Docker Image to ECR
-        run: |
-          docker push $ECR_URI:latest
+      # - name: Push Docker Image to ECR
+      #   run: |
+      #     docker push $ECR_URI:latest
   deploy-eks:
     needs: deploy-ecr
     runs-on: ubuntu-latest
@@ -90,30 +90,30 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
 
-      - name: Get ECR Repository URI
-        id: ecr-uri
-        run: |
-          ECR_URI=$(aws ecr describe-repositories --repository-names risk-assessment-ecr-repository-${{ github.event.inputs.environment }} --query 'repositories[0].repositoryUri' --output text)
-          echo "ECR_URI=$ECR_URI" >> $GITHUB_ENV  # Set environment variable
-          echo "::set-output name=ECR_URI::$ECR_URI"  # Store as job output
+      # - name: Get ECR Repository URI
+      #   id: ecr-uri
+      #   run: |
+      #     ECR_URI=$(aws ecr describe-repositories --repository-names risk-assessment-ecr-repository-${{ github.event.inputs.environment }} --query 'repositories[0].repositoryUri' --output text)
+      #     echo "ECR_URI=$ECR_URI" >> $GITHUB_ENV  # Set environment variable
+      #     echo "::set-output name=ECR_URI::$ECR_URI"  # Store as job output
 
-      - name: Deploy CloudFormation Stack for EKS
-        run: |
-          aws cloudformation deploy \
-            --stack-name ${{ env.EKS_CLUSTER_NAME }} \
-            --template-file cloudformation/risk-assessment-eks-stack.yml \
-            --capabilities CAPABILITY_NAMED_IAM \
-            --parameter-overrides \
-              ClusterName=${{ env.EKS_CLUSTER_NAME }} \
-              NodeInstanceType=${{ env.NODE_INSTANCE_TYPE }} \
-              ECRImageURI=${{ env.ECR_IMAGE_URI }}
+      # - name: Deploy CloudFormation Stack for EKS
+      #   run: |
+      #     aws cloudformation deploy \
+      #       --stack-name ${{ env.EKS_CLUSTER_NAME }} \
+      #       --template-file cloudformation/risk-assessment-eks-stack.yml \
+      #       --capabilities CAPABILITY_NAMED_IAM \
+      #       --parameter-overrides \
+      #         ClusterName=${{ env.EKS_CLUSTER_NAME }} \
+      #         NodeInstanceType=${{ env.NODE_INSTANCE_TYPE }} \
+      #         ECRImageURI=${{ env.ECR_IMAGE_URI }}
 
-      - name: Wait for EKS Cluster to be Ready
-        run: |
-          until aws eks describe-cluster --name ${{ env.EKS_CLUSTER_NAME }} --query 'cluster.status' --output text | grep -q 'ACTIVE'; do
-            echo "Waiting for EKS cluster to be active..."
-            sleep 30
-          done
+      # - name: Wait for EKS Cluster to be Ready
+      #   run: |
+      #     until aws eks describe-cluster --name ${{ env.EKS_CLUSTER_NAME }} --query 'cluster.status' --output text | grep -q 'ACTIVE'; do
+      #       echo "Waiting for EKS cluster to be active..."
+      #       sleep 30
+      #     done
 
   deploy-app:
     needs: deploy-eks
@@ -124,7 +124,7 @@ jobs:
       AWS_REGION: ${{ secrets.AWS_REGION }}
       EKS_CLUSTER_NAME: risk-assessment-eks-cluster-${{ github.event.inputs.environment }}
       ECR_REPO_NAME: risk-assessment-ecr-repository-${{ github.event.inputs.environment }}
-      IMAGE_TAG: ${{ github.event.inputs.build-number }}
+      IMAGE_TAG: latest
 
     steps:
       - name: Checkout Code
