@@ -19,7 +19,13 @@ def predict():
 
         # Perform prediction
         prediction = model.predict(input_data)
-        result = {"prediction": prediction.tolist()}
+        # result = {"prediction": prediction.tolist()}
+        # Add the prediction as a new column in the DataFrame
+        input_data["risk assessment"] = prediction
+
+        # Convert the DataFrame back to a list of dictionaries
+        result = input_data.to_dict(orient="records")
+        print(result)
         return jsonify(result)
     except Exception as e:
         print("Error:", e)  # Debugging statement
