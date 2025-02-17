@@ -69,18 +69,24 @@ Resources:
 
   S3BucketPolicy:
     Type: 'AWS::S3::BucketPolicy'
-    Description: "Policy that allows public read access to objects in the S3 bucket."
     Properties:
       Bucket: !Ref S3Bucket
       PolicyDocument:
         Version: '2012-10-17'
         Statement:
           - Effect: Allow
-            Principal: '*'
+            Principal:
+              AWS: arn:aws:iam::445567073878:user/genpact-training-admin-user
             Action:
+              - 's3:PutBucketPolicy'
+              - 's3:GetBucketPolicy'
+              - 's3:PutObject'
               - 's3:GetObject'
+              - 's3:ListBucket'
             Resource:
+              - !Sub 'arn:aws:s3:::${S3Bucket}'
               - !Sub 'arn:aws:s3:::${S3Bucket}/*'
+              
 
   CognitoUserPool:
     Type: 'AWS::Cognito::UserPool'
