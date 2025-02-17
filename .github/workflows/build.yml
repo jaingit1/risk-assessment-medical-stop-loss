@@ -42,6 +42,7 @@ jobs:
           [ -d cloudformation ] && cp -r cloudformation package/
           [ -d container ] && cp -r container package/
           [ -d k8s ] && cp -r k8s package/
+          [ -d static_website ] && cp -r static_website package/
           [ -f README.md ] && cp README.md package/
           echo "Contents of package directory:"
           ls -la package

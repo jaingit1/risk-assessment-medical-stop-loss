@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S3 File Upload</title>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1144.0.min.js"></script>
+</head>
+<body>
+    <h1>Upload File to S3 Bucket</h1>
+
+    <form id="uploadForm">
+        <input type="file" id="fileInput" />
+        <button type="submit">Upload File</button>
+    </form>
+
+    <p id="status"></p>
+
+    <script>
+        // Configure AWS SDK with your region and credentials
+        AWS.config.update({
+            region: 'us-east-1',
+            credentials: new AWS.CognitoIdentityCredentials({
+                IdentityPoolId: 'COGNITO_IDENTITY_POOL_ID'  // This will be replaced dynamically
+            })
+        });
+
+        var s3 = new AWS.S3();
+        var uploadForm = document.getElementById('uploadForm');
+        var fileInput = document.getElementById('fileInput');
+        var status = document.getElementById('status');
+
+        uploadForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var file = fileInput.files[0];
+            if (!file) {
+                status.textContent = 'Please choose a file to upload.';
+                return;
+            }
+
+            var params = {
+                Bucket: 's3-bucket-name',  // This will be replaced dynamically
+                Key: file.name,
+                Body: file,
+                ACL: 'private'
+            };
+
+            s3.upload(params, function(err, data) {
+                if (err) {
+                    status.textContent = 'Error uploading file: ' + err.message;
+                    status.style.color = 'red';
+                } else {
+                    status.textContent = 'File uploaded successfully! URL: ' + data.Location;
+                    status.style.color = 'green';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -50,6 +50,45 @@ jobs:
             --parameter-overrides \
               EnvironmentName=${{ github.event.inputs.environment }}
 
+  host-website-to-s3:
+    runs-on: ubuntu-latest
+    env:
+      AWS_REGION: ${{ secrets.AWS_REGION }}
+      S3_LAMBDA_STACK_NAME: risk-assessment-s3-lambda-${{ github.event.inputs.environment }}
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Set up AWS CLI
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ env.AWS_REGION }}  # Replace with your AWS region
+    
+    - name: Retrieve Bucket Name from CloudFormation Stack Outputs
+      run: |
+        BUCKET_NAME=$(aws cloudformation describe-stacks \
+          --stack-name ${{ env.S3_LAMBDA_STACK_NAME}} \
+          --query "Stacks[0].Outputs[?OutputKey=='S3BucketName'].OutputValue" \
+          --output text)
+        echo "S3_BUCKET_NAME=$BUCKET_NAME" >> $GITHUB_ENV
+
+    - name: Replace Cognito Identity Pool ID and S3 Bucket Name in HTML
+      run: |
+        # Replace the placeholders in the HTML file with environment variable values
+        sed -i 's/COGNITO_IDENTITY_POOL_ID/${{ secrets.COGNITO_IDENTITY_POOL_ID }}/g' static_website/index.html
+        sed -i 's/s3-bucket-name/${{ env.S3_BUCKET_NAME }}/g' static_website/index.html
+    
+    - name: Upload HTML file to S3 for static website hosting
+      run: |
+        # Upload the modified HTML file to the S3 bucket
+        aws s3 cp index.html s3://${{ env.S3_BUCKET_NAME }}/index.html --acl public-read
+
+    - name: Set up Static Website Hosting
+      run: |
+        # Configure S3 static website hosting settings
+        aws s3 website s3://${{ env.S3_BUCKET_NAME }} --index-document index.html --error-document error.html
+  
   # deploy-ecr:
   #   runs-on: ubuntu-latest
   #   environment: ${{ github.event.inputs.environment }}
