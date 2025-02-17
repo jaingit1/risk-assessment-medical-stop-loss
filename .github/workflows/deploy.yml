@@ -90,12 +90,12 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
 
-      # - name: Get ECR Repository URI
-      #   id: ecr-uri
-      #   run: |
-      #     ECR_URI=$(aws ecr describe-repositories --repository-names risk-assessment-ecr-repository-${{ github.event.inputs.environment }} --query 'repositories[0].repositoryUri' --output text)
-      #     echo "ECR_URI=$ECR_URI" >> $GITHUB_ENV  # Set environment variable
-      #     echo "::set-output name=ECR_URI::$ECR_URI"  # Store as job output
+      - name: Get ECR Repository URI
+        id: ecr-uri
+        run: |
+          ECR_URI=$(aws ecr describe-repositories --repository-names risk-assessment-ecr-repository-${{ github.event.inputs.environment }} --query 'repositories[0].repositoryUri' --output text)
+          echo "ECR_URI=$ECR_URI" >> $GITHUB_ENV  # Set environment variable
+          echo "::set-output name=ECR_URI::$ECR_URI"  # Store as job output
 
       # - name: Deploy CloudFormation Stack for EKS
       #   run: |
