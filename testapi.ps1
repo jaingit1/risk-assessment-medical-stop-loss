@@ -15,4 +15,4 @@ $body = '{
 }'
 
 # Send the POST request
-Invoke-WebRequest -Uri http://a2272bc632dd4437f97f315bc39623ee-963283982.us-east-1.elb.amazonaws.com/predict -Method Post -Headers $headers -Body $body
+Invoke-WebRequest -Uri http://a2272bc632dd4437f97f315bc39623ee-963283982.us-east-1.elb.amazonaws.com:80/predict -Method Post -Headers $headers -Body $body
