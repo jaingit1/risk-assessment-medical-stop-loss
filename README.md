@@ -29,3 +29,6 @@ kubectl get svc
 
 # get pods
 kubectl get pods
+
+# manual cleanup
+Load Balancer, Network Interface, vpc 
