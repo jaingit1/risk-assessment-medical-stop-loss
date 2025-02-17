@@ -21,5 +21,11 @@ docker pull 445567073878.dkr.ecr.us-east-1.amazonaws.com/risk-assessment-ecr-rep
 
 docker run -p 5000:5000 445567073878.dkr.ecr.us-east-1.amazonaws.com/risk-assessment-ecr-repository:latest
 
-# Check 
+# Check connect to eks
 aws eks update-kubeconfig --region us-east-1 --name risk-assessment-eks-cluster-development
+
+# get service details
+kubectl get svc
+
+# get pods
+kubectl get pods
