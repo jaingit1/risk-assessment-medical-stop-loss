@@ -86,7 +86,12 @@ Resources:
             Resource:
               - !Sub 'arn:aws:s3:::${S3Bucket}'
               - !Sub 'arn:aws:s3:::${S3Bucket}/*'
-              
+          # Allow public access to the objects in the bucket (for static website access)
+          - Effect: Allow
+            Principal: "*"
+            Action: 's3:GetObject'
+            Resource: !Sub 'arn:aws:s3:::${S3Bucket}/*'
+
 
   CognitoUserPool:
     Type: 'AWS::Cognito::UserPool'
