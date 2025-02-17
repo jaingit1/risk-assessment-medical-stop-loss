@@ -63,6 +63,12 @@ Resources:
     Description: "S3 bucket that stores uploaded objects and triggers Lambda function on new object creation."
     Properties:
       BucketName: !Sub '${EnvironmentName}-risk-assessment-bucket'
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: false
+        BlockPublicPolicy: false
+        IgnorePublicAcls: false
+        RestrictPublicBuckets: false
+        
       WebsiteConfiguration:
         IndexDocument: index.html
         ErrorDocument: error.html
