@@ -1,0 +1,194 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Parameters:
+  EnvironmentName:
+    Type: String
+    Description: The environment name (e.g., dev, prod)
+    Default: dev
+
+Resources:
+  LambdaExecutionRole:
+    Type: 'AWS::IAM::Role'
+    Description: "IAM role that grants Lambda function necessary permissions to interact with AWS services like S3 and CloudWatch Logs."
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: 'lambda.amazonaws.com'
+            Action: 'sts:AssumeRole'
+      Policies:
+        - PolicyName: 'LambdaS3AccessPolicy'
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - 'logs:CreateLogGroup'
+                  - 'logs:CreateLogStream'
+                  - 'logs:PutLogEvents'
+                Resource: 'arn:aws:logs:*:*:*'
+              - Effect: Allow
+                Action:
+                  - 's3:GetObject'
+                  - 's3:ListBucket'
+                  - 's3:PutObject'
+                Resource:
+                  - !Sub 'arn:aws:s3:::${S3Bucket}'
+                  - !Sub 'arn:aws:s3:::${S3Bucket}/*'
+
+  LambdaFunction:
+    Type: 'AWS::Lambda::Function'
+    Description: "Lambda function that processes uploaded objects in the S3 bucket."
+    Properties:
+      FunctionName: !Sub '${EnvironmentName}-S3UploadProcessor'
+      Handler: 'lambda_function.lambda_handler'
+      Role: !GetAtt LambdaExecutionRole.Arn
+      Code:
+        ZipFile: |
+          import json
+          import boto3
+
+          def lambda_handler(event, context):
+              print("Event: ", event)
+              return {
+                  'statusCode': 200,
+                  'body': json.dumps('Hello from Lambda!')
+              }
+      Runtime: 'python3.9'
+
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Description: "S3 bucket that stores uploaded objects and triggers Lambda function on new object creation."
+    Properties:
+      BucketName: !Sub '${EnvironmentName}-risk-assessment-bucket'
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: error.html
+
+  S3BucketPolicy:
+    Type: 'AWS::S3::BucketPolicy'
+    Description: "Policy that allows public read access to objects in the S3 bucket."
+    Properties:
+      Bucket: !Ref S3Bucket
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal: '*'
+            Action:
+              - 's3:GetObject'
+            Resource:
+              - !Sub 'arn:aws:s3:::${S3Bucket}/*'
+
+  CognitoUserPool:
+    Type: 'AWS::Cognito::UserPool'
+    Description: "Cognito User Pool for user authentication in the environment."
+    Properties:
+      UserPoolName: !Sub '${EnvironmentName}-user-pool'
+      Policies:
+        PasswordPolicy:
+          MinimumLength: 8
+          RequireUppercase: true
+          RequireLowercase: true
+          RequireNumbers: true
+          RequireSymbols: false
+
+  CognitoUserPoolClient:
+    Type: 'AWS::Cognito::UserPoolClient'
+    Description: "Cognito User Pool Client to allow access to the user pool from applications."
+    Properties:
+      ClientName: !Sub '${EnvironmentName}-user-pool-client'
+      UserPoolId: !Ref CognitoUserPool
+      GenerateSecret: false
+
+  CognitoIdentityPool:
+    Type: 'AWS::Cognito::IdentityPool'
+    Description: "Cognito Identity Pool for federated identities that integrates with the user pool for authentication."
+    Properties:
+      IdentityPoolName: !Sub '${EnvironmentName}-identity-pool'
+      AllowUnauthenticatedIdentities: false
+      CognitoIdentityProviders:
+        - ClientId: !Ref CognitoUserPoolClient
+          ProviderName: !GetAtt CognitoUserPool.ProviderName
+
+  CognitoAuthRole:
+    Type: 'AWS::IAM::Role'
+    Description: "IAM role for authenticated users to interact with AWS resources, such as writing to S3."
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Federated: 'cognito-identity.amazonaws.com'
+            Action: 'sts:AssumeRoleWithWebIdentity'
+            Condition:
+              StringEquals:
+                'cognito-identity.amazonaws.com:aud': !Ref CognitoIdentityPool
+              'ForAnyValue:StringLike':
+                'cognito-identity.amazonaws.com:amr': authenticated
+      Policies:
+        - PolicyName: 'CognitoS3UploadPolicy'
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - 's3:PutObject'
+                  - 's3:PutObjectAcl'
+                Resource:
+                  - !Sub 'arn:aws:s3:::${S3Bucket}/*'
+
+  CognitoUnauthRole:
+    Type: 'AWS::IAM::Role'
+    Description: "IAM role for unauthenticated users to interact with AWS resources."
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Federated: 'cognito-identity.amazonaws.com'
+            Action: 'sts:AssumeRoleWithWebIdentity'
+            Condition:
+              StringEquals:
+                'cognito-identity.amazonaws.com:aud': !Ref CognitoIdentityPool
+              'ForAnyValue:StringLike':
+                'cognito-identity.amazonaws.com:amr': unauthenticated
+
+  IdentityPoolRoleAttachment:
+    Type: 'AWS::Cognito::IdentityPoolRoleAttachment'
+    Description: "Attaches the IAM roles for authenticated and unauthenticated users to the Cognito Identity Pool."
+    Properties:
+      IdentityPoolId: !Ref CognitoIdentityPool
+      Roles:
+        authenticated: !GetAtt CognitoAuthRole.Arn
+        unauthenticated: !GetAtt CognitoUnauthRole.Arn
+
+  LambdaInvokePermission:
+    Type: 'AWS::Lambda::Permission'
+    Description: "Grant permission for S3 to invoke the Lambda function when a new object is created."
+    Properties:
+      Action: 'lambda:InvokeFunction'
+      FunctionName: !Ref LambdaFunction
+      Principal: 's3.amazonaws.com'
+      SourceArn: !Sub 'arn:aws:s3:::${S3Bucket}'
+
+Outputs:
+  S3BucketName:
+    Description: "The name of the S3 bucket created for the environment."
+    Value: !Ref S3Bucket
+  CognitoUserPoolId:
+    Description: "The ID of the Cognito User Pool."
+    Value: !Ref CognitoUserPool
+  CognitoUserPoolClientId:
+    Description: "The ID of the Cognito User Pool Client."
+    Value: !Ref CognitoUserPoolClient
+  CognitoIdentityPoolId:
+    Description: "The ID of the Cognito Identity Pool."
+    Value: !Ref CognitoIdentityPool
+  CognitoAuthRoleArn:
+    Description: "The ARN of the Cognito authenticated IAM role."
+    Value: !GetAtt CognitoAuthRole.Arn
