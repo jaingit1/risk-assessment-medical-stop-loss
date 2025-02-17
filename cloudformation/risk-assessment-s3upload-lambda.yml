@@ -64,15 +64,15 @@ Resources:
     Properties:
       BucketName: !Sub '${EnvironmentName}-risk-assessment-bucket'
       CorsConfiguration:
-      CorsRules:
-        - AllowedOrigins:
-            - '*'
-          AllowedMethods:
-            - PUT
-            - POST
-            - GET
-          AllowedHeaders:
-            - '*'
+        CorsRules:
+          - AllowedOrigins:
+              - '*'
+            AllowedMethods:
+              - PUT
+              - POST
+              - GET
+            AllowedHeaders:
+              - '*'
       PublicAccessBlockConfiguration:
         BlockPublicAcls: false
         BlockPublicPolicy: false
