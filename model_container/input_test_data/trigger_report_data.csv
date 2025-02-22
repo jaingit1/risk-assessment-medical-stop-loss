@@ -1,0 +1,3994 @@
+ID,Trigger Event ID,Trigger Date,Trigger Type
+1461,TR7576,2024-09-17,Hospitalization
+1461,TR1659,2024-09-13,Hospitalization
+1461,TR1637,2024-01-24,High blood sugar
+1153,TR6456,2024-12-31,High blood sugar
+1464,TR8487,2024-09-22,High blood sugar
+1464,TR9446,2024-03-17,ER visit
+823,TR6218,2024-06-16,ER visit
+955,TR5902,2024-07-20,High blood sugar
+1918,TR9311,2024-06-21,Hospitalization
+1918,TR9721,2024-09-17,Hospitalization
+1918,TR5911,2024-09-07,ER visit
+1390,TR7035,2024-01-09,ER visit
+1390,TR2795,2024-06-18,High blood sugar
+953,TR6040,2024-10-25,Hospitalization
+953,TR1436,2024-12-18,High blood sugar
+1681,TR5350,2024-08-30,ER visit
+1681,TR4728,2024-12-01,Hospitalization
+1681,TR8871,2024-01-27,Hospitalization
+80,TR7229,2024-09-25,ER visit
+729,TR4968,2024-12-14,High blood sugar
+713,TR2800,2024-10-20,High blood sugar
+326,TR8225,2024-01-10,Hospitalization
+607,TR3481,2024-08-02,ER visit
+607,TR4340,2024-07-30,Hospitalization
+1867,TR8726,2024-09-13,ER visit
+1867,TR3262,2024-02-01,High blood sugar
+1361,TR6325,2024-04-16,ER visit
+1361,TR8837,2024-12-05,High blood sugar
+1361,TR7173,2024-09-26,ER visit
+1583,TR8531,2024-03-29,Hospitalization
+1583,TR6608,2024-09-29,High blood sugar
+1024,TR5331,2024-06-30,Hospitalization
+1024,TR8932,2024-11-08,Hospitalization
+1024,TR5038,2024-04-08,High blood sugar
+33,TR5890,2024-10-12,High blood sugar
+33,TR5876,2024-04-25,Hospitalization
+1879,TR4396,2024-12-26,Hospitalization
+1879,TR9011,2024-12-19,Hospitalization
+1694,TR6714,2024-09-02,Hospitalization
+1694,TR5480,2024-10-13,High blood sugar
+6,TR9899,2024-03-03,High blood sugar
+6,TR7464,2024-07-13,Hospitalization
+346,TR5758,2024-03-15,ER visit
+346,TR5712,2024-01-22,ER visit
+187,TR6674,2024-02-10,High blood sugar
+187,TR5201,2024-08-14,Hospitalization
+187,TR4505,2024-09-02,Hospitalization
+1636,TR5442,2024-10-02,High blood sugar
+15,TR5450,2024-12-22,ER visit
+15,TR2789,2024-03-11,ER visit
+15,TR4920,2024-11-11,ER visit
+1729,TR9700,2024-01-26,High blood sugar
+166,TR4814,2024-11-22,ER visit
+319,TR7771,2024-02-21,High blood sugar
+1871,TR2647,2024-08-29,High blood sugar
+1871,TR3252,2024-12-14,Hospitalization
+683,TR3587,2024-10-08,ER visit
+1811,TR8793,2024-11-30,High blood sugar
+1811,TR4267,2024-09-01,ER visit
+496,TR5676,2024-06-13,ER visit
+496,TR1969,2024-11-26,Hospitalization
+667,TR4804,2024-11-29,ER visit
+1716,TR3868,2024-01-20,Hospitalization
+1716,TR3880,2024-08-01,High blood sugar
+1716,TR7504,2024-01-19,ER visit
+717,TR5742,2024-04-05,High blood sugar
+717,TR1151,2024-01-20,ER visit
+448,TR2758,2024-10-17,High blood sugar
+448,TR5662,2024-06-20,ER visit
+1486,TR9901,2024-11-24,ER visit
+1486,TR9092,2024-09-25,ER visit
+322,TR8668,2024-09-15,ER visit
+1402,TR2845,2024-04-08,ER visit
+1402,TR3662,2024-06-18,ER visit
+1797,TR5215,2024-08-22,ER visit
+1797,TR1230,2024-04-05,ER visit
+1797,TR5833,2024-06-21,ER visit
+323,TR4164,2024-12-11,High blood sugar
+323,TR7643,2024-03-30,Hospitalization
+323,TR9442,2024-08-06,ER visit
+1502,TR7567,2024-02-14,Hospitalization
+1502,TR2562,2024-12-08,ER visit
+897,TR8822,2024-03-12,ER visit
+1739,TR1111,2024-05-07,High blood sugar
+1739,TR7284,2024-05-13,High blood sugar
+221,TR5374,2024-08-16,Hospitalization
+182,TR1187,2024-06-03,High blood sugar
+182,TR6890,2024-05-13,High blood sugar
+1092,TR2017,2024-04-30,Hospitalization
+1092,TR2936,2024-12-07,High blood sugar
+1092,TR6026,2024-08-26,ER visit
+1720,TR9233,2024-07-26,Hospitalization
+786,TR2923,2024-06-08,Hospitalization
+786,TR5833,2024-11-23,ER visit
+786,TR4618,2024-07-07,High blood sugar
+1577,TR8834,2024-03-09,Hospitalization
+811,TR7121,2024-08-20,Hospitalization
+694,TR9998,2024-12-25,ER visit
+694,TR9806,2024-08-29,ER visit
+1060,TR5054,2024-04-21,High blood sugar
+1060,TR2341,2024-12-14,Hospitalization
+1060,TR8319,2024-09-26,High blood sugar
+1522,TR6927,2024-12-26,High blood sugar
+1522,TR2838,2024-02-09,ER visit
+1522,TR9972,2024-02-01,Hospitalization
+185,TR9792,2024-04-13,Hospitalization
+185,TR3695,2024-03-17,Hospitalization
+185,TR9525,2024-06-16,ER visit
+1351,TR4365,2024-02-29,ER visit
+1351,TR9008,2024-10-25,ER visit
+712,TR8298,2024-09-18,ER visit
+1412,TR3161,2024-08-20,ER visit
+568,TR8484,2024-07-31,Hospitalization
+568,TR1945,2024-10-15,High blood sugar
+568,TR8575,2024-10-13,Hospitalization
+535,TR1356,2024-06-06,High blood sugar
+535,TR5169,2024-07-21,ER visit
+535,TR4570,2024-01-02,High blood sugar
+403,TR1742,2024-02-07,Hospitalization
+403,TR6644,2024-08-04,Hospitalization
+403,TR2044,2024-12-24,High blood sugar
+1510,TR2130,2024-01-31,ER visit
+1510,TR1519,2024-08-29,ER visit
+1510,TR7698,2024-05-26,Hospitalization
+1874,TR7887,2024-03-10,High blood sugar
+1357,TR8348,2024-07-14,ER visit
+1357,TR7154,2024-07-12,ER visit
+1863,TR9835,2024-12-15,Hospitalization
+1482,TR6697,2024-11-30,ER visit
+1952,TR9802,2024-04-01,High blood sugar
+1421,TR3086,2024-09-27,Hospitalization
+1421,TR1056,2024-04-24,Hospitalization
+863,TR8585,2024-06-01,High blood sugar
+733,TR7948,2024-10-05,Hospitalization
+733,TR7214,2024-09-29,ER visit
+733,TR5055,2024-04-27,ER visit
+861,TR3541,2024-06-26,High blood sugar
+861,TR4088,2024-05-21,ER visit
+1149,TR1527,2024-02-27,High blood sugar
+1149,TR7868,2024-12-04,High blood sugar
+1149,TR1256,2024-11-10,ER visit
+1193,TR2102,2024-04-15,High blood sugar
+1298,TR1550,2024-10-31,ER visit
+1067,TR1797,2024-11-02,Hospitalization
+1067,TR1724,2024-05-05,Hospitalization
+1102,TR4839,2024-08-12,High blood sugar
+1102,TR4559,2024-10-03,ER visit
+977,TR9255,2024-03-12,ER visit
+889,TR6224,2024-04-29,Hospitalization
+889,TR6253,2024-10-22,Hospitalization
+580,TR3347,2024-06-03,ER visit
+1603,TR4621,2024-09-23,High blood sugar
+1603,TR5923,2024-07-30,Hospitalization
+1603,TR1998,2024-05-20,High blood sugar
+3,TR3869,2024-10-29,High blood sugar
+3,TR7999,2024-11-16,Hospitalization
+3,TR9120,2024-10-11,High blood sugar
+1595,TR7244,2024-06-25,High blood sugar
+1945,TR7821,2024-06-12,ER visit
+1945,TR3444,2024-07-28,High blood sugar
+1945,TR7167,2024-06-02,ER visit
+556,TR8758,2024-10-02,Hospitalization
+1106,TR5927,2024-04-25,Hospitalization
+1581,TR8586,2024-03-14,ER visit
+1581,TR7761,2024-01-30,Hospitalization
+1581,TR9683,2024-08-01,High blood sugar
+951,TR4978,2024-07-17,High blood sugar
+1156,TR6411,2024-04-14,High blood sugar
+1156,TR2295,2024-11-27,Hospitalization
+852,TR2514,2024-07-08,High blood sugar
+852,TR4120,2024-10-01,Hospitalization
+1012,TR7179,2024-05-17,High blood sugar
+1760,TR1647,2024-11-05,ER visit
+1760,TR4082,2024-02-07,Hospitalization
+1760,TR4555,2024-10-27,Hospitalization
+197,TR6455,2024-04-16,High blood sugar
+197,TR1251,2024-06-04,Hospitalization
+824,TR2922,2024-04-07,Hospitalization
+367,TR4974,2024-09-02,ER visit
+367,TR4350,2024-12-22,ER visit
+367,TR4921,2024-07-22,High blood sugar
+539,TR5637,2024-06-13,ER visit
+539,TR8639,2024-07-13,High blood sugar
+539,TR6886,2024-09-30,High blood sugar
+9,TR6892,2024-05-13,High blood sugar
+9,TR9147,2024-09-19,Hospitalization
+1692,TR8692,2024-02-20,ER visit
+1692,TR4328,2024-06-12,High blood sugar
+1639,TR7781,2024-06-09,ER visit
+1639,TR4625,2024-01-24,High blood sugar
+1186,TR1265,2024-03-15,ER visit
+1186,TR7841,2024-05-13,ER visit
+1186,TR3497,2024-05-31,High blood sugar
+1403,TR4768,2024-06-17,Hospitalization
+1642,TR5026,2024-10-18,ER visit
+1642,TR6530,2024-09-12,Hospitalization
+2000,TR9037,2024-09-07,Hospitalization
+2000,TR3756,2024-08-23,High blood sugar
+1331,TR3773,2024-06-29,High blood sugar
+1331,TR9954,2024-03-12,High blood sugar
+1331,TR4015,2024-09-07,ER visit
+150,TR1962,2024-11-24,High blood sugar
+150,TR1554,2024-09-25,High blood sugar
+150,TR1794,2024-02-08,ER visit
+734,TR3252,2024-07-30,ER visit
+71,TR2113,2024-04-28,High blood sugar
+71,TR3474,2024-12-28,High blood sugar
+71,TR4583,2024-01-05,High blood sugar
+1215,TR7114,2024-08-21,High blood sugar
+1215,TR8916,2024-01-31,Hospitalization
+1215,TR8993,2024-12-03,Hospitalization
+1649,TR9719,2024-01-04,High blood sugar
+731,TR1194,2024-07-29,Hospitalization
+731,TR9673,2024-01-09,ER visit
+731,TR9777,2024-05-20,Hospitalization
+1594,TR9228,2024-01-09,Hospitalization
+1594,TR8054,2024-12-23,High blood sugar
+966,TR2578,2024-02-24,Hospitalization
+1801,TR4948,2024-03-17,Hospitalization
+1801,TR9625,2024-04-08,Hospitalization
+1801,TR6807,2024-05-09,Hospitalization
+1218,TR2294,2024-07-22,ER visit
+1218,TR7652,2024-07-10,High blood sugar
+1951,TR4984,2024-10-16,High blood sugar
+1951,TR4700,2024-12-22,ER visit
+503,TR2320,2024-12-16,Hospitalization
+503,TR1519,2024-11-30,ER visit
+1842,TR7213,2024-07-26,Hospitalization
+1137,TR8798,2024-10-09,ER visit
+1137,TR1154,2024-01-29,High blood sugar
+771,TR2354,2024-03-28,High blood sugar
+771,TR8109,2024-09-12,High blood sugar
+771,TR6427,2024-11-26,Hospitalization
+1206,TR9653,2024-02-18,Hospitalization
+1206,TR4764,2024-01-22,ER visit
+1206,TR8790,2024-04-18,ER visit
+834,TR2218,2024-01-24,High blood sugar
+834,TR5593,2024-12-16,Hospitalization
+1477,TR1539,2024-10-15,ER visit
+1477,TR6152,2024-04-01,Hospitalization
+1477,TR4394,2024-01-09,Hospitalization
+753,TR7525,2024-03-14,High blood sugar
+753,TR5903,2024-02-09,High blood sugar
+753,TR4939,2024-03-24,Hospitalization
+1430,TR9856,2024-07-18,Hospitalization
+1430,TR7288,2024-06-18,Hospitalization
+1430,TR2284,2024-03-12,Hospitalization
+180,TR1879,2024-06-26,High blood sugar
+180,TR8161,2024-02-20,ER visit
+180,TR2245,2024-04-28,High blood sugar
+1804,TR7499,2024-11-05,ER visit
+1804,TR1485,2024-06-16,Hospitalization
+317,TR8381,2024-05-19,ER visit
+317,TR4737,2024-09-08,High blood sugar
+317,TR7150,2024-07-01,High blood sugar
+1179,TR7227,2024-04-05,Hospitalization
+1179,TR5839,2024-02-13,High blood sugar
+1241,TR2204,2024-12-31,Hospitalization
+94,TR3526,2024-05-17,High blood sugar
+890,TR3527,2024-12-30,High blood sugar
+890,TR6188,2024-07-18,Hospitalization
+340,TR2499,2024-02-24,ER visit
+340,TR6050,2024-01-03,High blood sugar
+11,TR5419,2024-07-03,ER visit
+11,TR3170,2024-02-22,High blood sugar
+1471,TR8061,2024-04-05,High blood sugar
+1964,TR9395,2024-10-12,High blood sugar
+1964,TR2692,2024-07-27,High blood sugar
+839,TR6798,2024-02-15,ER visit
+212,TR6315,2024-02-17,ER visit
+212,TR1202,2024-07-16,High blood sugar
+212,TR7779,2024-05-29,High blood sugar
+475,TR4977,2024-02-13,ER visit
+475,TR9537,2024-10-19,Hospitalization
+1064,TR7237,2024-12-16,Hospitalization
+525,TR5405,2024-03-12,ER visit
+1098,TR9079,2024-05-17,High blood sugar
+1098,TR2036,2024-03-15,High blood sugar
+1223,TR5521,2024-08-10,Hospitalization
+939,TR8933,2024-06-02,Hospitalization
+939,TR6916,2024-02-09,ER visit
+331,TR9123,2024-05-06,Hospitalization
+331,TR4203,2024-10-31,ER visit
+462,TR3219,2024-02-24,Hospitalization
+462,TR1110,2024-06-04,Hospitalization
+1177,TR7224,2024-06-19,Hospitalization
+1177,TR8212,2024-06-17,High blood sugar
+745,TR3230,2024-08-08,High blood sugar
+745,TR6253,2024-06-02,High blood sugar
+1172,TR4290,2024-12-21,Hospitalization
+1172,TR6147,2024-09-02,ER visit
+1172,TR7524,2024-03-31,ER visit
+1039,TR9044,2024-05-29,ER visit
+1039,TR4971,2024-10-21,ER visit
+1173,TR5592,2024-07-11,High blood sugar
+1173,TR6980,2024-07-20,High blood sugar
+545,TR4273,2024-10-15,Hospitalization
+518,TR3947,2024-10-06,Hospitalization
+518,TR1440,2024-12-15,ER visit
+518,TR4434,2024-08-24,High blood sugar
+1314,TR2133,2024-05-29,ER visit
+1314,TR9180,2024-07-28,Hospitalization
+600,TR5961,2024-11-20,Hospitalization
+1111,TR3525,2024-05-09,ER visit
+1371,TR7176,2024-08-04,Hospitalization
+1371,TR8357,2024-02-07,ER visit
+1371,TR8851,2024-11-02,High blood sugar
+358,TR9755,2024-07-24,ER visit
+358,TR7853,2024-09-16,High blood sugar
+358,TR1602,2024-10-05,High blood sugar
+121,TR9796,2024-12-25,Hospitalization
+121,TR2392,2024-10-31,Hospitalization
+847,TR6816,2024-05-07,Hospitalization
+1117,TR1725,2024-11-27,ER visit
+528,TR7547,2024-11-26,ER visit
+528,TR8052,2024-06-18,Hospitalization
+528,TR1172,2024-02-24,ER visit
+1628,TR4637,2024-05-12,Hospitalization
+1174,TR4621,2024-09-22,ER visit
+1174,TR7129,2024-08-16,High blood sugar
+1174,TR8586,2024-07-19,High blood sugar
+1868,TR9199,2024-10-28,Hospitalization
+1868,TR6651,2024-03-18,ER visit
+1868,TR8909,2024-01-13,ER visit
+1118,TR7815,2024-05-31,High blood sugar
+96,TR3321,2024-02-29,High blood sugar
+18,TR6620,2024-06-08,Hospitalization
+18,TR4389,2024-08-21,High blood sugar
+1221,TR6706,2024-09-04,Hospitalization
+1221,TR2599,2024-08-31,High blood sugar
+1221,TR8412,2024-08-12,High blood sugar
+606,TR5919,2024-02-04,ER visit
+606,TR2885,2024-01-23,High blood sugar
+1935,TR2791,2024-06-24,High blood sugar
+1651,TR4996,2024-03-25,Hospitalization
+1651,TR3858,2024-09-21,High blood sugar
+1651,TR3623,2024-10-09,Hospitalization
+1735,TR7985,2024-10-13,High blood sugar
+1735,TR4798,2024-08-24,High blood sugar
+849,TR4022,2024-11-18,Hospitalization
+849,TR8080,2024-04-05,ER visit
+634,TR4232,2024-01-15,Hospitalization
+634,TR8037,2024-08-18,Hospitalization
+935,TR4519,2024-01-03,Hospitalization
+935,TR5560,2024-04-15,ER visit
+1258,TR2667,2024-02-02,High blood sugar
+1258,TR4063,2024-10-01,Hospitalization
+1258,TR6340,2024-07-06,Hospitalization
+229,TR2867,2024-08-22,ER visit
+230,TR9019,2024-12-09,Hospitalization
+230,TR6134,2024-09-27,High blood sugar
+1238,TR7431,2024-07-17,ER visit
+1238,TR2871,2024-10-27,High blood sugar
+1238,TR6766,2024-06-27,High blood sugar
+1653,TR3826,2024-11-12,ER visit
+1653,TR5873,2024-12-10,Hospitalization
+411,TR2388,2024-10-29,High blood sugar
+411,TR3194,2024-12-10,High blood sugar
+411,TR2931,2024-06-09,High blood sugar
+1164,TR2916,2024-06-05,High blood sugar
+4,TR3316,2024-07-10,ER visit
+1838,TR7852,2024-07-17,ER visit
+1838,TR3258,2024-11-01,High blood sugar
+1838,TR7286,2024-10-21,Hospitalization
+1772,TR8973,2024-04-05,High blood sugar
+1772,TR9804,2024-11-21,Hospitalization
+904,TR3838,2024-11-26,High blood sugar
+904,TR3733,2024-10-11,Hospitalization
+904,TR5732,2024-09-07,High blood sugar
+1911,TR6154,2024-04-05,Hospitalization
+1160,TR1878,2024-11-13,High blood sugar
+1160,TR1157,2024-07-02,High blood sugar
+110,TR4196,2024-03-10,Hospitalization
+110,TR9281,2024-07-15,ER visit
+487,TR7703,2024-09-10,Hospitalization
+487,TR9056,2024-12-16,ER visit
+487,TR8272,2024-07-31,High blood sugar
+879,TR2354,2024-03-26,Hospitalization
+879,TR1505,2024-10-16,Hospitalization
+1902,TR1535,2024-05-29,Hospitalization
+337,TR9808,2024-04-25,ER visit
+337,TR3755,2024-05-27,ER visit
+1198,TR9115,2024-10-16,High blood sugar
+1198,TR9369,2024-10-08,ER visit
+1919,TR2871,2024-10-20,ER visit
+52,TR7010,2024-10-05,High blood sugar
+52,TR1681,2024-10-04,Hospitalization
+396,TR9951,2024-08-13,Hospitalization
+396,TR7965,2024-04-21,High blood sugar
+396,TR5055,2024-02-22,Hospitalization
+1601,TR8368,2024-01-17,ER visit
+1601,TR6711,2024-05-14,High blood sugar
+74,TR2923,2024-08-12,High blood sugar
+1723,TR6744,2024-04-17,High blood sugar
+918,TR8015,2024-11-08,Hospitalization
+918,TR3281,2024-03-25,High blood sugar
+918,TR4390,2024-04-15,High blood sugar
+1051,TR6747,2024-10-18,High blood sugar
+552,TR9827,2024-05-23,Hospitalization
+552,TR6302,2024-03-27,ER visit
+552,TR5794,2024-12-26,High blood sugar
+1449,TR5380,2024-10-20,ER visit
+1449,TR2560,2024-09-20,Hospitalization
+830,TR1971,2024-07-29,Hospitalization
+491,TR3078,2024-12-01,Hospitalization
+491,TR3174,2024-12-25,Hospitalization
+1370,TR6277,2024-03-15,ER visit
+1845,TR7434,2024-12-12,High blood sugar
+241,TR5402,2024-03-13,Hospitalization
+241,TR7786,2024-11-17,Hospitalization
+1929,TR2237,2024-08-19,ER visit
+1929,TR2525,2024-11-20,ER visit
+1345,TR5558,2024-09-20,Hospitalization
+1345,TR7046,2024-12-21,High blood sugar
+591,TR6362,2024-09-06,High blood sugar
+591,TR1040,2024-10-24,Hospitalization
+181,TR8511,2024-02-17,ER visit
+181,TR6869,2024-11-21,Hospitalization
+181,TR9756,2024-02-02,Hospitalization
+158,TR8039,2024-04-21,ER visit
+158,TR9105,2024-04-18,Hospitalization
+1439,TR5646,2024-06-14,Hospitalization
+1439,TR9967,2024-06-21,Hospitalization
+920,TR8951,2024-03-07,ER visit
+920,TR1793,2024-06-24,High blood sugar
+920,TR2631,2024-01-24,High blood sugar
+330,TR1266,2024-08-23,ER visit
+330,TR3588,2024-03-04,High blood sugar
+330,TR8479,2024-08-13,Hospitalization
+53,TR4314,2024-08-07,High blood sugar
+1807,TR5945,2024-03-08,Hospitalization
+1807,TR5489,2024-03-22,High blood sugar
+1807,TR6905,2024-02-17,ER visit
+27,TR7092,2024-02-12,High blood sugar
+27,TR3711,2024-12-06,High blood sugar
+1489,TR6005,2024-07-21,High blood sugar
+299,TR4836,2024-12-24,ER visit
+299,TR2494,2024-08-07,High blood sugar
+299,TR2559,2024-12-26,ER visit
+1279,TR8812,2024-04-19,Hospitalization
+206,TR4705,2024-03-08,High blood sugar
+215,TR8291,2024-12-14,ER visit
+215,TR1132,2024-01-05,ER visit
+215,TR6629,2024-12-22,High blood sugar
+1454,TR3165,2024-08-04,Hospitalization
+714,TR4751,2024-02-06,ER visit
+714,TR2463,2024-07-15,High blood sugar
+1783,TR2690,2024-02-22,Hospitalization
+1783,TR7022,2024-06-09,ER visit
+1783,TR3246,2024-06-02,ER visit
+1416,TR3340,2024-03-09,Hospitalization
+1416,TR9691,2024-02-05,Hospitalization
+1099,TR3688,2024-01-05,High blood sugar
+1099,TR6753,2024-08-13,High blood sugar
+1099,TR3480,2024-04-19,ER visit
+1323,TR8248,2024-11-11,Hospitalization
+1323,TR2420,2024-04-21,Hospitalization
+1513,TR3017,2024-03-12,Hospitalization
+898,TR6759,2024-07-15,ER visit
+898,TR6152,2024-08-07,Hospitalization
+898,TR5059,2024-03-12,Hospitalization
+1616,TR2380,2024-11-26,ER visit
+1616,TR5668,2024-05-07,High blood sugar
+415,TR5942,2024-01-14,High blood sugar
+415,TR9482,2024-04-15,ER visit
+415,TR9348,2024-11-06,Hospitalization
+765,TR5842,2024-07-19,ER visit
+355,TR4921,2024-01-28,High blood sugar
+355,TR7322,2024-09-10,High blood sugar
+355,TR4949,2024-02-27,ER visit
+1451,TR2163,2024-11-22,ER visit
+1451,TR1197,2024-09-27,High blood sugar
+934,TR3162,2024-06-11,ER visit
+934,TR7895,2024-07-17,High blood sugar
+777,TR3830,2024-10-06,ER visit
+777,TR2195,2024-08-29,ER visit
+1047,TR2106,2024-10-27,ER visit
+1161,TR4534,2024-05-14,High blood sugar
+1854,TR7520,2024-01-31,ER visit
+1970,TR9209,2024-05-26,High blood sugar
+1970,TR7939,2024-07-31,High blood sugar
+1970,TR7590,2024-12-25,ER visit
+827,TR9791,2024-11-23,ER visit
+1886,TR3501,2024-11-11,High blood sugar
+1886,TR2369,2024-05-22,High blood sugar
+1886,TR2294,2024-06-07,Hospitalization
+1789,TR3545,2024-04-14,High blood sugar
+1789,TR6353,2024-10-01,Hospitalization
+1789,TR2083,2024-07-19,Hospitalization
+1917,TR8167,2024-12-23,Hospitalization
+1917,TR1948,2024-05-02,ER visit
+123,TR8118,2024-02-14,ER visit
+706,TR1901,2024-08-20,High blood sugar
+61,TR3877,2024-12-07,Hospitalization
+61,TR1207,2024-03-02,ER visit
+474,TR1185,2024-03-11,ER visit
+474,TR9133,2024-03-24,ER visit
+474,TR9568,2024-06-26,ER visit
+34,TR3735,2024-05-12,ER visit
+34,TR3079,2024-07-09,Hospitalization
+34,TR2934,2024-05-17,Hospitalization
+409,TR8034,2024-06-20,Hospitalization
+352,TR2046,2024-09-25,Hospitalization
+352,TR2262,2024-05-14,High blood sugar
+1695,TR9368,2024-08-21,Hospitalization
+1695,TR1908,2024-07-03,ER visit
+271,TR3734,2024-10-17,Hospitalization
+271,TR3577,2024-07-07,High blood sugar
+864,TR2889,2024-02-22,ER visit
+864,TR9336,2024-04-26,Hospitalization
+1693,TR1201,2024-01-23,Hospitalization
+316,TR8729,2024-01-24,Hospitalization
+719,TR3458,2024-07-15,ER visit
+719,TR1579,2024-04-01,ER visit
+1650,TR7870,2024-12-31,High blood sugar
+1650,TR6272,2024-04-24,ER visit
+1650,TR7819,2024-05-07,ER visit
+1028,TR5444,2024-06-12,Hospitalization
+1028,TR7108,2024-02-09,ER visit
+1028,TR9225,2024-03-02,Hospitalization
+1938,TR3938,2024-01-27,Hospitalization
+1938,TR9450,2024-04-24,ER visit
+1938,TR7568,2024-01-24,High blood sugar
+292,TR5625,2024-08-26,High blood sugar
+1065,TR2415,2024-06-16,ER visit
+1065,TR8483,2024-10-10,High blood sugar
+257,TR4287,2024-07-07,Hospitalization
+1109,TR5979,2024-10-15,Hospitalization
+1109,TR4974,2024-11-14,ER visit
+623,TR9083,2024-07-07,High blood sugar
+623,TR9954,2024-04-10,High blood sugar
+1392,TR1104,2024-03-18,Hospitalization
+512,TR4817,2024-01-13,ER visit
+512,TR6675,2024-10-04,High blood sugar
+1998,TR1157,2024-12-21,ER visit
+1998,TR1023,2024-06-20,High blood sugar
+1998,TR7164,2024-12-02,Hospitalization
+635,TR2703,2024-06-06,Hospitalization
+635,TR9680,2024-04-15,ER visit
+635,TR7878,2024-05-01,Hospitalization
+1752,TR3332,2024-01-31,High blood sugar
+1752,TR5584,2024-12-30,Hospitalization
+1147,TR4792,2024-01-23,ER visit
+1189,TR7102,2024-07-30,ER visit
+1189,TR2391,2024-08-22,ER visit
+1189,TR2565,2024-10-24,High blood sugar
+747,TR7461,2024-03-09,High blood sugar
+747,TR2020,2024-02-08,High blood sugar
+747,TR3141,2024-08-10,High blood sugar
+25,TR5276,2024-05-29,High blood sugar
+1979,TR6345,2024-07-20,Hospitalization
+1979,TR8417,2024-06-11,High blood sugar
+1492,TR2223,2024-04-29,High blood sugar
+1492,TR3230,2024-04-13,Hospitalization
+135,TR3546,2024-02-25,High blood sugar
+135,TR3693,2024-02-24,ER visit
+135,TR8635,2024-08-18,High blood sugar
+1548,TR2978,2024-07-27,High blood sugar
+1548,TR6870,2024-10-01,ER visit
+1282,TR6051,2024-08-19,ER visit
+1835,TR2964,2024-05-15,ER visit
+1835,TR3582,2024-02-16,ER visit
+264,TR1660,2024-06-04,High blood sugar
+264,TR6370,2024-04-20,ER visit
+264,TR2494,2024-03-16,ER visit
+574,TR6828,2024-05-07,Hospitalization
+574,TR9412,2024-07-21,ER visit
+574,TR5896,2024-01-26,ER visit
+452,TR1509,2024-03-30,Hospitalization
+452,TR8408,2024-07-26,Hospitalization
+910,TR5093,2024-10-08,High blood sugar
+910,TR8570,2024-02-18,Hospitalization
+910,TR3290,2024-02-22,High blood sugar
+938,TR2010,2024-01-07,Hospitalization
+840,TR4246,2024-03-07,Hospitalization
+1631,TR2376,2024-07-09,High blood sugar
+1631,TR5240,2024-10-25,Hospitalization
+1347,TR2056,2024-01-12,High blood sugar
+1225,TR8265,2024-11-26,Hospitalization
+1973,TR6432,2024-02-17,ER visit
+674,TR8552,2024-01-22,Hospitalization
+458,TR8096,2024-03-27,High blood sugar
+1831,TR9128,2024-07-21,Hospitalization
+1831,TR7270,2024-01-16,High blood sugar
+1831,TR7990,2024-12-15,High blood sugar
+865,TR4517,2024-06-30,ER visit
+1620,TR5585,2024-05-20,ER visit
+54,TR1567,2024-03-17,High blood sugar
+54,TR5026,2024-11-10,Hospitalization
+171,TR9173,2024-05-31,High blood sugar
+171,TR8848,2024-07-29,High blood sugar
+171,TR2437,2024-02-01,Hospitalization
+1467,TR3248,2024-07-15,Hospitalization
+1467,TR4267,2024-08-02,Hospitalization
+1269,TR5082,2024-09-26,Hospitalization
+1269,TR9907,2024-11-18,High blood sugar
+1269,TR7266,2024-01-10,High blood sugar
+1459,TR8859,2024-07-02,ER visit
+1459,TR8940,2024-10-05,High blood sugar
+1459,TR9231,2024-06-25,Hospitalization
+1494,TR5430,2024-07-17,ER visit
+1494,TR1427,2024-04-02,Hospitalization
+1378,TR4588,2024-11-01,High blood sugar
+1378,TR5602,2024-01-16,ER visit
+189,TR9674,2024-08-29,Hospitalization
+13,TR4813,2024-10-26,ER visit
+13,TR2640,2024-03-22,ER visit
+466,TR4951,2024-12-02,High blood sugar
+502,TR1916,2024-09-30,Hospitalization
+502,TR7363,2024-04-22,ER visit
+339,TR3885,2024-03-29,ER visit
+339,TR6210,2024-05-01,Hospitalization
+225,TR6878,2024-12-23,ER visit
+225,TR1462,2024-10-29,ER visit
+225,TR6761,2024-12-26,ER visit
+737,TR3328,2024-10-15,Hospitalization
+737,TR4084,2024-10-15,Hospitalization
+737,TR9882,2024-09-09,Hospitalization
+1674,TR9035,2024-03-30,Hospitalization
+1674,TR2478,2024-01-20,High blood sugar
+1427,TR4584,2024-04-29,ER visit
+893,TR8831,2024-09-26,Hospitalization
+239,TR4300,2024-06-18,ER visit
+175,TR3907,2024-06-23,ER visit
+389,TR1359,2024-01-31,High blood sugar
+389,TR3320,2024-03-16,Hospitalization
+986,TR6978,2024-09-26,Hospitalization
+788,TR7481,2024-07-10,ER visit
+1572,TR6514,2024-02-21,Hospitalization
+1572,TR6285,2024-06-03,ER visit
+1572,TR3580,2024-03-10,ER visit
+1285,TR8982,2024-08-11,High blood sugar
+1285,TR6198,2024-11-28,High blood sugar
+1285,TR6846,2024-03-30,High blood sugar
+1537,TR3872,2024-12-06,ER visit
+1296,TR5825,2024-06-06,Hospitalization
+1296,TR3911,2024-03-06,High blood sugar
+1948,TR7415,2024-01-01,Hospitalization
+1948,TR1530,2024-10-17,High blood sugar
+1948,TR6213,2024-04-03,High blood sugar
+216,TR2705,2024-04-23,ER visit
+216,TR3304,2024-09-11,High blood sugar
+216,TR2274,2024-06-18,High blood sugar
+569,TR6234,2024-06-26,ER visit
+1675,TR2453,2024-11-21,Hospitalization
+1023,TR6500,2024-12-09,High blood sugar
+1023,TR1186,2024-08-16,ER visit
+1023,TR4435,2024-05-15,High blood sugar
+416,TR2110,2024-12-20,ER visit
+1746,TR2770,2024-05-11,Hospitalization
+1746,TR1788,2024-01-01,Hospitalization
+1232,TR7875,2024-08-12,ER visit
+1232,TR7783,2024-03-26,ER visit
+1763,TR6754,2024-07-12,ER visit
+1763,TR7149,2024-10-06,Hospitalization
+1188,TR4695,2024-09-02,High blood sugar
+1162,TR2207,2024-08-19,Hospitalization
+658,TR1328,2024-05-30,ER visit
+1796,TR2715,2024-05-13,ER visit
+1796,TR6600,2024-02-07,Hospitalization
+385,TR3636,2024-07-11,ER visit
+1295,TR9962,2024-02-08,Hospitalization
+1295,TR6536,2024-02-17,ER visit
+1295,TR8909,2024-10-31,High blood sugar
+1824,TR8066,2024-01-16,High blood sugar
+1824,TR3703,2024-11-30,ER visit
+1824,TR8113,2024-11-06,Hospitalization
+1437,TR2659,2024-01-28,High blood sugar
+46,TR4112,2024-04-15,Hospitalization
+46,TR9849,2024-07-28,ER visit
+20,TR5612,2024-12-04,Hospitalization
+20,TR4891,2024-06-01,High blood sugar
+184,TR7437,2024-01-26,Hospitalization
+439,TR9043,2024-10-08,Hospitalization
+439,TR1893,2024-03-19,ER visit
+439,TR1062,2024-07-03,ER visit
+349,TR5825,2024-02-14,ER visit
+349,TR8869,2024-12-04,High blood sugar
+1195,TR1421,2024-02-19,High blood sugar
+1332,TR5781,2024-03-28,ER visit
+140,TR2892,2024-08-30,ER visit
+479,TR8715,2024-07-22,High blood sugar
+479,TR5341,2024-09-07,High blood sugar
+804,TR9914,2024-11-24,High blood sugar
+310,TR7078,2024-04-04,High blood sugar
+310,TR7052,2024-07-14,ER visit
+267,TR1731,2024-08-16,High blood sugar
+1818,TR8619,2024-08-13,ER visit
+1818,TR4706,2024-05-14,Hospitalization
+117,TR2009,2024-10-15,Hospitalization
+117,TR2584,2024-03-18,High blood sugar
+91,TR6632,2024-12-08,Hospitalization
+689,TR4727,2024-07-30,Hospitalization
+689,TR1999,2024-10-10,Hospitalization
+689,TR9561,2024-07-17,High blood sugar
+147,TR8779,2024-10-01,High blood sugar
+147,TR4860,2024-10-20,Hospitalization
+1702,TR2293,2024-06-02,ER visit
+1702,TR1568,2024-07-21,Hospitalization
+1266,TR9467,2024-10-19,High blood sugar
+1266,TR3415,2024-10-19,High blood sugar
+1266,TR8357,2024-03-02,High blood sugar
+145,TR4471,2024-03-26,Hospitalization
+5,TR1699,2024-03-05,ER visit
+718,TR8133,2024-02-10,High blood sugar
+718,TR3422,2024-04-13,High blood sugar
+832,TR6238,2024-05-12,Hospitalization
+832,TR2425,2024-02-04,ER visit
+832,TR7510,2024-07-17,Hospitalization
+1612,TR5525,2024-06-15,High blood sugar
+1612,TR8506,2024-09-23,ER visit
+1612,TR9561,2024-01-07,ER visit
+1120,TR7790,2024-02-27,High blood sugar
+1120,TR3428,2024-03-17,ER visit
+668,TR2641,2024-10-28,ER visit
+668,TR2654,2024-02-24,Hospitalization
+668,TR9775,2024-05-26,High blood sugar
+997,TR5327,2024-07-29,High blood sugar
+997,TR8955,2024-07-15,High blood sugar
+1596,TR8750,2024-11-07,High blood sugar
+1596,TR3821,2024-01-20,High blood sugar
+1596,TR7602,2024-05-21,ER visit
+249,TR7581,2024-11-12,Hospitalization
+615,TR6431,2024-07-21,High blood sugar
+1181,TR1807,2024-05-01,Hospitalization
+1181,TR5400,2024-08-31,Hospitalization
+1181,TR1331,2024-07-09,ER visit
+772,TR6094,2024-06-04,High blood sugar
+772,TR9054,2024-05-23,ER visit
+252,TR2609,2024-12-16,High blood sugar
+252,TR3201,2024-04-26,ER visit
+252,TR8259,2024-06-02,Hospitalization
+99,TR7828,2024-05-17,High blood sugar
+99,TR2462,2024-11-05,Hospitalization
+1936,TR4463,2024-08-14,Hospitalization
+1450,TR9462,2024-09-05,ER visit
+1450,TR1920,2024-07-10,High blood sugar
+394,TR2075,2024-03-22,Hospitalization
+394,TR9303,2024-06-08,ER visit
+394,TR3222,2024-07-25,High blood sugar
+111,TR1474,2024-10-18,High blood sugar
+111,TR4158,2024-03-29,Hospitalization
+111,TR1944,2024-04-12,High blood sugar
+471,TR8478,2024-01-17,Hospitalization
+280,TR4262,2024-07-03,High blood sugar
+1709,TR8605,2024-07-07,ER visit
+1709,TR7503,2024-09-15,Hospitalization
+1423,TR1500,2024-03-04,Hospitalization
+1423,TR7102,2024-05-03,High blood sugar
+1423,TR8308,2024-09-07,High blood sugar
+359,TR6730,2024-08-30,Hospitalization
+139,TR5237,2024-03-24,High blood sugar
+139,TR2480,2024-12-18,ER visit
+300,TR7333,2024-01-15,High blood sugar
+300,TR3669,2024-01-26,ER visit
+1531,TR4626,2024-04-19,ER visit
+1531,TR4688,2024-11-27,ER visit
+1531,TR4387,2024-12-12,ER visit
+913,TR7709,2024-11-29,ER visit
+913,TR1328,2024-09-19,High blood sugar
+595,TR8767,2024-01-05,ER visit
+595,TR3837,2024-03-08,High blood sugar
+595,TR1138,2024-11-03,ER visit
+565,TR6004,2024-05-09,Hospitalization
+1823,TR5511,2024-12-29,ER visit
+1823,TR7168,2024-08-04,Hospitalization
+1823,TR8520,2024-06-27,ER visit
+410,TR8646,2024-04-21,ER visit
+410,TR9530,2024-06-03,ER visit
+1858,TR2676,2024-07-22,Hospitalization
+1858,TR9380,2024-01-04,Hospitalization
+1858,TR7131,2024-12-05,ER visit
+1434,TR5631,2024-11-27,High blood sugar
+1434,TR2771,2024-06-01,ER visit
+1434,TR2045,2024-09-03,Hospitalization
+538,TR6327,2024-05-21,ER visit
+538,TR5278,2024-05-21,Hospitalization
+560,TR5895,2024-12-30,Hospitalization
+560,TR3456,2024-04-06,Hospitalization
+560,TR4937,2024-09-21,ER visit
+981,TR7620,2024-11-03,Hospitalization
+1994,TR3292,2024-06-12,Hospitalization
+1994,TR9148,2024-01-14,ER visit
+1994,TR5250,2024-05-31,Hospitalization
+1941,TR7361,2024-07-26,ER visit
+1941,TR4111,2024-01-19,Hospitalization
+564,TR4643,2024-12-31,High blood sugar
+564,TR9759,2024-12-17,High blood sugar
+1538,TR6873,2024-08-31,Hospitalization
+1538,TR5918,2024-09-16,High blood sugar
+1538,TR3967,2024-03-28,ER visit
+1026,TR8713,2024-02-19,High blood sugar
+1026,TR5237,2024-03-06,Hospitalization
+1273,TR3999,2024-10-13,Hospitalization
+1273,TR6499,2024-12-14,ER visit
+1273,TR2463,2024-12-01,Hospitalization
+1959,TR4659,2024-06-30,ER visit
+69,TR7889,2024-06-06,High blood sugar
+69,TR7089,2024-06-18,High blood sugar
+69,TR5817,2024-05-13,ER visit
+677,TR8709,2024-03-01,ER visit
+677,TR2166,2024-01-28,Hospitalization
+1944,TR9199,2024-04-09,High blood sugar
+1944,TR7253,2024-03-02,ER visit
+224,TR7768,2024-06-01,High blood sugar
+224,TR3470,2024-01-28,ER visit
+224,TR4281,2024-03-11,High blood sugar
+872,TR8496,2024-07-28,Hospitalization
+872,TR6183,2024-03-14,High blood sugar
+1864,TR2324,2024-04-02,High blood sugar
+1864,TR6449,2024-09-06,High blood sugar
+1864,TR3897,2024-11-19,High blood sugar
+1995,TR1950,2024-11-20,High blood sugar
+1995,TR8406,2024-01-03,Hospitalization
+59,TR3762,2024-04-17,ER visit
+59,TR3595,2024-10-22,High blood sugar
+77,TR3120,2024-02-15,Hospitalization
+77,TR8105,2024-11-10,High blood sugar
+285,TR7609,2024-08-07,High blood sugar
+285,TR8821,2024-08-07,ER visit
+285,TR1076,2024-07-15,High blood sugar
+1663,TR4267,2024-09-30,Hospitalization
+656,TR1230,2024-07-10,Hospitalization
+656,TR9700,2024-06-13,ER visit
+656,TR1293,2024-04-07,High blood sugar
+274,TR5076,2024-01-03,Hospitalization
+274,TR6641,2024-04-25,High blood sugar
+274,TR3112,2024-06-08,High blood sugar
+484,TR9246,2024-07-15,High blood sugar
+1429,TR3736,2024-06-05,ER visit
+1429,TR1749,2024-02-03,High blood sugar
+1429,TR5764,2024-06-01,Hospitalization
+617,TR9587,2024-09-23,High blood sugar
+617,TR8105,2024-06-21,Hospitalization
+653,TR6615,2024-03-09,High blood sugar
+653,TR6885,2024-09-07,Hospitalization
+653,TR3701,2024-04-06,Hospitalization
+1575,TR4742,2024-01-10,High blood sugar
+1575,TR3149,2024-04-24,High blood sugar
+1920,TR9267,2024-01-12,Hospitalization
+170,TR7006,2024-03-04,ER visit
+37,TR1612,2024-11-29,High blood sugar
+37,TR5190,2024-07-11,ER visit
+37,TR1796,2024-09-30,High blood sugar
+433,TR2771,2024-01-25,High blood sugar
+433,TR1323,2024-11-30,High blood sugar
+433,TR2897,2024-01-25,High blood sugar
+1200,TR7230,2024-08-15,ER visit
+1200,TR9966,2024-03-04,High blood sugar
+1056,TR3508,2024-08-30,Hospitalization
+1056,TR1152,2024-04-15,Hospitalization
+1862,TR2654,2024-08-03,ER visit
+1862,TR9524,2024-12-05,High blood sugar
+245,TR3247,2024-11-14,Hospitalization
+245,TR2718,2024-08-02,ER visit
+1007,TR2928,2024-11-12,High blood sugar
+1007,TR2867,2024-05-24,Hospitalization
+1007,TR9154,2024-02-24,Hospitalization
+125,TR4272,2024-11-07,ER visit
+315,TR4304,2024-09-24,High blood sugar
+315,TR7713,2024-07-02,High blood sugar
+1896,TR1645,2024-03-23,Hospitalization
+1896,TR9132,2024-10-07,Hospitalization
+306,TR8875,2024-12-18,Hospitalization
+1659,TR1044,2024-04-30,High blood sugar
+1659,TR2458,2024-01-07,ER visit
+1140,TR9095,2024-10-20,ER visit
+1236,TR9383,2024-02-16,High blood sugar
+430,TR5192,2024-02-21,ER visit
+1341,TR8483,2024-04-28,Hospitalization
+1341,TR5327,2024-05-31,ER visit
+1341,TR1820,2024-08-25,ER visit
+877,TR1646,2024-03-30,ER visit
+821,TR6123,2024-07-03,Hospitalization
+821,TR2898,2024-08-06,High blood sugar
+45,TR1158,2024-01-24,Hospitalization
+1249,TR3793,2024-12-05,High blood sugar
+1517,TR8171,2024-07-02,High blood sugar
+1517,TR5395,2024-11-14,High blood sugar
+1622,TR7105,2024-02-17,ER visit
+1622,TR3996,2024-06-24,ER visit
+1622,TR7566,2024-02-28,High blood sugar
+1560,TR5453,2024-08-21,High blood sugar
+1560,TR8835,2024-07-16,ER visit
+684,TR3732,2024-11-28,Hospitalization
+684,TR3171,2024-02-27,High blood sugar
+1033,TR3611,2024-01-31,Hospitalization
+1033,TR7816,2024-02-23,ER visit
+1033,TR8908,2024-10-29,High blood sugar
+464,TR8178,2024-12-13,Hospitalization
+464,TR7221,2024-04-02,Hospitalization
+464,TR1472,2024-07-02,Hospitalization
+798,TR8914,2024-03-07,ER visit
+798,TR2850,2024-09-06,ER visit
+798,TR8220,2024-07-29,Hospitalization
+365,TR5286,2024-02-02,Hospitalization
+1374,TR1202,2024-06-09,ER visit
+1374,TR9598,2024-12-26,Hospitalization
+1374,TR4669,2024-10-22,Hospitalization
+388,TR9504,2024-06-22,ER visit
+388,TR2560,2024-09-24,Hospitalization
+388,TR5072,2024-08-09,Hospitalization
+31,TR7305,2024-06-26,Hospitalization
+31,TR1894,2024-03-17,ER visit
+1381,TR3571,2024-11-25,Hospitalization
+204,TR9123,2024-08-28,ER visit
+204,TR2226,2024-03-25,ER visit
+204,TR6253,2024-09-08,High blood sugar
+1210,TR5557,2024-06-18,High blood sugar
+1503,TR4648,2024-09-16,Hospitalization
+1553,TR7203,2024-11-25,ER visit
+1553,TR4850,2024-07-25,High blood sugar
+1553,TR8521,2024-02-10,Hospitalization
+418,TR8341,2024-10-20,High blood sugar
+418,TR9166,2024-02-15,High blood sugar
+392,TR2944,2024-06-10,ER visit
+392,TR1291,2024-09-11,ER visit
+716,TR7755,2024-07-25,High blood sugar
+64,TR9996,2024-10-12,High blood sugar
+1602,TR5990,2024-02-16,ER visit
+369,TR4389,2024-10-14,Hospitalization
+369,TR8474,2024-12-01,ER visit
+369,TR6953,2024-06-23,High blood sugar
+1484,TR8445,2024-04-24,Hospitalization
+1042,TR8751,2024-10-13,High blood sugar
+1042,TR6952,2024-12-02,Hospitalization
+1814,TR2868,2024-08-19,High blood sugar
+1814,TR4633,2024-02-19,Hospitalization
+1814,TR6592,2024-01-02,Hospitalization
+1926,TR5783,2024-11-20,High blood sugar
+1926,TR9552,2024-10-07,Hospitalization
+979,TR2741,2024-12-25,ER visit
+979,TR3689,2024-01-24,High blood sugar
+402,TR7704,2024-03-12,ER visit
+402,TR5166,2024-02-24,High blood sugar
+444,TR4072,2024-04-10,Hospitalization
+444,TR7437,2024-03-02,Hospitalization
+444,TR8488,2024-04-20,Hospitalization
+1410,TR2765,2024-06-22,High blood sugar
+157,TR3018,2024-01-24,ER visit
+157,TR8493,2024-08-18,ER visit
+1167,TR9260,2024-10-28,High blood sugar
+1167,TR9172,2024-03-09,High blood sugar
+1167,TR9689,2024-01-03,ER visit
+1002,TR8091,2024-01-25,ER visit
+1002,TR8912,2024-10-26,ER visit
+1002,TR3903,2024-09-17,ER visit
+756,TR3845,2024-10-23,High blood sugar
+756,TR2696,2024-03-06,High blood sugar
+756,TR6273,2024-07-17,Hospitalization
+193,TR7859,2024-07-15,ER visit
+193,TR5067,2024-11-07,Hospitalization
+193,TR7518,2024-05-20,High blood sugar
+1691,TR8419,2024-05-30,High blood sugar
+1691,TR3263,2024-03-09,Hospitalization
+56,TR9393,2024-11-04,ER visit
+56,TR9975,2024-06-02,ER visit
+799,TR4560,2024-12-30,ER visit
+799,TR4435,2024-04-12,ER visit
+810,TR5760,2024-12-31,Hospitalization
+810,TR6657,2024-12-17,Hospitalization
+810,TR3173,2024-12-10,High blood sugar
+7,TR3913,2024-11-28,ER visit
+7,TR9888,2024-09-14,ER visit
+7,TR6281,2024-12-21,ER visit
+1170,TR6771,2024-02-29,Hospitalization
+1170,TR8870,2024-10-14,ER visit
+1170,TR7839,2024-10-25,Hospitalization
+819,TR5684,2024-09-30,ER visit
+819,TR1209,2024-08-04,ER visit
+819,TR2744,2024-09-24,High blood sugar
+440,TR3381,2024-07-14,ER visit
+290,TR1927,2024-12-09,ER visit
+167,TR3636,2024-05-16,High blood sugar
+1216,TR5105,2024-12-15,Hospitalization
+1216,TR2016,2024-03-15,Hospitalization
+1788,TR4342,2024-05-31,ER visit
+1788,TR1529,2024-10-04,Hospitalization
+1788,TR8415,2024-07-02,ER visit
+1234,TR4675,2024-11-11,High blood sugar
+1921,TR7371,2024-11-27,High blood sugar
+1921,TR9370,2024-05-01,ER visit
+1921,TR5712,2024-12-22,High blood sugar
+1411,TR1769,2024-12-06,High blood sugar
+1411,TR7349,2024-07-14,ER visit
+1411,TR6122,2024-08-01,ER visit
+741,TR1212,2024-01-28,High blood sugar
+741,TR4327,2024-05-08,Hospitalization
+741,TR8259,2024-11-13,Hospitalization
+1219,TR7025,2024-11-20,ER visit
+48,TR4218,2024-10-06,ER visit
+48,TR5819,2024-04-09,Hospitalization
+48,TR3906,2024-08-17,High blood sugar
+1363,TR4063,2024-02-08,Hospitalization
+1363,TR9418,2024-03-29,Hospitalization
+1363,TR7180,2024-03-02,Hospitalization
+1239,TR5572,2024-08-07,Hospitalization
+1165,TR3131,2024-05-15,ER visit
+1165,TR5178,2024-03-23,ER visit
+1165,TR6415,2024-01-03,High blood sugar
+699,TR3536,2024-12-29,High blood sugar
+699,TR3518,2024-01-21,High blood sugar
+1993,TR1833,2024-11-01,High blood sugar
+1993,TR5934,2024-11-16,Hospitalization
+1942,TR6866,2024-10-20,ER visit
+1942,TR6207,2024-02-07,ER visit
+172,TR4012,2024-04-22,High blood sugar
+172,TR2117,2024-09-23,High blood sugar
+172,TR3611,2024-09-15,Hospitalization
+1058,TR9798,2024-10-05,Hospitalization
+1058,TR2506,2024-07-25,High blood sugar
+195,TR4495,2024-04-23,ER visit
+195,TR6437,2024-12-05,ER visit
+451,TR5809,2024-07-03,ER visit
+451,TR9691,2024-04-21,High blood sugar
+1540,TR1144,2024-10-14,ER visit
+1540,TR6668,2024-02-28,Hospitalization
+762,TR4994,2024-05-03,Hospitalization
+762,TR6258,2024-01-21,High blood sugar
+882,TR7322,2024-02-28,Hospitalization
+882,TR9851,2024-05-11,High blood sugar
+1040,TR1404,2024-05-24,ER visit
+1040,TR7143,2024-09-21,ER visit
+1040,TR9335,2024-09-20,ER visit
+30,TR1718,2024-09-06,Hospitalization
+30,TR4154,2024-05-31,High blood sugar
+1107,TR2349,2024-09-20,ER visit
+1107,TR3742,2024-02-19,High blood sugar
+1194,TR1120,2024-09-30,ER visit
+1194,TR2072,2024-11-16,Hospitalization
+1194,TR4492,2024-04-17,Hospitalization
+429,TR2702,2024-08-05,High blood sugar
+429,TR9810,2024-04-15,Hospitalization
+429,TR8130,2024-12-25,Hospitalization
+1276,TR3519,2024-02-06,High blood sugar
+1276,TR8523,2024-01-13,ER visit
+1276,TR1620,2024-06-18,Hospitalization
+107,TR1889,2024-02-07,High blood sugar
+643,TR2154,2024-05-08,Hospitalization
+1214,TR5237,2024-04-26,Hospitalization
+1214,TR7357,2024-07-27,Hospitalization
+1214,TR7626,2024-08-18,Hospitalization
+1136,TR1276,2024-06-10,High blood sugar
+1136,TR2938,2024-07-18,High blood sugar
+1670,TR2036,2024-01-04,High blood sugar
+1670,TR1745,2024-10-26,Hospitalization
+1670,TR2189,2024-12-24,Hospitalization
+1260,TR2738,2024-09-14,Hospitalization
+1260,TR5937,2024-05-28,High blood sugar
+769,TR5612,2024-02-14,Hospitalization
+769,TR7249,2024-08-12,ER visit
+769,TR1504,2024-07-21,Hospitalization
+223,TR9740,2024-03-21,ER visit
+223,TR3234,2024-04-22,Hospitalization
+1306,TR9941,2024-07-19,High blood sugar
+1306,TR3360,2024-05-31,Hospitalization
+1306,TR7113,2024-06-01,ER visit
+894,TR3316,2024-10-10,ER visit
+905,TR1082,2024-01-22,Hospitalization
+357,TR7456,2024-11-01,ER visit
+357,TR9970,2024-10-02,ER visit
+357,TR5992,2024-02-13,High blood sugar
+1447,TR4469,2024-06-25,Hospitalization
+1744,TR9397,2024-11-26,Hospitalization
+1744,TR3637,2024-03-13,Hospitalization
+1567,TR5140,2024-04-23,ER visit
+570,TR3971,2024-02-28,Hospitalization
+81,TR1891,2024-10-17,Hospitalization
+81,TR8557,2024-10-08,High blood sugar
+81,TR2198,2024-11-26,High blood sugar
+258,TR2103,2024-12-09,High blood sugar
+258,TR2608,2024-05-08,ER visit
+296,TR8982,2024-10-24,Hospitalization
+1604,TR3100,2024-07-01,High blood sugar
+1604,TR4842,2024-12-09,High blood sugar
+1019,TR2143,2024-05-25,High blood sugar
+1465,TR8960,2024-06-11,Hospitalization
+1937,TR6008,2024-06-17,Hospitalization
+1937,TR3496,2024-12-21,Hospitalization
+858,TR6971,2024-10-17,ER visit
+858,TR8017,2024-06-10,ER visit
+858,TR1079,2024-03-27,High blood sugar
+1565,TR4629,2024-05-06,Hospitalization
+1565,TR8145,2024-12-30,High blood sugar
+1923,TR3200,2024-07-03,Hospitalization
+1923,TR6432,2024-12-13,Hospitalization
+118,TR8296,2024-08-24,Hospitalization
+118,TR6004,2024-07-02,ER visit
+1960,TR2783,2024-10-09,ER visit
+1960,TR2343,2024-03-30,Hospitalization
+1418,TR9824,2024-03-12,High blood sugar
+1418,TR5312,2024-04-10,Hospitalization
+1967,TR2252,2024-11-16,Hospitalization
+1967,TR1305,2024-02-08,High blood sugar
+1967,TR1511,2024-09-16,Hospitalization
+1119,TR7637,2024-10-23,High blood sugar
+1119,TR4485,2024-10-29,ER visit
+1119,TR5269,2024-01-19,ER visit
+1297,TR8734,2024-10-03,High blood sugar
+1297,TR3435,2024-11-30,ER visit
+1297,TR7430,2024-07-06,ER visit
+1151,TR5767,2024-10-28,High blood sugar
+1229,TR9210,2024-08-25,ER visit
+1701,TR7500,2024-02-16,Hospitalization
+1701,TR9227,2024-07-05,Hospitalization
+1701,TR4913,2024-01-06,High blood sugar
+1085,TR3717,2024-12-16,ER visit
+1085,TR3299,2024-09-20,Hospitalization
+1085,TR3608,2024-08-16,Hospitalization
+84,TR3395,2024-10-16,ER visit
+412,TR6878,2024-09-04,ER visit
+412,TR4585,2024-01-21,Hospitalization
+412,TR4796,2024-09-06,Hospitalization
+1946,TR7052,2024-05-15,High blood sugar
+1349,TR4387,2024-01-22,High blood sugar
+1598,TR7358,2024-07-03,Hospitalization
+1598,TR8448,2024-08-28,High blood sugar
+1598,TR1653,2024-01-24,Hospitalization
+1339,TR2691,2024-06-14,Hospitalization
+1339,TR9542,2024-12-26,High blood sugar
+1339,TR5480,2024-11-20,High blood sugar
+1190,TR9918,2024-05-14,ER visit
+1190,TR3848,2024-10-18,ER visit
+1190,TR7201,2024-07-11,ER visit
+1045,TR2275,2024-10-27,Hospitalization
+1045,TR5121,2024-09-21,High blood sugar
+153,TR9460,2024-04-24,Hospitalization
+153,TR6781,2024-07-26,High blood sugar
+1212,TR8898,2024-09-06,Hospitalization
+1212,TR1108,2024-11-05,ER visit
+1499,TR8207,2024-03-12,ER visit
+1499,TR4768,2024-03-25,ER visit
+1499,TR9430,2024-02-09,Hospitalization
+1018,TR4465,2024-05-23,High blood sugar
+1018,TR4062,2024-03-17,High blood sugar
+1018,TR6934,2024-03-21,ER visit
+103,TR4773,2024-03-01,ER visit
+103,TR6410,2024-07-31,ER visit
+103,TR8889,2024-02-28,ER visit
+1532,TR8848,2024-09-02,High blood sugar
+1532,TR3641,2024-04-17,Hospitalization
+1532,TR7732,2024-11-27,Hospitalization
+240,TR1706,2024-05-04,Hospitalization
+1699,TR3639,2024-10-20,Hospitalization
+1686,TR9399,2024-11-18,ER visit
+826,TR3406,2024-10-20,ER visit
+1468,TR5231,2024-03-26,ER visit
+1637,TR7642,2024-09-21,Hospitalization
+1717,TR1305,2024-10-15,ER visit
+1717,TR5644,2024-12-04,ER visit
+1717,TR4548,2024-02-13,High blood sugar
+168,TR8723,2024-11-06,High blood sugar
+168,TR3794,2024-09-03,ER visit
+1884,TR3338,2024-07-29,High blood sugar
+557,TR9369,2024-04-03,High blood sugar
+557,TR3747,2024-05-15,ER visit
+557,TR6614,2024-12-17,ER visit
+723,TR2127,2024-11-01,ER visit
+723,TR7196,2024-04-27,ER visit
+671,TR2778,2024-03-08,Hospitalization
+671,TR4315,2024-01-09,Hospitalization
+333,TR7877,2024-09-15,ER visit
+333,TR2577,2024-03-17,High blood sugar
+333,TR8796,2024-03-31,ER visit
+707,TR1639,2024-11-03,ER visit
+707,TR9246,2024-09-29,High blood sugar
+707,TR2526,2024-03-01,Hospitalization
+1299,TR3135,2024-12-03,ER visit
+1299,TR9835,2024-11-04,ER visit
+818,TR8069,2024-12-13,Hospitalization
+1433,TR7068,2024-08-03,Hospitalization
+1433,TR9680,2024-01-23,High blood sugar
+1433,TR4759,2024-08-07,Hospitalization
+1086,TR6742,2024-07-14,Hospitalization
+1086,TR2600,2024-10-28,Hospitalization
+817,TR5170,2024-03-09,High blood sugar
+817,TR4809,2024-09-01,Hospitalization
+950,TR9908,2024-05-25,Hospitalization
+1908,TR4096,2024-05-11,High blood sugar
+1908,TR1116,2024-01-03,Hospitalization
+1985,TR2930,2024-09-24,Hospitalization
+1985,TR1117,2024-09-23,High blood sugar
+1985,TR4365,2024-07-11,ER visit
+1428,TR7698,2024-06-10,High blood sugar
+1428,TR2746,2024-07-04,Hospitalization
+1428,TR7980,2024-03-20,Hospitalization
+233,TR5155,2024-10-26,Hospitalization
+233,TR9783,2024-05-13,High blood sugar
+233,TR6990,2024-08-04,Hospitalization
+807,TR7511,2024-05-21,Hospitalization
+807,TR7770,2024-04-14,High blood sugar
+807,TR8904,2024-10-09,ER visit
+363,TR8925,2024-07-08,ER visit
+1907,TR6641,2024-06-06,Hospitalization
+1907,TR7522,2024-12-27,High blood sugar
+1569,TR2951,2024-03-11,Hospitalization
+1569,TR8317,2024-04-27,High blood sugar
+1569,TR3650,2024-12-24,High blood sugar
+1963,TR9328,2024-04-19,ER visit
+555,TR1852,2024-06-22,ER visit
+555,TR7375,2024-03-23,High blood sugar
+1159,TR2492,2024-01-03,Hospitalization
+1159,TR8727,2024-03-15,ER visit
+1159,TR8133,2024-11-03,Hospitalization
+1496,TR5310,2024-02-02,ER visit
+739,TR2311,2024-07-08,ER visit
+1163,TR7296,2024-01-20,Hospitalization
+1163,TR9536,2024-07-24,ER visit
+1163,TR1941,2024-05-26,ER visit
+808,TR9099,2024-11-23,Hospitalization
+1644,TR4304,2024-01-06,ER visit
+1644,TR9489,2024-12-02,ER visit
+721,TR1550,2024-04-09,ER visit
+721,TR9364,2024-11-02,Hospitalization
+806,TR4795,2024-12-23,High blood sugar
+806,TR3776,2024-11-10,Hospitalization
+806,TR1590,2024-12-11,High blood sugar
+1974,TR1004,2024-05-02,ER visit
+1974,TR2422,2024-03-21,High blood sugar
+1016,TR6785,2024-07-23,Hospitalization
+1016,TR7474,2024-12-08,Hospitalization
+1155,TR4281,2024-10-27,ER visit
+1155,TR1251,2024-09-22,High blood sugar
+1158,TR2124,2024-12-26,ER visit
+1158,TR5661,2024-02-16,ER visit
+1158,TR6703,2024-10-13,Hospitalization
+380,TR4707,2024-05-21,High blood sugar
+380,TR4187,2024-11-06,High blood sugar
+1271,TR1076,2024-07-25,High blood sugar
+1271,TR3867,2024-05-13,High blood sugar
+1727,TR2744,2024-09-16,ER visit
+1727,TR2185,2024-10-13,ER visit
+616,TR6570,2024-05-30,Hospitalization
+616,TR9409,2024-02-29,ER visit
+616,TR9813,2024-05-11,ER visit
+1624,TR8254,2024-05-08,Hospitalization
+1624,TR8923,2024-07-12,Hospitalization
+1624,TR6565,2024-05-04,Hospitalization
+1627,TR8548,2024-12-14,ER visit
+1627,TR1448,2024-10-27,ER visit
+1446,TR5224,2024-02-29,Hospitalization
+1446,TR7269,2024-02-04,Hospitalization
+1262,TR4767,2024-04-22,Hospitalization
+1262,TR7757,2024-06-10,ER visit
+1262,TR9462,2024-06-29,ER visit
+1597,TR5314,2024-01-05,High blood sugar
+1597,TR5706,2024-05-07,ER visit
+1597,TR7536,2024-02-17,ER visit
+1457,TR2245,2024-06-24,ER visit
+1457,TR3924,2024-10-10,Hospitalization
+1457,TR6142,2024-08-31,ER visit
+347,TR5408,2024-04-21,Hospitalization
+347,TR4115,2024-04-03,High blood sugar
+1122,TR4847,2024-04-12,High blood sugar
+1122,TR5348,2024-05-03,Hospitalization
+194,TR4322,2024-04-27,Hospitalization
+1551,TR6833,2024-11-12,Hospitalization
+748,TR2964,2024-02-24,ER visit
+76,TR9071,2024-12-12,High blood sugar
+697,TR9871,2024-01-04,Hospitalization
+697,TR8901,2024-01-22,ER visit
+697,TR6167,2024-07-09,High blood sugar
+1248,TR5501,2024-10-21,ER visit
+1248,TR3996,2024-09-08,High blood sugar
+1480,TR7518,2024-05-23,ER visit
+1480,TR3101,2024-04-23,High blood sugar
+1480,TR9613,2024-01-28,High blood sugar
+1338,TR9859,2024-09-01,ER visit
+1338,TR9232,2024-01-17,Hospitalization
+1127,TR3863,2024-07-20,High blood sugar
+1127,TR2972,2024-08-22,Hospitalization
+179,TR8537,2024-09-22,ER visit
+179,TR1137,2024-06-10,Hospitalization
+179,TR4452,2024-01-07,Hospitalization
+505,TR2650,2024-10-24,Hospitalization
+505,TR6924,2024-06-15,Hospitalization
+722,TR4066,2024-05-12,Hospitalization
+722,TR5306,2024-10-07,High blood sugar
+722,TR5413,2024-05-01,High blood sugar
+1048,TR6621,2024-11-09,High blood sugar
+1048,TR4013,2024-07-06,ER visit
+1346,TR4449,2024-08-05,Hospitalization
+1346,TR7099,2024-08-02,High blood sugar
+1095,TR5581,2024-07-24,ER visit
+1095,TR3947,2024-08-18,High blood sugar
+1711,TR4744,2024-03-08,High blood sugar
+1711,TR5422,2024-02-21,Hospitalization
+1711,TR8081,2024-04-30,ER visit
+967,TR3389,2024-04-10,Hospitalization
+967,TR8749,2024-03-17,Hospitalization
+527,TR7906,2024-03-31,High blood sugar
+1870,TR9470,2024-03-09,Hospitalization
+1870,TR6172,2024-09-30,ER visit
+174,TR5111,2024-06-02,Hospitalization
+174,TR1781,2024-10-14,Hospitalization
+1354,TR3676,2024-02-20,Hospitalization
+1354,TR4530,2024-01-31,High blood sugar
+438,TR2577,2024-08-31,ER visit
+438,TR6483,2024-08-18,High blood sugar
+332,TR6903,2024-07-03,High blood sugar
+332,TR5222,2024-10-13,High blood sugar
+1715,TR7746,2024-01-11,High blood sugar
+1715,TR6752,2024-03-03,High blood sugar
+431,TR4259,2024-11-06,ER visit
+431,TR9821,2024-10-22,Hospitalization
+431,TR5663,2024-03-30,High blood sugar
+1676,TR9363,2024-06-15,High blood sugar
+1676,TR8322,2024-09-06,ER visit
+1883,TR5694,2024-07-14,ER visit
+1632,TR3373,2024-11-19,Hospitalization
+1632,TR6527,2024-03-26,ER visit
+1710,TR7631,2024-11-19,Hospitalization
+1710,TR2296,2024-02-06,High blood sugar
+480,TR4739,2024-06-24,High blood sugar
+1613,TR5773,2024-06-11,Hospitalization
+1613,TR5382,2024-12-29,ER visit
+961,TR7479,2024-11-26,Hospitalization
+961,TR8289,2024-05-18,ER visit
+961,TR9535,2024-07-04,High blood sugar
+1658,TR3741,2024-07-30,ER visit
+1658,TR1378,2024-04-04,Hospitalization
+1062,TR5122,2024-04-30,Hospitalization
+754,TR2311,2024-12-24,High blood sugar
+754,TR3734,2024-04-17,ER visit
+754,TR2687,2024-07-22,ER visit
+1819,TR8752,2024-02-02,ER visit
+1683,TR1431,2024-01-28,High blood sugar
+1683,TR9584,2024-07-22,ER visit
+1683,TR2702,2024-02-12,Hospitalization
+325,TR3544,2024-11-12,ER visit
+325,TR7387,2024-02-13,High blood sugar
+469,TR5053,2024-04-27,ER visit
+469,TR8260,2024-05-25,ER visit
+562,TR1834,2024-07-24,Hospitalization
+562,TR9648,2024-06-08,Hospitalization
+562,TR1068,2024-08-05,ER visit
+1426,TR3331,2024-09-11,High blood sugar
+1860,TR9277,2024-12-31,Hospitalization
+1976,TR1957,2024-01-28,High blood sugar
+1976,TR3673,2024-04-13,ER visit
+854,TR4303,2024-12-23,High blood sugar
+1088,TR8319,2024-10-31,ER visit
+62,TR1810,2024-10-30,High blood sugar
+62,TR2465,2024-02-11,High blood sugar
+62,TR1531,2024-05-21,Hospitalization
+1280,TR5879,2024-04-17,High blood sugar
+829,TR4943,2024-02-29,Hospitalization
+829,TR9132,2024-02-24,Hospitalization
+255,TR8645,2024-02-20,High blood sugar
+255,TR7798,2024-11-29,Hospitalization
+255,TR2719,2024-01-24,High blood sugar
+127,TR3549,2024-07-17,Hospitalization
+127,TR1834,2024-06-30,Hospitalization
+127,TR5233,2024-09-16,ER visit
+1029,TR5667,2024-10-24,ER visit
+1619,TR9583,2024-08-26,High blood sugar
+1619,TR6974,2024-06-17,Hospitalization
+1619,TR2973,2024-01-05,ER visit
+705,TR8168,2024-04-15,ER visit
+1046,TR6532,2024-04-24,ER visit
+1046,TR3713,2024-09-28,Hospitalization
+1114,TR1370,2024-03-02,High blood sugar
+1114,TR3727,2024-08-29,Hospitalization
+1114,TR9658,2024-10-12,Hospitalization
+1488,TR9562,2024-08-15,ER visit
+1488,TR8727,2024-01-02,Hospitalization
+1488,TR8667,2024-03-11,Hospitalization
+885,TR4714,2024-01-29,ER visit
+885,TR2834,2024-08-27,ER visit
+885,TR2733,2024-07-31,Hospitalization
+222,TR9388,2024-01-15,ER visit
+222,TR8700,2024-02-26,High blood sugar
+1969,TR4322,2024-03-07,High blood sugar
+1003,TR7294,2024-11-01,High blood sugar
+1003,TR8882,2024-05-08,High blood sugar
+1003,TR2976,2024-09-08,High blood sugar
+1462,TR8948,2024-04-11,ER visit
+1462,TR4714,2024-06-22,ER visit
+1462,TR8330,2024-01-21,High blood sugar
+89,TR2737,2024-10-13,High blood sugar
+89,TR3982,2024-01-04,High blood sugar
+907,TR1244,2024-10-07,ER visit
+907,TR9995,2024-12-10,ER visit
+1573,TR8627,2024-06-29,Hospitalization
+1573,TR1515,2024-09-13,Hospitalization
+320,TR5208,2024-03-27,Hospitalization
+1766,TR4181,2024-05-30,Hospitalization
+1766,TR4494,2024-03-10,ER visit
+1766,TR4051,2024-07-21,ER visit
+1887,TR7401,2024-03-03,ER visit
+1591,TR7298,2024-01-20,ER visit
+1591,TR7265,2024-11-04,High blood sugar
+1591,TR6773,2024-10-09,Hospitalization
+676,TR7527,2024-05-12,ER visit
+676,TR8735,2024-12-07,ER visit
+437,TR8249,2024-07-18,Hospitalization
+120,TR6841,2024-12-15,ER visit
+120,TR8158,2024-02-03,High blood sugar
+120,TR2939,2024-11-13,ER visit
+398,TR6974,2024-10-22,Hospitalization
+870,TR2465,2024-03-13,High blood sugar
+870,TR1899,2024-06-13,High blood sugar
+870,TR7661,2024-02-29,Hospitalization
+1490,TR7363,2024-03-15,Hospitalization
+1490,TR1072,2024-02-07,High blood sugar
+1794,TR4564,2024-01-05,ER visit
+1794,TR6963,2024-04-11,Hospitalization
+636,TR9563,2024-11-28,High blood sugar
+1425,TR5621,2024-03-21,Hospitalization
+1425,TR2843,2024-04-18,ER visit
+63,TR4639,2024-10-02,ER visit
+63,TR3243,2024-10-22,High blood sugar
+63,TR9877,2024-05-27,ER visit
+965,TR2080,2024-09-14,ER visit
+965,TR1386,2024-04-22,ER visit
+1320,TR2755,2024-06-03,Hospitalization
+284,TR2222,2024-08-05,High blood sugar
+284,TR6183,2024-01-08,High blood sugar
+284,TR1767,2024-04-27,High blood sugar
+275,TR7034,2024-02-21,ER visit
+996,TR8803,2024-07-12,Hospitalization
+622,TR7359,2024-07-05,High blood sugar
+622,TR5764,2024-12-23,Hospitalization
+622,TR5015,2024-07-25,High blood sugar
+1367,TR6406,2024-12-07,ER visit
+1585,TR2486,2024-06-07,High blood sugar
+1507,TR6338,2024-01-02,High blood sugar
+1988,TR5524,2024-03-01,ER visit
+1030,TR5252,2024-08-03,ER visit
+1030,TR9037,2024-03-20,High blood sugar
+424,TR7954,2024-10-26,Hospitalization
+424,TR6243,2024-03-03,ER visit
+424,TR5043,2024-08-29,High blood sugar
+281,TR6258,2024-06-21,ER visit
+281,TR3241,2024-02-26,Hospitalization
+281,TR2251,2024-10-06,High blood sugar
+1078,TR6398,2024-09-09,High blood sugar
+1078,TR3195,2024-02-20,Hospitalization
+507,TR7096,2024-10-30,Hospitalization
+1759,TR9301,2024-09-11,High blood sugar
+1759,TR6592,2024-02-20,Hospitalization
+1759,TR5253,2024-07-04,Hospitalization
+659,TR1747,2024-07-11,High blood sugar
+1057,TR8567,2024-11-02,ER visit
+1057,TR4720,2024-03-23,Hospitalization
+1057,TR1309,2024-07-15,ER visit
+702,TR5795,2024-05-31,ER visit
+501,TR5590,2024-07-08,ER visit
+501,TR8578,2024-08-04,Hospitalization
+1043,TR1600,2024-03-13,High blood sugar
+1043,TR2059,2024-07-02,High blood sugar
+991,TR1447,2024-02-22,High blood sugar
+991,TR4335,2024-08-23,High blood sugar
+550,TR8599,2024-09-13,High blood sugar
+558,TR7295,2024-07-04,High blood sugar
+958,TR8875,2024-11-29,ER visit
+958,TR4766,2024-09-29,ER visit
+603,TR2002,2024-12-06,ER visit
+603,TR2600,2024-04-20,Hospitalization
+443,TR6028,2024-06-11,Hospitalization
+443,TR9684,2024-04-26,Hospitalization
+1736,TR8246,2024-04-05,High blood sugar
+219,TR5943,2024-02-07,ER visit
+219,TR6313,2024-09-14,Hospitalization
+251,TR3966,2024-08-23,ER visit
+251,TR1816,2024-07-15,High blood sugar
+251,TR3830,2024-03-23,ER visit
+1834,TR7462,2024-05-12,High blood sugar
+1834,TR9652,2024-12-16,Hospitalization
+115,TR8387,2024-03-16,High blood sugar
+115,TR9457,2024-04-05,High blood sugar
+1422,TR8351,2024-01-24,ER visit
+1422,TR8022,2024-08-01,High blood sugar
+207,TR1168,2024-03-10,Hospitalization
+207,TR7180,2024-08-16,Hospitalization
+1293,TR3356,2024-04-15,High blood sugar
+1293,TR2107,2024-09-01,ER visit
+1293,TR4383,2024-12-27,Hospitalization
+551,TR9986,2024-04-16,Hospitalization
+551,TR8796,2024-07-24,High blood sugar
+1076,TR3266,2024-12-20,High blood sugar
+1076,TR3054,2024-07-02,Hospitalization
+1849,TR8065,2024-09-27,High blood sugar
+654,TR8785,2024-09-15,High blood sugar
+654,TR1853,2024-11-06,Hospitalization
+654,TR1494,2024-07-27,ER visit
+1150,TR9574,2024-09-21,ER visit
+1150,TR4829,2024-07-20,Hospitalization
+1453,TR6482,2024-01-30,High blood sugar
+990,TR5255,2024-04-30,Hospitalization
+990,TR6682,2024-01-04,Hospitalization
+1568,TR9598,2024-12-17,High blood sugar
+825,TR8770,2024-03-15,ER visit
+825,TR7850,2024-04-12,ER visit
+825,TR6363,2024-02-12,High blood sugar
+1458,TR8029,2024-08-18,Hospitalization
+1458,TR1144,2024-05-11,High blood sugar
+1458,TR4143,2024-06-09,Hospitalization
+1445,TR6270,2024-12-01,High blood sugar
+1445,TR8376,2024-07-29,High blood sugar
+1445,TR8760,2024-01-30,ER visit
+1246,TR8591,2024-10-31,ER visit
+1246,TR6554,2024-09-12,High blood sugar
+1246,TR5172,2024-06-25,High blood sugar
+1110,TR2261,2024-08-11,ER visit
+579,TR1452,2024-12-26,Hospitalization
+579,TR9633,2024-05-03,ER visit
+579,TR3411,2024-05-12,Hospitalization
+191,TR4441,2024-09-01,ER visit
+815,TR8461,2024-03-07,ER visit
+815,TR3953,2024-04-15,Hospitalization
+1,TR3884,2024-12-27,High blood sugar
+1070,TR3412,2024-11-25,ER visit
+1074,TR2743,2024-02-22,ER visit
+1074,TR8615,2024-02-08,ER visit
+201,TR9029,2024-11-29,High blood sugar
+201,TR2977,2024-08-06,ER visit
+855,TR7929,2024-02-24,High blood sugar
+855,TR1937,2024-03-25,ER visit
+47,TR9899,2024-03-21,Hospitalization
+47,TR2868,2024-07-09,ER visit
+1359,TR7621,2024-05-17,ER visit
+1359,TR4812,2024-10-22,High blood sugar
+248,TR3879,2024-07-10,High blood sugar
+1343,TR1128,2024-08-05,High blood sugar
+1782,TR3935,2024-10-26,Hospitalization
+272,TR3952,2024-01-16,Hospitalization
+724,TR1227,2024-07-30,High blood sugar
+724,TR5360,2024-02-18,Hospitalization
+724,TR7512,2024-04-04,High blood sugar
+1732,TR2268,2024-09-10,Hospitalization
+1732,TR7919,2024-02-01,High blood sugar
+651,TR2170,2024-01-13,High blood sugar
+651,TR8611,2024-08-18,Hospitalization
+651,TR4539,2024-01-10,ER visit
+1844,TR4178,2024-07-23,High blood sugar
+1112,TR6610,2024-01-21,High blood sugar
+1112,TR1176,2024-12-16,ER visit
+1564,TR4248,2024-05-29,High blood sugar
+176,TR7770,2024-04-04,High blood sugar
+279,TR5158,2024-04-03,Hospitalization
+279,TR7172,2024-05-23,ER visit
+1069,TR2853,2024-04-24,High blood sugar
+1069,TR3619,2024-08-13,High blood sugar
+1069,TR5565,2024-10-15,ER visit
+1566,TR4959,2024-08-09,ER visit
+1566,TR1087,2024-10-11,Hospitalization
+1321,TR1532,2024-04-23,Hospitalization
+1321,TR6326,2024-07-22,Hospitalization
+1321,TR1997,2024-05-13,High blood sugar
+1035,TR6325,2024-06-28,ER visit
+41,TR4587,2024-12-23,Hospitalization
+1307,TR4684,2024-11-05,ER visit
+1307,TR8569,2024-03-06,High blood sugar
+1307,TR3588,2024-12-24,High blood sugar
+692,TR9862,2024-04-02,ER visit
+692,TR3622,2024-02-14,ER visit
+675,TR7350,2024-03-01,Hospitalization
+675,TR6702,2024-04-23,ER visit
+675,TR1782,2024-11-29,Hospitalization
+417,TR8032,2024-10-15,ER visit
+417,TR3055,2024-01-31,ER visit
+1227,TR8414,2024-08-02,ER visit
+1227,TR6425,2024-07-21,High blood sugar
+218,TR3723,2024-08-20,High blood sugar
+1873,TR5976,2024-11-25,High blood sugar
+1873,TR4365,2024-07-01,Hospitalization
+1873,TR9015,2024-10-28,Hospitalization
+1847,TR7121,2024-11-15,High blood sugar
+1847,TR8416,2024-01-12,High blood sugar
+916,TR9284,2024-01-01,ER visit
+916,TR8124,2024-10-06,ER visit
+916,TR1045,2024-06-03,Hospitalization
+803,TR6953,2024-09-10,Hospitalization
+803,TR1355,2024-07-30,ER visit
+928,TR9939,2024-01-23,Hospitalization
+812,TR2692,2024-12-06,High blood sugar
+226,TR1761,2024-03-28,ER visit
+226,TR4050,2024-03-25,ER visit
+226,TR7085,2024-02-09,Hospitalization
+728,TR1533,2024-05-01,ER visit
+728,TR5244,2024-05-23,ER visit
+1294,TR1566,2024-10-20,High blood sugar
+1294,TR4689,2024-10-26,ER visit
+1294,TR3570,2024-03-29,ER visit
+1635,TR5051,2024-04-08,ER visit
+1635,TR3839,2024-04-15,ER visit
+1475,TR5008,2024-03-26,High blood sugar
+450,TR1667,2024-02-04,ER visit
+450,TR7131,2024-03-19,High blood sugar
+1414,TR6636,2024-06-18,High blood sugar
+1414,TR2859,2024-01-31,High blood sugar
+1414,TR4706,2024-11-12,Hospitalization
+377,TR6383,2024-05-25,Hospitalization
+377,TR1547,2024-12-15,ER visit
+1289,TR9262,2024-07-26,High blood sugar
+1096,TR5666,2024-10-13,Hospitalization
+1096,TR4410,2024-12-21,ER visit
+1096,TR4172,2024-11-15,Hospitalization
+646,TR3657,2024-04-08,High blood sugar
+434,TR7457,2024-05-06,ER visit
+434,TR7991,2024-03-24,High blood sugar
+1264,TR9804,2024-01-04,High blood sugar
+372,TR9820,2024-06-26,Hospitalization
+265,TR3006,2024-04-28,ER visit
+265,TR5414,2024-03-05,ER visit
+265,TR2482,2024-05-18,ER visit
+477,TR1942,2024-10-23,Hospitalization
+869,TR7435,2024-06-19,ER visit
+869,TR3193,2024-06-09,Hospitalization
+701,TR3337,2024-03-01,ER visit
+1859,TR7577,2024-09-11,Hospitalization
+645,TR8882,2024-02-08,ER visit
+1373,TR7089,2024-06-07,Hospitalization
+1373,TR3622,2024-05-22,High blood sugar
+1316,TR7290,2024-01-08,High blood sugar
+1417,TR5394,2024-10-31,High blood sugar
+1124,TR4328,2024-02-17,ER visit
+1124,TR6601,2024-08-17,Hospitalization
+1124,TR2602,2024-11-14,High blood sugar
+1534,TR3962,2024-03-08,ER visit
+1534,TR8312,2024-07-21,Hospitalization
+1534,TR4753,2024-02-08,High blood sugar
+1600,TR7101,2024-09-03,High blood sugar
+1396,TR3098,2024-07-24,ER visit
+795,TR8757,2024-05-20,Hospitalization
+795,TR3476,2024-06-12,ER visit
+640,TR7531,2024-09-17,High blood sugar
+640,TR7276,2024-05-08,ER visit
+640,TR3324,2024-02-22,ER visit
+247,TR7975,2024-01-14,High blood sugar
+247,TR8349,2024-03-02,High blood sugar
+247,TR1433,2024-04-27,Hospitalization
+925,TR3594,2024-10-19,Hospitalization
+735,TR5400,2024-09-29,High blood sugar
+735,TR3251,2024-06-10,High blood sugar
+735,TR2000,2024-05-18,Hospitalization
+506,TR2734,2024-03-26,ER visit
+1704,TR4772,2024-06-30,High blood sugar
+1066,TR1162,2024-06-30,High blood sugar
+1066,TR2541,2024-06-11,ER visit
+1559,TR3286,2024-04-17,Hospitalization
+1559,TR2721,2024-02-21,Hospitalization
+269,TR1808,2024-05-01,ER visit
+269,TR8235,2024-09-21,High blood sugar
+1491,TR8552,2024-10-29,ER visit
+1491,TR3288,2024-11-22,High blood sugar
+1856,TR3078,2024-08-26,Hospitalization
+1856,TR5117,2024-07-10,High blood sugar
+109,TR2530,2024-03-19,High blood sugar
+1753,TR4870,2024-10-06,High blood sugar
+1753,TR5167,2024-12-28,High blood sugar
+1753,TR6264,2024-11-17,High blood sugar
+843,TR2793,2024-10-03,Hospitalization
+843,TR3954,2024-10-29,ER visit
+843,TR5956,2024-01-04,Hospitalization
+16,TR9071,2024-09-04,High blood sugar
+16,TR8068,2024-01-22,ER visit
+16,TR7262,2024-09-09,High blood sugar
+1897,TR4423,2024-04-11,Hospitalization
+1897,TR3787,2024-04-30,Hospitalization
+1897,TR8045,2024-10-28,High blood sugar
+524,TR6864,2024-02-18,High blood sugar
+524,TR1936,2024-11-12,ER visit
+649,TR8655,2024-06-23,ER visit
+544,TR5748,2024-10-04,High blood sugar
+544,TR5504,2024-08-09,ER visit
+544,TR9515,2024-01-30,High blood sugar
+1654,TR9248,2024-11-21,High blood sugar
+1654,TR9639,2024-07-02,High blood sugar
+758,TR9871,2024-04-08,Hospitalization
+758,TR6253,2024-03-28,High blood sugar
+758,TR8163,2024-12-24,High blood sugar
+1518,TR3211,2024-09-01,High blood sugar
+1518,TR3816,2024-07-26,ER visit
+1518,TR9321,2024-01-10,High blood sugar
+260,TR8901,2024-07-22,Hospitalization
+260,TR3757,2024-03-05,Hospitalization
+1765,TR4550,2024-06-05,High blood sugar
+1765,TR6224,2024-11-22,High blood sugar
+1021,TR2313,2024-07-10,High blood sugar
+1021,TR7419,2024-10-26,Hospitalization
+1021,TR3605,2024-03-27,ER visit
+1748,TR6740,2024-04-03,ER visit
+613,TR9737,2024-02-24,High blood sugar
+1243,TR7647,2024-06-29,ER visit
+1684,TR8327,2024-06-02,Hospitalization
+220,TR7736,2024-10-09,High blood sugar
+486,TR5127,2024-10-28,ER visit
+40,TR1208,2024-11-26,High blood sugar
+626,TR3662,2024-03-27,High blood sugar
+1175,TR2428,2024-05-20,Hospitalization
+259,TR3867,2024-10-18,Hospitalization
+259,TR1187,2024-10-31,ER visit
+387,TR7840,2024-11-06,Hospitalization
+848,TR8264,2024-03-28,High blood sugar
+848,TR3201,2024-01-21,Hospitalization
+775,TR1004,2024-07-23,ER visit
+775,TR6614,2024-05-14,ER visit
+1334,TR6919,2024-10-24,ER visit
+1982,TR4032,2024-04-09,Hospitalization
+1982,TR8818,2024-02-04,Hospitalization
+1690,TR1644,2024-11-27,Hospitalization
+1690,TR4794,2024-01-10,Hospitalization
+468,TR1817,2024-02-08,Hospitalization
+468,TR4598,2024-02-13,ER visit
+468,TR7074,2024-05-05,ER visit
+1525,TR3910,2024-10-02,Hospitalization
+1608,TR5880,2024-03-23,High blood sugar
+210,TR2422,2024-02-17,ER visit
+210,TR4640,2024-10-30,High blood sugar
+104,TR1766,2024-01-03,High blood sugar
+104,TR1348,2024-08-02,ER visit
+1539,TR8559,2024-03-14,High blood sugar
+1539,TR1610,2024-09-05,High blood sugar
+1539,TR7553,2024-06-13,ER visit
+1611,TR2816,2024-07-23,ER visit
+1611,TR7848,2024-12-16,Hospitalization
+567,TR8142,2024-08-30,ER visit
+72,TR5610,2024-07-19,High blood sugar
+597,TR9613,2024-12-28,ER visit
+1829,TR1169,2024-06-30,Hospitalization
+1829,TR6334,2024-01-08,ER visit
+1829,TR8586,2024-04-26,High blood sugar
+1872,TR5446,2024-04-12,ER visit
+297,TR8285,2024-02-16,High blood sugar
+297,TR3402,2024-08-05,ER visit
+1115,TR2823,2024-12-10,Hospitalization
+508,TR7723,2024-04-11,Hospitalization
+8,TR5243,2024-01-07,ER visit
+586,TR2526,2024-12-30,High blood sugar
+586,TR5909,2024-08-10,Hospitalization
+268,TR2624,2024-04-12,High blood sugar
+1901,TR5522,2024-06-27,ER visit
+1901,TR2905,2024-05-27,Hospitalization
+779,TR8532,2024-04-10,Hospitalization
+779,TR8600,2024-04-01,High blood sugar
+779,TR7362,2024-08-28,Hospitalization
+1991,TR8808,2024-07-04,High blood sugar
+1991,TR1518,2024-08-03,High blood sugar
+1991,TR4414,2024-08-04,ER visit
+709,TR5789,2024-11-05,High blood sugar
+709,TR1737,2024-04-02,Hospitalization
+1671,TR2138,2024-08-07,High blood sugar
+1671,TR6370,2024-08-30,Hospitalization
+970,TR9382,2024-02-21,High blood sugar
+970,TR8231,2024-10-08,ER visit
+379,TR9100,2024-02-14,ER visit
+601,TR4093,2024-11-11,High blood sugar
+601,TR5911,2024-03-29,High blood sugar
+601,TR3994,2024-12-23,High blood sugar
+791,TR5702,2024-03-27,ER visit
+1176,TR8295,2024-04-22,High blood sugar
+1176,TR5368,2024-06-06,High blood sugar
+1176,TR2274,2024-05-16,Hospitalization
+930,TR4588,2024-03-27,ER visit
+930,TR6658,2024-05-17,ER visit
+774,TR4217,2024-06-20,High blood sugar
+774,TR7368,2024-09-13,High blood sugar
+1366,TR8350,2024-05-10,Hospitalization
+1366,TR1176,2024-10-18,High blood sugar
+1366,TR6880,2024-03-25,ER visit
+1866,TR7057,2024-10-01,Hospitalization
+1866,TR7201,2024-04-25,ER visit
+97,TR1679,2024-08-02,High blood sugar
+44,TR8661,2024-12-18,Hospitalization
+44,TR4241,2024-03-29,ER visit
+1061,TR5361,2024-08-10,ER visit
+1061,TR1198,2024-02-02,ER visit
+1061,TR6552,2024-01-02,High blood sugar
+1004,TR6524,2024-09-13,High blood sugar
+1146,TR8892,2024-06-09,High blood sugar
+1146,TR3857,2024-05-17,High blood sugar
+1146,TR7403,2024-02-16,ER visit
+1387,TR4841,2024-05-22,Hospitalization
+1387,TR1262,2024-06-13,High blood sugar
+1387,TR4610,2024-01-17,Hospitalization
+881,TR2272,2024-09-30,ER visit
+881,TR8001,2024-05-14,High blood sugar
+26,TR9007,2024-06-05,ER visit
+796,TR7726,2024-11-21,High blood sugar
+796,TR5810,2024-02-18,High blood sugar
+796,TR8464,2024-04-23,Hospitalization
+1514,TR5291,2024-09-24,ER visit
+1514,TR4477,2024-05-21,ER visit
+1514,TR1839,2024-08-22,ER visit
+680,TR2349,2024-07-11,Hospitalization
+680,TR8395,2024-10-04,Hospitalization
+1958,TR7809,2024-06-28,ER visit
+1958,TR7784,2024-05-11,ER visit
+1958,TR3152,2024-08-27,High blood sugar
+782,TR4831,2024-07-17,High blood sugar
+782,TR2100,2024-07-25,Hospitalization
+782,TR5864,2024-07-07,High blood sugar
+604,TR9510,2024-02-14,ER visit
+604,TR9479,2024-07-09,ER visit
+604,TR1549,2024-11-07,High blood sugar
+628,TR8418,2024-03-17,High blood sugar
+1556,TR3735,2024-12-22,Hospitalization
+1556,TR2802,2024-10-22,High blood sugar
+1815,TR6047,2024-09-21,Hospitalization
+1593,TR8445,2024-01-21,High blood sugar
+1593,TR7308,2024-11-28,High blood sugar
+1546,TR4869,2024-05-28,High blood sugar
+376,TR8018,2024-07-29,High blood sugar
+376,TR6528,2024-01-18,ER visit
+1000,TR5062,2024-04-26,ER visit
+214,TR7960,2024-05-16,ER visit
+214,TR9342,2024-10-30,High blood sugar
+884,TR1443,2024-04-18,Hospitalization
+878,TR8209,2024-09-04,High blood sugar
+878,TR4456,2024-12-06,ER visit
+68,TR8716,2024-07-26,Hospitalization
+383,TR9978,2024-03-02,Hospitalization
+383,TR3998,2024-03-10,ER visit
+383,TR7891,2024-04-03,High blood sugar
+154,TR5607,2024-08-31,Hospitalization
+154,TR1264,2024-02-11,Hospitalization
+1957,TR9324,2024-08-19,ER visit
+1957,TR9307,2024-11-27,Hospitalization
+1957,TR6391,2024-08-08,Hospitalization
+1256,TR6398,2024-09-14,Hospitalization
+391,TR1764,2024-11-02,High blood sugar
+391,TR8712,2024-07-17,High blood sugar
+391,TR7794,2024-04-15,ER visit
+32,TR3771,2024-06-04,High blood sugar
+1435,TR9252,2024-09-20,Hospitalization
+1435,TR7550,2024-09-03,High blood sugar
+1435,TR6159,2024-01-13,Hospitalization
+1827,TR1358,2024-06-14,Hospitalization
+1827,TR5959,2024-12-09,High blood sugar
+1827,TR3261,2024-10-19,High blood sugar
+243,TR8461,2024-03-01,High blood sugar
+1052,TR7923,2024-05-14,High blood sugar
+611,TR9930,2024-02-09,ER visit
+611,TR8254,2024-07-24,High blood sugar
+611,TR7670,2024-01-16,ER visit
+1329,TR4060,2024-04-15,Hospitalization
+1329,TR2142,2024-02-01,ER visit
+571,TR1242,2024-03-24,Hospitalization
+571,TR4140,2024-08-30,ER visit
+294,TR3905,2024-10-24,ER visit
+294,TR2312,2024-09-17,Hospitalization
+294,TR9790,2024-12-10,ER visit
+344,TR2966,2024-09-08,Hospitalization
+1770,TR7859,2024-03-19,High blood sugar
+1770,TR6289,2024-12-25,Hospitalization
+1770,TR4823,2024-04-14,ER visit
+1784,TR8496,2024-02-16,High blood sugar
+1784,TR9747,2024-01-04,ER visit
+679,TR5299,2024-06-06,High blood sugar
+679,TR7639,2024-03-28,Hospitalization
+1550,TR3584,2024-05-29,High blood sugar
+1550,TR4379,2024-01-16,High blood sugar
+1550,TR9774,2024-12-22,High blood sugar
+435,TR4840,2024-12-06,ER visit
+435,TR4889,2024-02-14,High blood sugar
+435,TR5955,2024-06-16,Hospitalization
+880,TR1315,2024-11-23,Hospitalization
+880,TR5624,2024-02-27,Hospitalization
+880,TR7857,2024-07-02,High blood sugar
+144,TR7232,2024-01-14,Hospitalization
+144,TR3943,2024-11-02,ER visit
+98,TR6570,2024-11-11,Hospitalization
+1528,TR4110,2024-08-12,High blood sugar
+1528,TR7027,2024-01-02,Hospitalization
+1528,TR9691,2024-05-12,High blood sugar
+1891,TR4801,2024-05-19,High blood sugar
+57,TR5553,2024-09-19,Hospitalization
+57,TR5019,2024-12-03,ER visit
+57,TR3403,2024-01-28,ER visit
+1857,TR2234,2024-12-13,Hospitalization
+1857,TR9827,2024-08-26,High blood sugar
+1857,TR7787,2024-02-27,Hospitalization
+22,TR1091,2024-09-14,High blood sugar
+22,TR7175,2024-07-16,High blood sugar
+514,TR4633,2024-05-18,High blood sugar
+514,TR2866,2024-12-13,ER visit
+514,TR9645,2024-06-24,ER visit
+1523,TR2686,2024-01-27,Hospitalization
+1523,TR5138,2024-07-13,ER visit
+1523,TR3325,2024-10-24,High blood sugar
+976,TR2526,2024-09-18,High blood sugar
+976,TR1024,2024-06-17,Hospitalization
+976,TR8352,2024-04-12,High blood sugar
+1698,TR8798,2024-02-28,Hospitalization
+577,TR3557,2024-11-02,Hospitalization
+949,TR5888,2024-11-18,High blood sugar
+949,TR8311,2024-01-22,ER visit
+1075,TR1509,2024-04-14,High blood sugar
+1648,TR9837,2024-11-18,High blood sugar
+1648,TR9480,2024-01-17,Hospitalization
+1648,TR2074,2024-11-23,ER visit
+610,TR7588,2024-03-22,Hospitalization
+610,TR9662,2024-03-17,High blood sugar
+529,TR7793,2024-11-03,Hospitalization
+177,TR5849,2024-03-30,Hospitalization
+177,TR9627,2024-06-02,High blood sugar
+177,TR1494,2024-06-16,Hospitalization
+1397,TR8498,2024-01-10,High blood sugar
+1397,TR9459,2024-03-16,Hospitalization
+1397,TR6552,2024-09-16,ER visit
+423,TR8650,2024-04-04,High blood sugar
+423,TR5515,2024-11-19,ER visit
+423,TR2233,2024-02-15,Hospitalization
+681,TR1035,2024-10-03,ER visit
+681,TR2840,2024-08-04,ER visit
+1930,TR7305,2024-11-03,ER visit
+1930,TR3809,2024-02-26,Hospitalization
+1930,TR7654,2024-08-29,High blood sugar
+954,TR1254,2024-03-08,Hospitalization
+954,TR1542,2024-10-12,Hospitalization
+1892,TR1274,2024-03-09,Hospitalization
+1892,TR2966,2024-05-02,High blood sugar
+1892,TR1930,2024-08-21,Hospitalization
+1505,TR7902,2024-03-30,Hospitalization
+1505,TR5334,2024-04-09,High blood sugar
+1505,TR5412,2024-05-23,High blood sugar
+960,TR7250,2024-06-15,High blood sugar
+573,TR4012,2024-11-29,ER visit
+573,TR5146,2024-11-24,High blood sugar
+573,TR9551,2024-06-20,ER visit
+1130,TR1096,2024-09-05,ER visit
+1130,TR3926,2024-02-11,Hospitalization
+1130,TR5837,2024-01-06,ER visit
+593,TR3336,2024-12-02,Hospitalization
+593,TR3659,2024-06-01,ER visit
+593,TR7126,2024-12-02,High blood sugar
+289,TR1304,2024-07-27,Hospitalization
+1401,TR3559,2024-02-16,ER visit
+1401,TR8512,2024-04-24,Hospitalization
+1401,TR5073,2024-07-05,High blood sugar
+327,TR5362,2024-04-03,ER visit
+1777,TR7636,2024-08-19,ER visit
+1777,TR1963,2024-12-26,High blood sugar
+1777,TR7172,2024-05-07,ER visit
+895,TR1012,2024-08-17,ER visit
+895,TR5811,2024-03-08,Hospitalization
+895,TR7151,2024-05-04,ER visit
+1527,TR6051,2024-03-09,High blood sugar
+1527,TR6766,2024-01-22,ER visit
+1309,TR7961,2024-04-23,Hospitalization
+1309,TR9212,2024-05-10,ER visit
+178,TR9729,2024-12-24,Hospitalization
+1925,TR5561,2024-07-07,ER visit
+1925,TR1266,2024-12-13,Hospitalization
+1932,TR5456,2024-07-23,Hospitalization
+1621,TR3406,2024-10-06,ER visit
+1621,TR6771,2024-03-01,High blood sugar
+1621,TR8401,2024-10-18,High blood sugar
+908,TR9483,2024-05-07,ER visit
+908,TR5529,2024-07-08,ER visit
+1865,TR7735,2024-07-23,ER visit
+1865,TR4237,2024-03-18,ER visit
+1865,TR4781,2024-03-06,ER visit
+853,TR7244,2024-01-20,High blood sugar
+853,TR8595,2024-07-25,Hospitalization
+1584,TR9666,2024-11-15,Hospitalization
+1584,TR5648,2024-07-27,High blood sugar
+1584,TR2207,2024-10-26,High blood sugar
+371,TR6085,2024-07-09,Hospitalization
+1097,TR3853,2024-09-05,High blood sugar
+1097,TR1827,2024-03-10,ER visit
+1097,TR4047,2024-05-11,High blood sugar
+1708,TR7339,2024-09-25,High blood sugar
+1708,TR3716,2024-04-04,High blood sugar
+1708,TR3110,2024-07-29,High blood sugar
+933,TR7831,2024-07-15,Hospitalization
+730,TR8433,2024-02-07,Hospitalization
+730,TR7687,2024-10-18,Hospitalization
+599,TR6648,2024-04-06,Hospitalization
+131,TR3528,2024-11-08,ER visit
+131,TR9981,2024-10-28,ER visit
+1055,TR6252,2024-04-20,Hospitalization
+82,TR7550,2024-09-01,Hospitalization
+82,TR9433,2024-10-11,Hospitalization
+82,TR9117,2024-08-25,High blood sugar
+1606,TR4068,2024-11-08,ER visit
+1606,TR8107,2024-07-09,ER visit
+1138,TR2989,2024-06-03,High blood sugar
+1853,TR9604,2024-05-10,High blood sugar
+1861,TR9573,2024-01-26,High blood sugar
+142,TR5047,2024-11-07,ER visit
+142,TR6363,2024-02-18,High blood sugar
+896,TR9648,2024-11-04,High blood sugar
+1201,TR2386,2024-04-07,High blood sugar
+1201,TR3065,2024-03-20,Hospitalization
+1201,TR1161,2024-07-25,High blood sugar
+492,TR2089,2024-01-03,Hospitalization
+666,TR1813,2024-06-01,ER visit
+666,TR8641,2024-11-30,ER visit
+426,TR2103,2024-03-16,ER visit
+426,TR4716,2024-06-05,Hospitalization
+1053,TR2158,2024-05-25,High blood sugar
+199,TR2936,2024-06-02,ER visit
+1677,TR9463,2024-04-14,High blood sugar
+655,TR6265,2024-09-10,Hospitalization
+655,TR9905,2024-03-18,ER visit
+655,TR3169,2024-08-28,High blood sugar
+472,TR9849,2024-10-29,High blood sugar
+1257,TR6361,2024-11-25,ER visit
+1257,TR7287,2024-12-09,High blood sugar
+1890,TR3218,2024-03-22,Hospitalization
+1890,TR1186,2024-05-31,ER visit
+760,TR3479,2024-11-13,ER visit
+760,TR9496,2024-01-29,ER visit
+1319,TR6518,2024-04-29,ER visit
+1469,TR8937,2024-01-16,Hospitalization
+1072,TR2676,2024-08-07,Hospitalization
+1072,TR5276,2024-11-14,High blood sugar
+639,TR7564,2024-11-13,Hospitalization
+639,TR9932,2024-03-05,High blood sugar
+639,TR7062,2024-01-18,High blood sugar
+70,TR3157,2024-09-30,ER visit
+70,TR2395,2024-01-03,High blood sugar
+1342,TR6971,2024-12-03,ER visit
+1342,TR1045,2024-05-05,High blood sugar
+1769,TR7692,2024-11-11,Hospitalization
+1769,TR2646,2024-07-28,ER visit
+929,TR6459,2024-08-08,High blood sugar
+929,TR3505,2024-09-02,Hospitalization
+929,TR5757,2024-11-29,Hospitalization
+1372,TR5061,2024-06-07,ER visit
+196,TR5220,2024-09-08,ER visit
+196,TR3676,2024-03-02,ER visit
+533,TR2188,2024-04-25,High blood sugar
+533,TR4181,2024-12-02,ER visit
+1557,TR6173,2024-12-04,Hospitalization
+1557,TR2588,2024-07-26,Hospitalization
+875,TR9129,2024-01-27,ER visit
+250,TR4218,2024-09-10,ER visit
+250,TR3778,2024-11-24,Hospitalization
+850,TR6728,2024-09-11,High blood sugar
+596,TR7865,2024-04-25,Hospitalization
+1931,TR3938,2024-10-21,Hospitalization
+1775,TR6464,2024-03-16,Hospitalization
+228,TR2162,2024-10-25,ER visit
+228,TR4248,2024-10-29,High blood sugar
+228,TR8934,2024-09-21,High blood sugar
+813,TR8530,2024-04-17,ER visit
+841,TR5886,2024-04-07,Hospitalization
+582,TR5815,2024-04-04,ER visit
+582,TR5506,2024-06-07,ER visit
+582,TR5695,2024-08-17,High blood sugar
+205,TR1001,2024-11-07,High blood sugar
+205,TR9083,2024-05-18,ER visit
+205,TR1420,2024-08-08,ER visit
+906,TR7815,2024-09-30,High blood sugar
+906,TR4694,2024-03-06,High blood sugar
+632,TR1084,2024-02-03,Hospitalization
+632,TR8707,2024-12-20,ER visit
+1875,TR2248,2024-06-13,Hospitalization
+1875,TR2168,2024-11-07,Hospitalization
+163,TR1558,2024-11-18,Hospitalization
+163,TR6853,2024-12-18,High blood sugar
+1971,TR4914,2024-09-04,Hospitalization
+1205,TR9818,2024-03-26,High blood sugar
+1205,TR6687,2024-10-30,High blood sugar
+1205,TR5390,2024-02-10,High blood sugar
+1493,TR4155,2024-07-15,ER visit
+1493,TR1606,2024-05-10,Hospitalization
+876,TR6800,2024-02-07,High blood sugar
+876,TR1023,2024-09-17,ER visit
+876,TR6674,2024-06-25,ER visit
+926,TR2563,2024-02-10,ER visit
+926,TR8403,2024-06-13,High blood sugar
+926,TR5444,2024-05-13,High blood sugar
+1719,TR7429,2024-11-13,High blood sugar
+1719,TR6992,2024-12-08,ER visit
+1719,TR2916,2024-05-07,High blood sugar
+548,TR9059,2024-01-25,Hospitalization
+548,TR1044,2024-08-30,High blood sugar
+1335,TR1185,2024-05-25,High blood sugar
+1116,TR1206,2024-05-05,Hospitalization
+1116,TR6225,2024-06-08,High blood sugar
+1116,TR2920,2024-06-08,High blood sugar
+1203,TR1301,2024-05-21,High blood sugar
+1203,TR9944,2024-05-07,High blood sugar
+1203,TR3919,2024-03-17,ER visit
+809,TR1395,2024-10-03,High blood sugar
+612,TR7268,2024-04-17,Hospitalization
+612,TR3626,2024-07-20,Hospitalization
+612,TR4908,2024-01-21,ER visit
+792,TR9912,2024-07-09,High blood sugar
+792,TR7542,2024-10-10,Hospitalization
+792,TR5566,2024-12-16,ER visit
+641,TR1344,2024-12-21,High blood sugar
+641,TR8287,2024-12-03,ER visit
+641,TR9855,2024-09-30,High blood sugar
+1420,TR7418,2024-03-18,ER visit
+1755,TR6536,2024-03-21,ER visit
+1755,TR7260,2024-02-16,Hospitalization
+743,TR8165,2024-12-20,Hospitalization
+743,TR4385,2024-12-29,ER visit
+638,TR6612,2024-05-01,High blood sugar
+356,TR3165,2024-08-01,High blood sugar
+356,TR1909,2024-04-12,High blood sugar
+356,TR8674,2024-04-07,High blood sugar
+1888,TR1338,2024-05-14,High blood sugar
+1888,TR9310,2024-09-14,Hospitalization
+1754,TR8985,2024-08-09,ER visit
+1399,TR8912,2024-09-15,Hospitalization
+49,TR3755,2024-11-01,High blood sugar
+1934,TR2924,2024-12-13,ER visit
+922,TR2518,2024-12-24,High blood sugar
+922,TR5622,2024-10-03,High blood sugar
+922,TR2292,2024-04-23,ER visit
+547,TR3379,2024-04-12,High blood sugar
+757,TR2642,2024-07-12,Hospitalization
+757,TR6493,2024-02-19,Hospitalization
+1809,TR6546,2024-05-21,Hospitalization
+1809,TR1770,2024-10-14,High blood sugar
+1809,TR3670,2024-06-24,Hospitalization
+710,TR4055,2024-05-03,High blood sugar
+710,TR2954,2024-12-02,High blood sugar
+1383,TR7607,2024-10-31,Hospitalization
+973,TR8451,2024-05-31,Hospitalization
+1590,TR3603,2024-12-10,High blood sugar
+1590,TR1296,2024-03-16,High blood sugar
+1590,TR4700,2024-06-09,High blood sugar
+1543,TR1114,2024-08-28,High blood sugar
+1543,TR8821,2024-08-31,Hospitalization
+1543,TR6953,2024-05-19,High blood sugar
+1105,TR5854,2024-05-22,High blood sugar
+1105,TR1929,2024-09-02,High blood sugar
+1105,TR3254,2024-09-29,High blood sugar
+1826,TR2309,2024-04-10,High blood sugar
+1826,TR2040,2024-08-15,ER visit
+1826,TR7396,2024-05-28,ER visit
+1139,TR6553,2024-02-07,ER visit
+1139,TR5461,2024-05-04,Hospitalization
+1139,TR8961,2024-08-03,High blood sugar
+137,TR3167,2024-07-27,Hospitalization
+137,TR3945,2024-07-27,High blood sugar
+75,TR7159,2024-06-16,ER visit
+1808,TR4802,2024-07-05,High blood sugar
+78,TR7297,2024-03-11,Hospitalization
+1481,TR5934,2024-09-30,Hospitalization
+1071,TR7127,2024-03-07,High blood sugar
+660,TR8346,2024-10-11,Hospitalization
+660,TR4540,2024-01-04,ER visit
+1830,TR7574,2024-09-21,High blood sugar
+1830,TR6417,2024-01-25,ER visit
+401,TR4874,2024-07-20,ER visit
+161,TR7484,2024-07-21,Hospitalization
+1020,TR1137,2024-08-10,High blood sugar
+1742,TR3117,2024-01-23,ER visit
+1742,TR2437,2024-09-28,ER visit
+1082,TR8027,2024-11-20,High blood sugar
+1082,TR1131,2024-05-16,Hospitalization
+1082,TR9929,2024-11-15,ER visit
+476,TR1179,2024-03-02,High blood sugar
+476,TR1717,2024-04-20,High blood sugar
+476,TR2937,2024-10-30,ER visit
+763,TR4887,2024-01-31,ER visit
+831,TR3345,2024-01-15,ER visit
+831,TR3216,2024-07-05,Hospitalization
+831,TR5297,2024-01-12,Hospitalization
+1460,TR4277,2024-03-21,High blood sugar
+1460,TR7078,2024-08-23,High blood sugar
+1805,TR7007,2024-08-27,ER visit
+1805,TR2836,2024-04-28,High blood sugar
+1805,TR4058,2024-10-21,Hospitalization
+1211,TR1811,2024-01-22,High blood sugar
+1211,TR9739,2024-11-15,High blood sugar
+740,TR3179,2024-01-23,ER visit
+740,TR6715,2024-08-25,ER visit
+432,TR6270,2024-05-31,Hospitalization
+432,TR5478,2024-05-11,High blood sugar
+1166,TR3245,2024-10-29,High blood sugar
+1166,TR6226,2024-01-23,High blood sugar
+1166,TR5612,2024-05-26,ER visit
+868,TR6396,2024-05-26,Hospitalization
+868,TR9418,2024-04-25,High blood sugar
+868,TR3037,2024-02-16,High blood sugar
+927,TR2978,2024-01-09,High blood sugar
+927,TR7378,2024-10-07,High blood sugar
+927,TR6740,2024-06-27,Hospitalization
+998,TR5643,2024-04-18,Hospitalization
+998,TR6409,2024-05-24,Hospitalization
+998,TR7654,2024-07-22,ER visit
+542,TR7078,2024-03-26,High blood sugar
+1259,TR9082,2024-03-04,High blood sugar
+1950,TR1857,2024-09-10,High blood sugar
+1950,TR7674,2024-06-10,High blood sugar
+1950,TR1197,2024-07-13,Hospitalization
+211,TR2680,2024-07-28,ER visit
+1582,TR6072,2024-03-12,ER visit
+1582,TR7931,2024-10-04,High blood sugar
+60,TR1171,2024-08-17,Hospitalization
+1996,TR3527,2024-08-17,ER visit
+1996,TR7653,2024-08-03,ER visit
+1305,TR4223,2024-03-08,High blood sugar
+162,TR6996,2024-02-02,ER visit
+162,TR6982,2024-09-15,High blood sugar
+1129,TR7135,2024-02-06,Hospitalization
+766,TR1071,2024-12-14,High blood sugar
+900,TR4774,2024-08-13,ER visit
+1780,TR2477,2024-11-21,High blood sugar
+1780,TR9143,2024-08-04,High blood sugar
+1780,TR6177,2024-02-18,High blood sugar
+1079,TR6682,2024-01-28,High blood sugar
+1079,TR8209,2024-09-26,High blood sugar
+1290,TR7118,2024-02-01,High blood sugar
+1290,TR3936,2024-03-07,ER visit
+1290,TR5951,2024-05-10,High blood sugar
+1615,TR5018,2024-04-17,ER visit
+1915,TR6039,2024-06-16,High blood sugar
+1915,TR5347,2024-08-14,Hospitalization
+1915,TR7150,2024-01-29,High blood sugar
+1961,TR4502,2024-07-06,ER visit
+1961,TR6240,2024-02-19,ER visit
+583,TR1891,2024-08-27,Hospitalization
+583,TR8540,2024-06-12,High blood sugar
+583,TR2309,2024-03-04,Hospitalization
+1213,TR9708,2024-09-25,High blood sugar
+1213,TR8122,2024-07-22,High blood sugar
+1213,TR7629,2024-06-02,ER visit
+1542,TR8039,2024-04-19,Hospitalization
+1542,TR7362,2024-06-18,Hospitalization
+1542,TR4851,2024-03-04,ER visit
+941,TR9108,2024-06-14,ER visit
+1081,TR8536,2024-11-17,Hospitalization
+1081,TR9961,2024-07-21,ER visit
+188,TR8679,2024-07-10,High blood sugar
+1696,TR4979,2024-04-05,Hospitalization
+38,TR8835,2024-12-21,Hospitalization
+38,TR2453,2024-08-30,ER visit
+38,TR5347,2024-10-04,High blood sugar
+202,TR2642,2024-01-04,Hospitalization
+1333,TR3686,2024-04-05,Hospitalization
+1333,TR6896,2024-01-14,High blood sugar
+1333,TR9009,2024-08-09,ER visit
+871,TR4107,2024-04-21,ER visit
+1408,TR8848,2024-12-19,ER visit
+227,TR3183,2024-12-15,ER visit
+1516,TR7633,2024-10-16,High blood sugar
+536,TR1654,2024-05-12,High blood sugar
+536,TR3185,2024-04-05,Hospitalization
+1133,TR3684,2024-05-02,Hospitalization
+1133,TR8539,2024-07-21,High blood sugar
+132,TR4061,2024-11-12,Hospitalization
+132,TR3708,2024-05-12,High blood sugar
+698,TR4879,2024-08-30,ER visit
+698,TR3612,2024-11-14,High blood sugar
+1440,TR6540,2024-09-30,High blood sugar
+1530,TR1765,2024-03-13,Hospitalization
+1530,TR4904,2024-03-10,High blood sugar
+1530,TR3987,2024-12-17,ER visit
+1840,TR2538,2024-10-21,ER visit
+587,TR1002,2024-12-18,Hospitalization
+587,TR7935,2024-02-03,Hospitalization
+1990,TR4734,2024-04-06,High blood sugar
+1990,TR9458,2024-03-30,Hospitalization
+1990,TR5806,2024-05-22,ER visit
+1038,TR5864,2024-04-18,Hospitalization
+209,TR2156,2024-12-03,Hospitalization
+209,TR9606,2024-11-05,ER visit
+1393,TR1148,2024-11-07,High blood sugar
+566,TR6429,2024-09-04,High blood sugar
+566,TR2377,2024-06-13,Hospitalization
+566,TR5402,2024-06-17,ER visit
+314,TR3078,2024-06-24,ER visit
+314,TR1943,2024-07-18,ER visit
+314,TR6301,2024-08-14,High blood sugar
+602,TR2137,2024-10-18,ER visit
+602,TR4623,2024-04-13,ER visit
+234,TR1061,2024-01-16,High blood sugar
+1500,TR5658,2024-07-20,ER visit
+1500,TR4497,2024-05-05,High blood sugar
+1500,TR3535,2024-12-10,Hospitalization
+1940,TR3466,2024-08-09,Hospitalization
+500,TR8362,2024-09-09,Hospitalization
+1326,TR4577,2024-08-27,Hospitalization
+1326,TR2235,2024-04-14,Hospitalization
+112,TR1553,2024-09-16,High blood sugar
+112,TR7583,2024-07-22,High blood sugar
+937,TR1463,2024-09-01,High blood sugar
+937,TR1056,2024-08-14,ER visit
+1090,TR6922,2024-10-12,Hospitalization
+923,TR7200,2024-05-01,ER visit
+1900,TR6131,2024-06-20,ER visit
+1192,TR9248,2024-11-15,ER visit
+1286,TR5713,2024-03-10,Hospitalization
+1286,TR1615,2024-02-13,ER visit
+473,TR5874,2024-08-30,Hospitalization
+473,TR3167,2024-01-28,Hospitalization
+473,TR5427,2024-09-10,Hospitalization
+874,TR8116,2024-12-11,ER visit
+1733,TR9295,2024-07-06,Hospitalization
+1733,TR8012,2024-03-26,Hospitalization
+1268,TR3256,2024-08-03,High blood sugar
+1268,TR1039,2024-07-09,ER visit
+1643,TR1225,2024-03-22,High blood sugar
+1643,TR5015,2024-01-21,High blood sugar
+1703,TR4127,2024-07-26,ER visit
+1703,TR6846,2024-09-17,High blood sugar
+1703,TR7611,2024-11-20,Hospitalization
+362,TR2162,2024-07-29,High blood sugar
+362,TR8337,2024-05-24,High blood sugar
+136,TR8957,2024-06-10,Hospitalization
+136,TR4422,2024-11-26,High blood sugar
+1135,TR4564,2024-09-24,Hospitalization
+1152,TR8936,2024-12-23,ER visit
+1152,TR9874,2024-10-21,High blood sugar
+1152,TR5551,2024-12-28,ER visit
+108,TR5221,2024-02-09,High blood sugar
+108,TR9291,2024-11-02,Hospitalization
+108,TR1563,2024-08-06,High blood sugar
+1054,TR6160,2024-11-13,ER visit
+1054,TR1232,2024-06-09,Hospitalization
+1054,TR4400,2024-05-24,Hospitalization
+413,TR8151,2024-08-01,ER visit
+23,TR3089,2024-04-20,ER visit
+23,TR4644,2024-03-08,High blood sugar
+1734,TR7242,2024-05-11,High blood sugar
+1734,TR3142,2024-02-21,Hospitalization
+1734,TR3571,2024-02-21,ER visit
+1312,TR9743,2024-10-07,ER visit
+1312,TR2222,2024-11-29,High blood sugar
+1312,TR2709,2024-12-04,High blood sugar
+1633,TR5723,2024-11-11,Hospitalization
+1633,TR6561,2024-10-14,ER visit
+696,TR1266,2024-05-08,ER visit
+421,TR2199,2024-12-24,ER visit
+278,TR8379,2024-12-16,ER visit
+461,TR3676,2024-12-23,High blood sugar
+461,TR4163,2024-03-11,High blood sugar
+1068,TR5983,2024-09-28,High blood sugar
+1068,TR5918,2024-09-11,Hospitalization
+1068,TR3647,2024-03-29,ER visit
+88,TR8554,2024-07-22,High blood sugar
+88,TR9055,2024-09-15,ER visit
+283,TR9211,2024-09-19,High blood sugar
+1889,TR3109,2024-03-13,Hospitalization
+1889,TR8376,2024-04-14,High blood sugar
+1889,TR9946,2024-09-26,Hospitalization
+1574,TR1947,2024-09-04,ER visit
+1574,TR9956,2024-06-17,High blood sugar
+1574,TR2104,2024-05-28,High blood sugar
+1325,TR1810,2024-09-24,High blood sugar
+1325,TR2262,2024-07-15,ER visit
+541,TR5184,2024-04-12,Hospitalization
+541,TR7063,2024-10-21,Hospitalization
+541,TR6012,2024-07-24,High blood sugar
+1222,TR9789,2024-10-21,ER visit
+1222,TR7412,2024-05-18,Hospitalization
+860,TR6317,2024-12-13,Hospitalization
+534,TR8271,2024-08-07,Hospitalization
+534,TR5412,2024-11-15,Hospitalization
+534,TR7337,2024-10-17,Hospitalization
+235,TR9873,2024-12-13,High blood sugar
+1501,TR8287,2024-01-02,High blood sugar
+1337,TR7471,2024-04-13,High blood sugar
+256,TR9896,2024-01-26,Hospitalization
+203,TR3305,2024-10-20,Hospitalization
+236,TR7294,2024-02-12,Hospitalization
+236,TR3169,2024-07-24,High blood sugar
+1999,TR7859,2024-02-20,Hospitalization
+647,TR6220,2024-07-01,High blood sugar
+647,TR9299,2024-08-18,Hospitalization
+1407,TR6415,2024-05-22,High blood sugar
+1407,TR9564,2024-09-12,ER visit
+1922,TR6370,2024-06-14,Hospitalization
+1922,TR9086,2024-07-02,Hospitalization
+1812,TR3820,2024-02-21,High blood sugar
+1812,TR8704,2024-05-10,Hospitalization
+1022,TR1093,2024-05-20,High blood sugar
+1022,TR1856,2024-01-04,High blood sugar
+1436,TR8313,2024-09-25,ER visit
+1436,TR9536,2024-06-21,ER visit
+943,TR3175,2024-09-28,Hospitalization
+943,TR1941,2024-05-29,Hospitalization
+780,TR7794,2024-02-06,High blood sugar
+780,TR6781,2024-07-14,High blood sugar
+1315,TR2745,2024-06-15,High blood sugar
+1315,TR3869,2024-03-19,High blood sugar
+39,TR5260,2024-06-03,Hospitalization
+39,TR9393,2024-02-05,ER visit
+122,TR8738,2024-11-09,Hospitalization
+122,TR1080,2024-05-31,Hospitalization
+122,TR4304,2024-03-14,Hospitalization
+888,TR7660,2024-09-27,ER visit
+113,TR1278,2024-08-06,Hospitalization
+113,TR4823,2024-09-19,ER visit
+113,TR8699,2024-06-11,High blood sugar
+686,TR8415,2024-02-02,Hospitalization
+1509,TR7688,2024-05-05,High blood sugar
+414,TR5887,2024-01-24,High blood sugar
+790,TR4476,2024-03-19,High blood sugar
+790,TR7737,2024-09-19,Hospitalization
+985,TR1740,2024-03-29,High blood sugar
+1741,TR1794,2024-06-19,Hospitalization
+1741,TR9760,2024-10-03,High blood sugar
+1741,TR1498,2024-04-24,Hospitalization
+1726,TR2133,2024-05-22,Hospitalization
+1726,TR5409,2024-04-18,Hospitalization
+1726,TR1198,2024-12-08,High blood sugar
+488,TR2084,2024-08-09,Hospitalization
+488,TR8792,2024-11-06,High blood sugar
+488,TR8942,2024-11-01,ER visit
+1310,TR3210,2024-09-06,High blood sugar
+1310,TR6515,2024-05-19,High blood sugar
+1310,TR5402,2024-03-19,Hospitalization
+936,TR6940,2024-04-17,High blood sugar
+273,TR5428,2024-11-08,ER visit
+273,TR1215,2024-09-26,Hospitalization
+1718,TR1692,2024-06-11,High blood sugar
+1718,TR4352,2024-08-25,High blood sugar
+522,TR9063,2024-07-12,Hospitalization
+522,TR9346,2024-06-02,Hospitalization
+523,TR6273,2024-10-20,High blood sugar
+1795,TR4649,2024-11-23,High blood sugar
+1795,TR5115,2024-10-20,Hospitalization
+351,TR6517,2024-01-10,Hospitalization
+351,TR9986,2024-10-26,ER visit
+351,TR3299,2024-01-24,ER visit
+1706,TR1017,2024-08-09,ER visit
+1706,TR5111,2024-03-27,Hospitalization
+1706,TR3410,2024-05-18,Hospitalization
+1987,TR4821,2024-01-23,Hospitalization
+1987,TR6796,2024-02-16,High blood sugar
+1987,TR3292,2024-09-28,Hospitalization
+374,TR5593,2024-09-23,High blood sugar
+374,TR1287,2024-11-08,Hospitalization
+1455,TR6114,2024-04-07,Hospitalization
+1455,TR1669,2024-03-19,High blood sugar
+652,TR8209,2024-02-19,Hospitalization
+1792,TR8719,2024-08-23,Hospitalization
+1792,TR9725,2024-05-26,Hospitalization
+1792,TR8541,2024-08-11,ER visit
+370,TR6985,2024-11-08,Hospitalization
+370,TR6058,2024-02-28,High blood sugar
+767,TR7969,2024-09-19,High blood sugar
+1362,TR9563,2024-05-16,High blood sugar
+1362,TR4300,2024-03-22,Hospitalization
+1362,TR9206,2024-01-02,High blood sugar
+1832,TR6242,2024-03-07,ER visit
+1832,TR9519,2024-11-24,High blood sugar
+1832,TR9426,2024-07-21,Hospitalization
+1599,TR7885,2024-02-24,ER visit
+1599,TR5009,2024-03-22,High blood sugar
+1813,TR3757,2024-04-22,ER visit
+1813,TR1510,2024-08-07,High blood sugar
+1813,TR6907,2024-11-25,Hospitalization
+169,TR7172,2024-10-07,ER visit
+169,TR5586,2024-11-14,High blood sugar
+169,TR8524,2024-03-25,High blood sugar
+836,TR5792,2024-09-03,ER visit
+836,TR4437,2024-09-21,ER visit
+963,TR4153,2024-08-15,ER visit
+946,TR7290,2024-01-02,ER visit
+946,TR3978,2024-07-25,High blood sugar
+946,TR4500,2024-10-29,High blood sugar
+463,TR2416,2024-11-24,High blood sugar
+463,TR2511,2024-07-09,Hospitalization
+463,TR2479,2024-09-28,ER visit
+1697,TR9202,2024-10-03,High blood sugar
+1697,TR5831,2024-03-17,ER visit
+329,TR6927,2024-07-14,ER visit
+1555,TR6118,2024-10-15,High blood sugar
+1555,TR9990,2024-07-31,ER visit
+360,TR7887,2024-01-12,ER visit
+360,TR4859,2024-03-19,ER visit
+360,TR8539,2024-03-09,ER visit
+368,TR4605,2024-03-14,ER visit
+368,TR8762,2024-11-30,High blood sugar
+368,TR8377,2024-03-01,High blood sugar
+992,TR1441,2024-09-14,ER visit
+992,TR3805,2024-03-18,ER visit
+992,TR8725,2024-04-26,ER visit
+138,TR1927,2024-10-20,Hospitalization
+138,TR8019,2024-01-19,ER visit
+138,TR5468,2024-06-10,Hospitalization
+520,TR8340,2024-10-04,Hospitalization
+520,TR5596,2024-01-29,Hospitalization
+520,TR8317,2024-08-26,High blood sugar
+1740,TR5251,2024-06-14,Hospitalization
+1740,TR8293,2024-02-06,ER visit
+1740,TR9133,2024-08-03,ER visit
+773,TR4318,2024-06-09,High blood sugar
+773,TR9598,2024-10-30,High blood sugar
+442,TR9860,2024-10-05,ER visit
+563,TR1651,2024-12-16,High blood sugar
+563,TR4442,2024-08-19,High blood sugar
+563,TR9424,2024-08-24,Hospitalization
+540,TR2061,2024-06-29,Hospitalization
+499,TR1951,2024-09-09,High blood sugar
+499,TR5956,2024-10-12,ER visit
+1235,TR7399,2024-09-18,Hospitalization
+1235,TR7635,2024-03-26,ER visit
+1485,TR9282,2024-04-17,High blood sugar
+1485,TR9384,2024-05-14,ER visit
+1485,TR7734,2024-08-14,ER visit
+436,TR1374,2024-09-25,ER visit
+1252,TR8847,2024-01-09,ER visit
+366,TR3472,2024-02-10,High blood sugar
+366,TR7539,2024-05-01,High blood sugar
+1725,TR3955,2024-02-25,Hospitalization
+1725,TR1456,2024-02-28,Hospitalization
+1725,TR6467,2024-11-19,Hospitalization
+277,TR9965,2024-02-15,Hospitalization
+277,TR2634,2024-10-06,ER visit
+277,TR9847,2024-03-20,Hospitalization
+148,TR7340,2024-11-25,Hospitalization
+148,TR2610,2024-12-01,ER visit
+148,TR3192,2024-09-18,High blood sugar
+1041,TR9002,2024-11-28,Hospitalization
+1589,TR7357,2024-07-24,High blood sugar
+408,TR1600,2024-11-01,Hospitalization
+408,TR1771,2024-03-01,High blood sugar
+408,TR3161,2024-08-20,Hospitalization
+1384,TR3404,2024-09-03,High blood sugar
+1267,TR3358,2024-10-11,High blood sugar
+1267,TR4784,2024-07-17,Hospitalization
+1267,TR5503,2024-04-24,High blood sugar
+1224,TR8154,2024-09-18,Hospitalization
+1224,TR5977,2024-12-04,Hospitalization
+1224,TR8440,2024-11-07,ER visit
+845,TR6180,2024-05-04,Hospitalization
+1793,TR9041,2024-08-03,Hospitalization
+1364,TR9372,2024-08-23,Hospitalization
+1364,TR7779,2024-11-10,Hospitalization
+87,TR4129,2024-04-25,ER visit
+87,TR6805,2024-06-22,ER visit
+87,TR8308,2024-12-19,ER visit
+1803,TR8245,2024-09-06,ER visit
+1916,TR3798,2024-02-21,High blood sugar
+1578,TR2640,2024-04-21,Hospitalization
+1578,TR6394,2024-06-14,ER visit
+1578,TR1699,2024-06-23,Hospitalization
+1379,TR8208,2024-06-11,ER visit
+1379,TR1536,2024-12-12,Hospitalization
+1379,TR3080,2024-07-02,High blood sugar
+1394,TR9598,2024-02-17,ER visit
+1394,TR4647,2024-09-01,High blood sugar
+1394,TR5486,2024-09-21,High blood sugar
+856,TR5315,2024-05-23,Hospitalization
+856,TR6098,2024-01-23,ER visit
+856,TR9341,2024-07-07,High blood sugar
+1524,TR2714,2024-04-17,Hospitalization
+1524,TR6101,2024-02-09,Hospitalization
+1524,TR6055,2024-02-02,Hospitalization
+79,TR2677,2024-01-27,High blood sugar
+79,TR4716,2024-03-19,Hospitalization
+945,TR1806,2024-06-14,Hospitalization
+945,TR7563,2024-04-11,Hospitalization
+945,TR8273,2024-10-01,High blood sugar
+200,TR7447,2024-06-15,Hospitalization
+1605,TR2223,2024-11-04,High blood sugar
+1605,TR8174,2024-01-20,Hospitalization
+1605,TR8313,2024-08-18,High blood sugar
+1785,TR3328,2024-01-28,High blood sugar
+1785,TR5957,2024-04-28,ER visit
+1785,TR5374,2024-11-17,ER visit
+802,TR9394,2024-08-06,ER visit
+802,TR5315,2024-05-29,High blood sugar
+759,TR5807,2024-08-30,Hospitalization
+759,TR4799,2024-01-13,Hospitalization
+1660,TR5885,2024-08-06,High blood sugar
+1660,TR2087,2024-01-12,Hospitalization
+1657,TR3207,2024-04-21,High blood sugar
+1657,TR6231,2024-11-09,Hospitalization
+232,TR9169,2024-04-21,High blood sugar
+232,TR4412,2024-09-16,ER visit
+1680,TR9162,2024-06-30,ER visit
+1878,TR3624,2024-08-19,Hospitalization
+1878,TR3413,2024-11-03,Hospitalization
+1121,TR4826,2024-08-12,Hospitalization
+1121,TR9340,2024-02-23,Hospitalization
+1121,TR4414,2024-07-20,ER visit
+29,TR3239,2024-01-20,ER visit
+29,TR2453,2024-10-16,High blood sugar
+29,TR7034,2024-06-18,Hospitalization
+572,TR5985,2024-12-04,ER visit
+572,TR3681,2024-11-24,High blood sugar
+572,TR4713,2024-04-26,High blood sugar
+1787,TR2482,2024-06-02,High blood sugar
+1791,TR2130,2024-07-09,ER visit
+1791,TR6684,2024-10-08,High blood sugar
+1529,TR9807,2024-05-10,Hospitalization
+1529,TR8091,2024-05-06,High blood sugar
+1529,TR1392,2024-07-18,High blood sugar
+393,TR5913,2024-04-16,ER visit
+393,TR7296,2024-05-29,High blood sugar
+1144,TR5171,2024-12-29,ER visit
+1144,TR3894,2024-07-18,ER visit
+17,TR6658,2024-03-03,Hospitalization
+17,TR6844,2024-11-19,High blood sugar
+17,TR5643,2024-10-05,Hospitalization
+192,TR8979,2024-02-12,Hospitalization
+192,TR2882,2024-05-17,High blood sugar
+192,TR2042,2024-08-05,High blood sugar
+105,TR6516,2024-01-02,ER visit
+105,TR3647,2024-01-07,High blood sugar
+625,TR9415,2024-02-09,ER visit
+1730,TR7627,2024-02-18,Hospitalization
+1730,TR2176,2024-10-16,Hospitalization
+1730,TR5696,2024-11-26,ER visit
+1302,TR5912,2024-04-26,High blood sugar
+1669,TR8856,2024-12-07,High blood sugar
+1669,TR1959,2024-07-16,ER visit
+1541,TR5180,2024-10-29,Hospitalization
+1541,TR4332,2024-10-14,ER visit
+1541,TR8976,2024-12-21,High blood sugar
+1251,TR1423,2024-05-27,High blood sugar
+1251,TR3054,2024-03-06,ER visit
+1535,TR5728,2024-07-26,High blood sugar
+1535,TR4954,2024-12-06,Hospitalization
+1535,TR1469,2024-04-13,ER visit
+1432,TR6699,2024-08-05,Hospitalization
+624,TR7299,2024-01-16,Hospitalization
+624,TR4066,2024-12-28,ER visit
+624,TR4090,2024-02-29,ER visit
+546,TR8412,2024-07-12,High blood sugar
+546,TR3017,2024-08-23,High blood sugar
+1336,TR7807,2024-07-12,ER visit
+1336,TR8135,2024-07-30,ER visit
+1336,TR1024,2024-02-09,High blood sugar
+1689,TR7457,2024-06-09,High blood sugar
+183,TR3849,2024-05-22,High blood sugar
+1939,TR3097,2024-03-09,ER visit
+703,TR4607,2024-12-14,ER visit
+395,TR9916,2024-11-10,High blood sugar
+395,TR2185,2024-01-21,Hospitalization
+1545,TR7936,2024-08-12,Hospitalization
+497,TR7897,2024-04-23,High blood sugar
+497,TR6866,2024-09-06,ER visit
+497,TR1264,2024-11-12,ER visit
+995,TR8411,2024-08-30,Hospitalization
+465,TR6364,2024-02-06,High blood sugar
+465,TR5987,2024-03-17,Hospitalization
+465,TR7612,2024-05-21,Hospitalization
+1413,TR5813,2024-05-20,High blood sugar
+1869,TR3690,2024-11-11,Hospitalization
+173,TR6741,2024-05-05,ER visit
+338,TR7667,2024-05-19,High blood sugar
+338,TR5059,2024-07-24,ER visit
+1237,TR1577,2024-11-07,ER visit
+1237,TR1571,2024-01-21,High blood sugar
+1237,TR6848,2024-05-13,ER visit
+493,TR9991,2024-10-29,ER visit
+1579,TR9908,2024-05-19,ER visit
+213,TR9123,2024-08-01,Hospitalization
+213,TR3715,2024-11-19,High blood sugar
+213,TR2711,2024-06-10,ER visit
+1037,TR7168,2024-01-06,Hospitalization
+1037,TR8168,2024-02-26,Hospitalization
+65,TR9224,2024-10-16,ER visit
+901,TR2204,2024-04-17,High blood sugar
+901,TR1227,2024-09-11,Hospitalization
+1774,TR2895,2024-09-13,ER visit
+1774,TR7656,2024-07-22,High blood sugar
+1774,TR2681,2024-09-30,High blood sugar
+1571,TR4765,2024-01-10,ER visit
+742,TR5817,2024-10-06,Hospitalization
+742,TR2779,2024-07-13,High blood sugar
+742,TR3959,2024-12-13,High blood sugar
+246,TR6977,2024-02-19,High blood sugar
+246,TR2657,2024-01-28,High blood sugar
+246,TR5135,2024-07-14,Hospitalization
+405,TR7698,2024-05-13,Hospitalization
+405,TR3514,2024-07-16,ER visit
+386,TR4795,2024-08-12,ER visit
+386,TR3536,2024-02-27,Hospitalization
+1207,TR7909,2024-04-22,ER visit
+1207,TR3084,2024-02-25,High blood sugar
+510,TR9201,2024-07-25,Hospitalization
+510,TR7466,2024-08-19,High blood sugar
+598,TR6810,2024-03-23,Hospitalization
+1721,TR6063,2024-11-23,Hospitalization
+1721,TR5589,2024-09-07,ER visit
+982,TR1981,2024-01-20,Hospitalization
+982,TR9283,2024-11-19,ER visit
+1846,TR2961,2024-08-19,Hospitalization
+1846,TR4793,2024-08-26,High blood sugar
+1846,TR4612,2024-11-29,High blood sugar
+155,TR9127,2024-06-21,High blood sugar
+519,TR1603,2024-08-05,High blood sugar
+1404,TR7269,2024-03-29,High blood sugar
+1404,TR5342,2024-02-12,High blood sugar
+768,TR2434,2024-08-17,Hospitalization
+768,TR6455,2024-08-01,ER visit
+1087,TR5300,2024-05-15,Hospitalization
+1255,TR4036,2024-07-08,High blood sugar
+422,TR5651,2024-05-13,High blood sugar
+422,TR9195,2024-06-25,Hospitalization
+124,TR3350,2024-11-20,ER visit
+124,TR7784,2024-11-02,ER visit
+124,TR5682,2024-11-01,ER visit
+1949,TR5209,2024-07-07,ER visit
+1949,TR2876,2024-02-14,High blood sugar
+1949,TR8584,2024-04-22,High blood sugar
+1352,TR5166,2024-01-23,ER visit
+1352,TR9290,2024-10-31,Hospitalization
+1352,TR8021,2024-09-05,Hospitalization
+1688,TR4102,2024-01-11,High blood sugar
+820,TR8278,2024-04-08,Hospitalization
+820,TR7425,2024-05-06,High blood sugar
+820,TR3699,2024-06-15,High blood sugar
+101,TR8786,2024-03-29,ER visit
+101,TR7830,2024-12-09,ER visit
+785,TR8960,2024-12-26,ER visit
+1284,TR2983,2024-12-03,ER visit
+1284,TR8152,2024-06-08,ER visit
+609,TR1055,2024-05-18,ER visit
+609,TR8132,2024-03-28,Hospitalization
+764,TR4118,2024-03-04,ER visit
+764,TR4133,2024-06-29,ER visit
+764,TR3538,2024-05-24,High blood sugar
+400,TR6594,2024-06-29,High blood sugar
+400,TR2414,2024-07-16,ER visit
+1104,TR3349,2024-04-11,High blood sugar
+1104,TR3497,2024-08-08,Hospitalization
+1104,TR4404,2024-02-15,Hospitalization
+1552,TR3013,2024-05-10,Hospitalization
+1552,TR6899,2024-12-18,Hospitalization
+1552,TR2186,2024-06-25,ER visit
+883,TR6760,2024-10-21,Hospitalization
+190,TR6931,2024-03-08,Hospitalization
+190,TR8884,2024-03-13,Hospitalization
+1645,TR7025,2024-01-04,Hospitalization
+1645,TR9866,2024-07-24,High blood sugar
+1353,TR2011,2024-11-22,Hospitalization
+1353,TR5487,2024-09-18,Hospitalization
+1353,TR9611,2024-11-27,High blood sugar
+1472,TR1216,2024-12-22,High blood sugar
+1123,TR8713,2024-03-21,ER visit
+1123,TR3478,2024-02-06,High blood sugar
+83,TR4367,2024-04-06,High blood sugar
+83,TR1534,2024-06-06,High blood sugar
+983,TR4020,2024-12-05,Hospitalization
+983,TR4471,2024-12-02,ER visit
+983,TR9675,2024-09-07,ER visit
+457,TR3481,2024-05-07,Hospitalization
+1080,TR3594,2024-08-28,ER visit
+1080,TR5054,2024-08-19,Hospitalization
+1277,TR7708,2024-03-20,High blood sugar
+690,TR8326,2024-08-17,Hospitalization
+382,TR8192,2024-08-07,Hospitalization
+382,TR8117,2024-05-29,High blood sugar
+382,TR6500,2024-11-10,High blood sugar
+642,TR3025,2024-09-17,ER visit
+642,TR5798,2024-10-24,Hospitalization
+642,TR9805,2024-07-16,High blood sugar
+1768,TR8500,2024-11-23,ER visit
+1768,TR3474,2024-05-30,Hospitalization
+778,TR5398,2024-05-28,High blood sugar
+778,TR4176,2024-11-06,High blood sugar
+778,TR4297,2024-02-07,Hospitalization
+1011,TR6678,2024-09-07,High blood sugar
+1011,TR9108,2024-11-22,Hospitalization
+1498,TR7698,2024-07-25,Hospitalization
+467,TR1074,2024-05-13,Hospitalization
+467,TR6412,2024-12-17,High blood sugar
+467,TR7624,2024-04-27,High blood sugar
+663,TR8194,2024-08-04,Hospitalization
+663,TR9214,2024-11-26,ER visit
+663,TR4059,2024-04-17,Hospitalization
+1587,TR2239,2024-04-07,Hospitalization
+1511,TR4381,2024-03-04,Hospitalization
+1511,TR8924,2024-02-24,ER visit
+254,TR1242,2024-11-01,High blood sugar
+254,TR4986,2024-06-23,High blood sugar
+1762,TR4397,2024-01-22,Hospitalization
+1762,TR9749,2024-10-10,Hospitalization
+672,TR4271,2024-04-06,High blood sugar
+390,TR6224,2024-11-30,Hospitalization
+447,TR9390,2024-02-19,High blood sugar
+447,TR2726,2024-01-09,ER visit
+447,TR7599,2024-07-22,Hospitalization
+989,TR1185,2024-10-03,High blood sugar
+989,TR5088,2024-03-21,High blood sugar
+846,TR9810,2024-03-10,ER visit
+846,TR2953,2024-01-30,Hospitalization
+543,TR9204,2024-04-23,ER visit
+543,TR6986,2024-09-27,High blood sugar
+543,TR2179,2024-04-09,High blood sugar
+92,TR5522,2024-06-30,ER visit
+128,TR8930,2024-05-03,ER visit
+128,TR2544,2024-10-05,ER visit
+128,TR8941,2024-07-03,Hospitalization
+1487,TR2418,2024-05-13,High blood sugar
+1197,TR2383,2024-10-23,Hospitalization
+1197,TR7186,2024-01-12,Hospitalization
+1103,TR9193,2024-01-07,ER visit
+1103,TR4004,2024-08-03,Hospitalization
+537,TR6787,2024-07-13,Hospitalization
+1652,TR7507,2024-05-28,ER visit
+994,TR7723,2024-03-13,ER visit
+1953,TR3351,2024-03-30,ER visit
+1953,TR9101,2024-06-08,High blood sugar
+1953,TR3159,2024-10-09,High blood sugar
+482,TR2716,2024-06-21,Hospitalization
+1664,TR3398,2024-10-08,Hospitalization
+1664,TR2626,2024-08-06,High blood sugar
+1664,TR6527,2024-05-05,Hospitalization
+1049,TR3054,2024-07-31,ER visit
+902,TR9673,2024-01-31,High blood sugar
+1997,TR2267,2024-01-17,Hospitalization
+1997,TR8865,2024-06-14,Hospitalization
+899,TR9133,2024-10-24,Hospitalization
+899,TR1289,2024-11-29,High blood sugar
+899,TR3227,2024-07-21,High blood sugar
+1515,TR9576,2024-11-10,High blood sugar
+1515,TR1608,2024-02-02,ER visit
+1515,TR8825,2024-10-15,Hospitalization
+238,TR4013,2024-06-30,Hospitalization
+238,TR9699,2024-08-04,ER visit
+238,TR7855,2024-07-21,High blood sugar
+1415,TR9739,2024-01-26,High blood sugar
+1415,TR7860,2024-04-19,High blood sugar
+1724,TR7411,2024-02-17,ER visit
+1724,TR3686,2024-10-12,Hospitalization
+1724,TR5766,2024-02-28,ER visit
+1134,TR4703,2024-08-14,Hospitalization
+833,TR1883,2024-04-10,Hospitalization
+833,TR8428,2024-09-26,Hospitalization
+95,TR4238,2024-05-23,ER visit
+164,TR4195,2024-01-10,High blood sugar
+164,TR1164,2024-11-12,High blood sugar
+164,TR3540,2024-11-04,ER visit
+1313,TR6591,2024-01-27,Hospitalization
+1722,TR7408,2024-12-06,ER visit
+1722,TR7517,2024-03-31,High blood sugar
+1722,TR8903,2024-01-21,ER visit
+253,TR3904,2024-11-19,Hospitalization
+1661,TR9068,2024-05-25,High blood sugar
+1661,TR9415,2024-05-26,Hospitalization
+1661,TR8354,2024-06-16,ER visit
+266,TR9753,2024-09-24,Hospitalization
+266,TR3814,2024-09-28,ER visit
+266,TR4785,2024-02-02,High blood sugar
+1822,TR4742,2024-08-24,High blood sugar
+931,TR6409,2024-03-01,High blood sugar
+931,TR3501,2024-03-30,Hospitalization
+931,TR4394,2024-11-01,ER visit
+1898,TR8430,2024-03-10,ER visit
+1592,TR3861,2024-12-13,ER visit
+1592,TR5193,2024-06-16,Hospitalization
+1592,TR2837,2024-01-20,ER visit
+1943,TR5076,2024-10-30,High blood sugar
+1943,TR5845,2024-10-08,ER visit
+1799,TR5778,2024-07-07,Hospitalization
+1799,TR2397,2024-04-30,High blood sugar
+1533,TR7583,2024-10-01,High blood sugar
+1533,TR6914,2024-06-08,Hospitalization
+1533,TR5395,2024-11-03,High blood sugar
+948,TR1853,2024-10-06,ER visit
+948,TR8791,2024-01-30,Hospitalization
+1031,TR3845,2024-10-20,ER visit
+1031,TR8020,2024-05-18,Hospitalization
+1031,TR7550,2024-04-20,Hospitalization
+1091,TR9572,2024-11-02,Hospitalization
+1091,TR8832,2024-05-03,ER visit
+134,TR6988,2024-07-03,Hospitalization
+134,TR1279,2024-11-27,High blood sugar
+1816,TR9915,2024-06-21,ER visit
+1816,TR9841,2024-05-04,Hospitalization
+1182,TR1633,2024-07-03,Hospitalization
+1182,TR9188,2024-01-07,ER visit
+594,TR1513,2024-08-25,High blood sugar
+594,TR1888,2024-11-11,High blood sugar
+594,TR2893,2024-04-06,Hospitalization
+678,TR2556,2024-03-15,Hospitalization
+678,TR2274,2024-11-18,High blood sugar
+42,TR9197,2024-07-04,Hospitalization
+1906,TR4161,2024-05-24,High blood sugar
+1263,TR2802,2024-05-01,High blood sugar
+1685,TR7891,2024-12-10,High blood sugar
+1685,TR7889,2024-10-24,High blood sugar
+1820,TR2892,2024-01-10,Hospitalization
+1820,TR2366,2024-01-25,ER visit
+244,TR1507,2024-07-26,ER visit
+244,TR4275,2024-02-16,High blood sugar
+1125,TR4040,2024-06-16,Hospitalization
+1340,TR3725,2024-08-10,ER visit
+1512,TR1893,2024-07-15,ER visit
+1714,TR4392,2024-10-17,High blood sugar
+1714,TR7352,2024-02-09,High blood sugar
+1714,TR3137,2024-05-21,Hospitalization
+1470,TR4714,2024-07-23,ER visit
+1470,TR2916,2024-04-28,High blood sugar
+1443,TR5797,2024-02-18,High blood sugar
+1443,TR3558,2024-01-27,Hospitalization
+262,TR1127,2024-02-23,High blood sugar
+1504,TR2404,2024-08-31,High blood sugar
+1220,TR2983,2024-08-17,High blood sugar
+1220,TR5834,2024-11-04,High blood sugar
+1220,TR8620,2024-06-11,High blood sugar
+1431,TR1756,2024-05-08,Hospitalization
+1431,TR2804,2024-06-20,High blood sugar
+1431,TR6930,2024-11-05,ER visit
+1204,TR2205,2024-10-10,High blood sugar
+835,TR1190,2024-12-29,High blood sugar
+835,TR6451,2024-01-03,ER visit
+835,TR8224,2024-07-30,ER visit
+449,TR6867,2024-11-22,High blood sugar
+1561,TR4700,2024-08-01,Hospitalization
+761,TR7047,2024-11-02,ER visit
+761,TR8730,2024-02-14,Hospitalization
+1508,TR6922,2024-05-02,High blood sugar
+1508,TR5321,2024-04-03,High blood sugar
+341,TR1460,2024-05-02,ER visit
+1758,TR4042,2024-12-26,ER visit
+749,TR8846,2024-07-11,Hospitalization
+749,TR1890,2024-02-20,High blood sugar
+749,TR7786,2024-07-22,ER visit
+1776,TR1355,2024-08-04,ER visit
+1776,TR5830,2024-03-27,ER visit
+481,TR4166,2024-03-26,Hospitalization
+481,TR8303,2024-07-06,High blood sugar
+481,TR8271,2024-08-13,ER visit
+1558,TR5931,2024-02-11,ER visit
+1558,TR1718,2024-10-23,ER visit
+738,TR2400,2024-08-29,High blood sugar
+738,TR6523,2024-09-12,Hospitalization
+1885,TR3105,2024-03-18,Hospitalization
+784,TR9080,2024-09-10,High blood sugar
+784,TR6699,2024-12-21,Hospitalization
+784,TR7451,2024-03-24,Hospitalization
+1013,TR9633,2024-06-10,ER visit
+1751,TR9586,2024-09-24,Hospitalization
+1751,TR2889,2024-10-31,ER visit
+800,TR5084,2024-10-10,Hospitalization
+800,TR8820,2024-02-20,ER visit
+456,TR2856,2024-06-11,High blood sugar
+978,TR5228,2024-02-04,High blood sugar
+406,TR2900,2024-05-14,Hospitalization
+1617,TR9204,2024-05-29,ER visit
+1520,TR6002,2024-07-05,High blood sugar
+1520,TR8202,2024-08-01,High blood sugar
+286,TR4340,2024-02-08,Hospitalization
+321,TR8699,2024-02-08,ER visit
+321,TR5320,2024-12-31,ER visit
+1673,TR1008,2024-10-20,High blood sugar
+1272,TR7591,2024-07-28,Hospitalization
+1272,TR6262,2024-11-01,High blood sugar
+1272,TR6201,2024-06-07,High blood sugar
+1876,TR9892,2024-01-28,Hospitalization
+1876,TR8792,2024-06-29,Hospitalization
+1876,TR4146,2024-01-03,Hospitalization
+1128,TR3002,2024-01-04,ER visit
+1128,TR2487,2024-11-28,Hospitalization
+627,TR2463,2024-07-25,Hospitalization
+627,TR1473,2024-08-24,High blood sugar
+348,TR4379,2024-02-23,Hospitalization
+348,TR1602,2024-11-28,Hospitalization
+1728,TR3059,2024-02-23,High blood sugar
+237,TR9720,2024-04-19,ER visit
+237,TR2482,2024-04-23,Hospitalization
+515,TR2439,2024-09-24,High blood sugar
+515,TR3659,2024-08-20,ER visit
+515,TR5004,2024-01-16,ER visit
+980,TR7237,2024-08-28,Hospitalization
+980,TR7912,2024-07-02,ER visit
+1424,TR1502,2024-01-07,Hospitalization
+1424,TR2045,2024-02-02,ER visit
+657,TR6196,2024-11-28,ER visit
+657,TR3127,2024-05-28,ER visit
+657,TR1937,2024-07-23,Hospitalization
+1821,TR3433,2024-08-12,ER visit
+1821,TR2230,2024-05-28,High blood sugar
+1821,TR7900,2024-03-03,High blood sugar
+912,TR5443,2024-04-15,ER visit
+912,TR3826,2024-12-18,Hospitalization
+55,TR2142,2024-12-04,High blood sugar
+55,TR5152,2024-03-03,ER visit
+633,TR5778,2024-06-11,High blood sugar
+633,TR7484,2024-12-03,High blood sugar
+1640,TR5501,2024-03-14,High blood sugar
+1640,TR3389,2024-09-27,High blood sugar
+446,TR2023,2024-04-27,High blood sugar
+618,TR5814,2024-08-05,ER visit
+618,TR2200,2024-03-05,High blood sugar
+618,TR7925,2024-02-10,ER visit
+208,TR7559,2024-05-13,High blood sugar
+208,TR4675,2024-01-29,Hospitalization
+208,TR6696,2024-09-22,ER visit
+1828,TR6536,2024-11-17,Hospitalization
+1017,TR4900,2024-03-17,Hospitalization
+1017,TR7923,2024-05-22,High blood sugar
+1017,TR6219,2024-07-19,High blood sugar
+1893,TR9114,2024-02-03,High blood sugar
+1880,TR5212,2024-08-05,High blood sugar
+1880,TR4085,2024-06-15,High blood sugar
+453,TR8096,2024-02-20,Hospitalization
+1466,TR6152,2024-10-24,Hospitalization
+1466,TR8047,2024-01-05,High blood sugar
+1570,TR5718,2024-06-14,High blood sugar
+1288,TR4492,2024-02-19,ER visit
+116,TR2707,2024-11-30,ER visit
+116,TR5761,2024-04-24,Hospitalization
+1495,TR4966,2024-08-05,Hospitalization
+1495,TR2723,2024-11-19,Hospitalization
+1495,TR1194,2024-12-16,High blood sugar
+354,TR1745,2024-10-05,Hospitalization
+354,TR8922,2024-11-23,Hospitalization
+1233,TR6263,2024-08-07,Hospitalization
+1233,TR7156,2024-08-19,ER visit
+1233,TR2826,2024-01-28,Hospitalization
+614,TR4726,2024-09-26,Hospitalization
+614,TR5493,2024-01-08,ER visit
+614,TR6287,2024-02-24,Hospitalization
+1554,TR5644,2024-05-22,High blood sugar
+1554,TR6020,2024-09-07,ER visit
+1554,TR4939,2024-09-12,Hospitalization
+1614,TR4651,2024-05-16,ER visit
+727,TR8680,2024-12-01,Hospitalization
+727,TR8078,2024-05-07,Hospitalization
+1154,TR1564,2024-09-01,ER visit
+1154,TR7988,2024-02-18,High blood sugar
+1154,TR6902,2024-09-14,ER visit
+342,TR4955,2024-07-04,High blood sugar
+1283,TR8924,2024-12-06,High blood sugar
+58,TR5163,2024-01-25,ER visit
+58,TR4510,2024-01-03,Hospitalization
+1904,TR2353,2024-01-10,High blood sugar
+1904,TR9492,2024-02-29,ER visit
+1014,TR7518,2024-11-14,Hospitalization
+1014,TR8334,2024-10-12,Hospitalization
+67,TR1292,2024-11-25,Hospitalization
+67,TR6873,2024-11-13,ER visit
+1254,TR1348,2024-10-16,ER visit
+776,TR6804,2024-12-02,Hospitalization
+776,TR6736,2024-01-17,Hospitalization
+149,TR3509,2024-10-19,Hospitalization
+149,TR2104,2024-09-14,Hospitalization
+160,TR8322,2024-05-16,ER visit
+160,TR7399,2024-03-19,Hospitalization
+160,TR9279,2024-07-22,High blood sugar
+428,TR4366,2024-07-22,High blood sugar
+1786,TR3816,2024-11-06,ER visit
+1786,TR2260,2024-05-27,High blood sugar
+1786,TR2554,2024-08-06,High blood sugar
+1956,TR6674,2024-11-01,High blood sugar
+1712,TR7246,2024-01-19,ER visit
+1712,TR8994,2024-03-31,High blood sugar
+561,TR1424,2024-11-26,Hospitalization
+561,TR9728,2024-09-18,High blood sugar
+561,TR1883,2024-12-01,High blood sugar
+708,TR4299,2024-09-14,High blood sugar
+708,TR3010,2024-02-15,Hospitalization
+1903,TR2929,2024-12-07,ER visit
+425,TR6443,2024-10-25,ER visit
+425,TR3286,2024-11-04,High blood sugar
+1094,TR3624,2024-03-17,Hospitalization
+1094,TR4955,2024-04-17,High blood sugar
+1094,TR4037,2024-02-11,ER visit
+1377,TR8963,2024-07-18,ER visit
+1377,TR3244,2024-09-12,Hospitalization
+648,TR4509,2024-01-02,Hospitalization
+648,TR6636,2024-09-22,ER visit
+73,TR7956,2024-03-04,ER visit
+73,TR8544,2024-03-30,ER visit
+1972,TR5279,2024-02-29,High blood sugar
+1972,TR4104,2024-02-17,ER visit
+1972,TR3858,2024-05-22,ER visit
+1771,TR9102,2024-11-30,Hospitalization
+1771,TR3358,2024-04-06,ER visit
+1877,TR9059,2024-06-10,ER visit
+1006,TR9029,2024-12-24,Hospitalization
+621,TR2658,2024-04-02,ER visit
+621,TR6071,2024-12-12,Hospitalization
+1549,TR1194,2024-03-18,Hospitalization
+1549,TR5139,2024-11-07,Hospitalization
+1549,TR1568,2024-04-04,Hospitalization
+1992,TR4906,2024-10-31,Hospitalization
+1992,TR5274,2024-09-03,Hospitalization
+554,TR9326,2024-07-08,Hospitalization
+1978,TR5710,2024-02-03,ER visit
+1978,TR6609,2024-03-14,High blood sugar
+1779,TR6395,2024-12-05,ER visit
+302,TR6406,2024-03-10,Hospitalization
+302,TR1035,2024-04-25,Hospitalization
+302,TR6966,2024-10-21,ER visit
+700,TR9968,2024-12-18,High blood sugar
+700,TR9099,2024-09-08,ER visit
+1304,TR4665,2024-12-27,ER visit
+1304,TR5839,2024-07-21,ER visit
+1304,TR3984,2024-12-09,High blood sugar
+999,TR8542,2024-04-17,Hospitalization
+999,TR6705,2024-10-26,High blood sugar
+459,TR4645,2024-03-17,ER visit
+459,TR2630,2024-09-23,ER visit
+1954,TR2170,2024-12-14,High blood sugar
+1954,TR3434,2024-03-06,High blood sugar
+1933,TR6253,2024-05-02,Hospitalization
+1398,TR2206,2024-02-22,Hospitalization
+263,TR4399,2024-12-01,High blood sugar
+1344,TR1481,2024-02-24,Hospitalization
+770,TR4075,2024-06-17,ER visit
+770,TR1726,2024-07-09,High blood sugar
+921,TR7635,2024-05-13,Hospitalization
+1278,TR9606,2024-05-22,ER visit
+1278,TR2697,2024-05-27,High blood sugar
+1278,TR4459,2024-03-28,Hospitalization
+441,TR3971,2024-03-05,ER visit
+509,TR1546,2024-03-28,High blood sugar
+1101,TR5084,2024-09-04,Hospitalization
+1101,TR6271,2024-09-25,ER visit
+1101,TR8774,2024-12-26,ER visit
+590,TR5987,2024-10-21,ER visit
+1839,TR2717,2024-10-26,ER visit
+650,TR1195,2024-09-02,High blood sugar
+1547,TR8202,2024-06-29,ER visit
+1547,TR4360,2024-09-22,High blood sugar
+1547,TR3776,2024-09-02,High blood sugar
+1184,TR2828,2024-04-25,Hospitalization
+1479,TR4044,2024-10-10,High blood sugar
+1479,TR7156,2024-03-12,ER visit
+988,TR9451,2024-01-28,High blood sugar
+988,TR4426,2024-01-04,High blood sugar
+988,TR2107,2024-08-16,Hospitalization
+419,TR4799,2024-02-24,High blood sugar
+419,TR8358,2024-02-08,Hospitalization
+1962,TR5422,2024-06-03,High blood sugar
+1962,TR9920,2024-12-31,Hospitalization
+1962,TR5036,2024-10-13,High blood sugar
+1456,TR4233,2024-01-02,ER visit
+1456,TR5559,2024-08-15,High blood sugar
+1456,TR8170,2024-11-28,Hospitalization
+1986,TR9908,2024-04-28,Hospitalization
+1986,TR2568,2024-03-04,ER visit
+1986,TR4422,2024-04-24,ER visit
+661,TR5099,2024-02-01,Hospitalization
+661,TR5367,2024-10-21,ER visit
+631,TR6016,2024-03-27,High blood sugar
+631,TR6130,2024-07-06,High blood sugar
+673,TR8202,2024-01-16,ER visit
+673,TR1249,2024-09-06,High blood sugar
+1250,TR4811,2024-06-13,High blood sugar
+1630,TR9318,2024-06-13,ER visit
+1630,TR3132,2024-09-22,Hospitalization
+483,TR2656,2024-05-15,High blood sugar
+1855,TR9375,2024-03-04,ER visit
+1855,TR3935,2024-01-15,Hospitalization
+1855,TR4806,2024-10-16,High blood sugar
+581,TR1949,2024-06-13,High blood sugar
+581,TR9764,2024-03-10,ER visit
+581,TR9063,2024-05-23,High blood sugar
+1817,TR3719,2024-10-29,Hospitalization
+1817,TR9445,2024-06-23,ER visit
+1463,TR4591,2024-06-30,ER visit
+1463,TR2149,2024-08-25,ER visit
+993,TR5829,2024-08-06,ER visit
+993,TR6261,2024-02-21,Hospitalization
+915,TR1545,2024-04-20,Hospitalization
+146,TR7247,2024-01-09,Hospitalization
+146,TR7817,2024-07-29,Hospitalization
+857,TR1997,2024-09-09,Hospitalization
+857,TR7579,2024-11-26,Hospitalization
+857,TR4816,2024-04-19,ER visit
+1226,TR2131,2024-02-21,ER visit
+1191,TR2528,2024-08-08,ER visit
+1191,TR6445,2024-02-23,Hospitalization
+1191,TR4608,2024-06-21,ER visit
+1084,TR5012,2024-10-31,Hospitalization
+531,TR2869,2024-04-15,ER visit
+531,TR5188,2024-04-07,Hospitalization
+664,TR4774,2024-01-30,Hospitalization
+664,TR9075,2024-09-06,Hospitalization
+664,TR2264,2024-11-14,High blood sugar
+50,TR4521,2024-01-05,High blood sugar
+50,TR4460,2024-09-05,Hospitalization
+1682,TR2597,2024-07-31,ER visit
+859,TR3246,2024-10-24,Hospitalization
+859,TR1238,2024-01-27,Hospitalization
+859,TR7079,2024-05-26,High blood sugar
+1687,TR1738,2024-03-07,Hospitalization
+1687,TR3357,2024-09-01,High blood sugar
+1687,TR7408,2024-02-19,ER visit
+1073,TR8352,2024-05-18,ER visit
+720,TR3080,2024-06-01,ER visit
+720,TR8071,2024-06-01,Hospitalization
+720,TR5423,2024-10-13,High blood sugar
+1955,TR3415,2024-05-04,Hospitalization
+1955,TR6263,2024-07-03,ER visit
+584,TR6381,2024-08-05,Hospitalization
+682,TR1394,2024-10-21,High blood sugar
+378,TR7301,2024-04-22,High blood sugar
+378,TR2960,2024-08-13,ER visit
+984,TR8377,2024-01-13,ER visit
+10,TR6662,2024-01-18,ER visit
+521,TR1371,2024-10-07,Hospitalization
+521,TR6140,2024-04-29,High blood sugar
+1050,TR6256,2024-12-25,Hospitalization
+1050,TR9800,2024-01-06,ER visit
+1050,TR7789,2024-02-20,High blood sugar
+1756,TR5549,2024-05-14,ER visit
+1756,TR8134,2024-06-13,High blood sugar
+1756,TR8318,2024-06-16,High blood sugar
+726,TR9824,2024-12-22,ER visit
+726,TR8327,2024-02-10,High blood sugar
+726,TR5823,2024-05-14,High blood sugar
+1301,TR6154,2024-01-18,ER visit
+1142,TR6923,2024-01-29,High blood sugar
+1142,TR7060,2024-02-13,ER visit
+887,TR6338,2024-12-06,Hospitalization
+887,TR8935,2024-08-02,Hospitalization
+887,TR1157,2024-05-23,ER visit
+1850,TR1794,2024-03-30,High blood sugar
+1850,TR7448,2024-02-29,Hospitalization
+1850,TR9166,2024-11-26,ER visit
+1773,TR4976,2024-11-03,ER visit
+1773,TR1393,2024-01-19,High blood sugar
+559,TR5218,2024-04-24,High blood sugar
+1386,TR5967,2024-02-10,High blood sugar
+1386,TR6719,2024-01-18,ER visit
+1386,TR9828,2024-11-18,Hospitalization
+1400,TR8843,2024-07-17,ER visit
+1196,TR2182,2024-10-19,High blood sugar
+1409,TR8100,2024-05-19,High blood sugar
+1409,TR6068,2024-07-02,ER visit
+1476,TR1091,2024-05-11,High blood sugar
+1476,TR1222,2024-01-26,High blood sugar
+1476,TR5813,2024-01-21,ER visit
+1899,TR5798,2024-01-12,Hospitalization
+36,TR5175,2024-07-30,High blood sugar
+36,TR5127,2024-07-02,Hospitalization
+36,TR8568,2024-11-15,Hospitalization
+952,TR4457,2024-09-27,Hospitalization
+952,TR9773,2024-05-31,Hospitalization
+298,TR3791,2024-06-28,High blood sugar
+298,TR7656,2024-07-03,High blood sugar
+1975,TR3326,2024-05-24,ER visit
+1265,TR7963,2024-07-21,High blood sugar
+1265,TR6181,2024-03-09,ER visit
+1983,TR1991,2024-08-04,Hospitalization
+1983,TR4152,2024-02-12,ER visit
+959,TR8708,2024-01-21,ER visit
+959,TR6429,2024-11-04,High blood sugar
+959,TR2461,2024-02-10,ER visit
+1607,TR3795,2024-02-27,Hospitalization
+1607,TR2749,2024-12-07,High blood sugar
+1607,TR6781,2024-07-15,High blood sugar
+1966,TR7109,2024-12-14,High blood sugar
+909,TR2925,2024-10-12,Hospitalization
+1810,TR6405,2024-10-16,ER visit
+1810,TR1368,2024-11-04,High blood sugar
+1610,TR2783,2024-05-03,ER visit
+1610,TR1352,2024-06-22,Hospitalization
+1132,TR9147,2024-02-06,Hospitalization
+1132,TR2165,2024-05-11,Hospitalization
+1375,TR5497,2024-08-09,High blood sugar
+1375,TR8933,2024-09-03,High blood sugar
+1375,TR7345,2024-12-04,ER visit
+1287,TR1653,2024-02-21,ER visit
+1483,TR3560,2024-04-27,High blood sugar
+1483,TR5055,2024-12-24,Hospitalization
+1483,TR8513,2024-03-03,Hospitalization
+350,TR1948,2024-08-29,High blood sugar
+350,TR6934,2024-03-24,ER visit
+1369,TR2632,2024-07-11,Hospitalization
+1369,TR9354,2024-07-30,High blood sugar
+90,TR5555,2024-05-29,ER visit
+90,TR7871,2024-07-13,ER visit
+644,TR9275,2024-07-06,Hospitalization
+644,TR3949,2024-11-06,Hospitalization
+1745,TR6051,2024-12-15,Hospitalization
+1745,TR9884,2024-02-13,Hospitalization
+1913,TR9331,2024-04-04,ER visit
+670,TR4966,2024-02-15,High blood sugar
+1444,TR3080,2024-11-19,ER visit
+1444,TR5571,2024-05-19,Hospitalization
+106,TR3574,2024-12-30,High blood sugar
+106,TR8496,2024-10-23,ER visit
+1168,TR2512,2024-06-15,High blood sugar
+1168,TR5904,2024-05-16,ER visit
+1168,TR6009,2024-09-28,High blood sugar
+1750,TR6071,2024-01-03,ER visit
+1180,TR9919,2024-06-22,ER visit
+1180,TR7638,2024-05-10,Hospitalization
+751,TR3534,2024-10-23,ER visit
+1563,TR9243,2024-05-28,Hospitalization
+1563,TR1299,2024-09-10,ER visit
+1563,TR8808,2024-11-25,High blood sugar
+1737,TR7509,2024-09-01,High blood sugar
+1588,TR8820,2024-11-22,Hospitalization
+1588,TR5172,2024-08-02,ER visit
+1588,TR8700,2024-10-19,Hospitalization
+373,TR9702,2024-08-19,High blood sugar
+1008,TR5067,2024-06-13,ER visit
+964,TR6744,2024-03-16,Hospitalization
+964,TR2632,2024-02-27,High blood sugar
+1358,TR3008,2024-08-20,High blood sugar
+1358,TR3077,2024-08-04,ER visit
+1358,TR8313,2024-10-02,ER visit
+787,TR8130,2024-08-14,ER visit
+787,TR8086,2024-08-22,Hospitalization
+470,TR7558,2024-12-21,Hospitalization
+470,TR2337,2024-01-30,ER visit
+141,TR4108,2024-03-02,ER visit
+141,TR3681,2024-07-05,ER visit
+141,TR5147,2024-07-13,High blood sugar
+789,TR4450,2024-06-24,ER visit
+324,TR8130,2024-08-17,Hospitalization
+51,TR1253,2024-09-11,High blood sugar
+51,TR6816,2024-09-28,ER visit
+51,TR8331,2024-08-03,Hospitalization
+715,TR2913,2024-10-21,High blood sugar
+715,TR7140,2024-01-14,High blood sugar
+793,TR4482,2024-08-11,Hospitalization
+793,TR7810,2024-10-29,Hospitalization
+793,TR1760,2024-09-05,High blood sugar
+399,TR5546,2024-06-04,Hospitalization
+399,TR8822,2024-08-16,High blood sugar
+399,TR2818,2024-09-03,High blood sugar
+1148,TR6823,2024-01-18,High blood sugar
+1148,TR8668,2024-08-18,High blood sugar
+1947,TR6983,2024-03-10,ER visit
+336,TR2401,2024-01-10,Hospitalization
+336,TR7037,2024-07-03,ER visit
+336,TR5195,2024-05-24,ER visit
+1790,TR1586,2024-05-24,ER visit
+1790,TR9818,2024-11-23,ER visit
+1790,TR8508,2024-06-13,High blood sugar
+619,TR7065,2024-03-08,High blood sugar
+619,TR4546,2024-07-18,High blood sugar
+407,TR5376,2024-05-12,High blood sugar
+407,TR5408,2024-10-08,ER visit
+1927,TR6518,2024-06-21,High blood sugar
+1927,TR8756,2024-12-29,ER visit
+1909,TR7717,2024-12-10,High blood sugar
+1909,TR4965,2024-04-17,Hospitalization
+1778,TR5448,2024-12-19,Hospitalization
+1778,TR1052,2024-04-04,Hospitalization
+1894,TR1432,2024-06-19,Hospitalization
+1894,TR6594,2024-10-16,High blood sugar
+1894,TR1161,2024-04-20,Hospitalization
+364,TR3630,2024-08-18,Hospitalization
+364,TR8702,2024-08-28,ER visit
+364,TR9650,2024-03-07,Hospitalization
+498,TR3341,2024-12-27,High blood sugar
+498,TR7374,2024-08-31,ER visit
+498,TR6357,2024-10-19,High blood sugar
+1350,TR9158,2024-09-16,ER visit
+1350,TR5467,2024-01-31,High blood sugar
+1350,TR7985,2024-03-21,Hospitalization
+343,TR4846,2024-01-12,ER visit
+343,TR7941,2024-07-28,Hospitalization
+944,TR1509,2024-10-03,High blood sugar
+944,TR4070,2024-11-21,High blood sugar
+944,TR8129,2024-08-25,ER visit
+43,TR5328,2024-06-05,High blood sugar
+43,TR3825,2024-10-03,High blood sugar
+43,TR5677,2024-11-24,ER visit
+783,TR6904,2024-12-20,Hospitalization
+1324,TR8896,2024-01-29,ER visit
+975,TR2681,2024-07-22,High blood sugar
+975,TR6814,2024-08-09,High blood sugar
+975,TR8834,2024-04-24,ER visit
+1837,TR9609,2024-08-27,ER visit
+1837,TR3286,2024-05-11,Hospitalization
+304,TR2739,2024-09-08,High blood sugar
+304,TR5717,2024-08-03,High blood sugar
+1157,TR2830,2024-02-03,Hospitalization
+1157,TR4162,2024-07-18,ER visit
+1157,TR8017,2024-12-14,ER visit
+12,TR1355,2024-06-19,Hospitalization
+12,TR8712,2024-12-17,ER visit
+12,TR6621,2024-03-29,Hospitalization
+665,TR6640,2024-03-31,ER visit
+665,TR2623,2024-01-19,ER visit
+665,TR2211,2024-07-17,ER visit
+1178,TR8805,2024-08-06,Hospitalization
+1178,TR2015,2024-09-28,Hospitalization
+1245,TR9349,2024-11-15,Hospitalization
+1245,TR4410,2024-03-13,High blood sugar
+629,TR1754,2024-09-01,High blood sugar
+454,TR2037,2024-09-25,Hospitalization
+1474,TR6044,2024-04-20,High blood sugar
+816,TR1301,2024-10-23,High blood sugar
+816,TR4416,2024-03-13,ER visit
+816,TR5909,2024-09-02,ER visit
+328,TR8081,2024-04-01,ER visit
+85,TR5566,2024-03-30,High blood sugar
+85,TR5610,2024-11-15,High blood sugar
+85,TR1061,2024-02-20,Hospitalization
+1027,TR7215,2024-12-22,High blood sugar
+942,TR6774,2024-10-22,High blood sugar
+942,TR2930,2024-11-08,Hospitalization
+942,TR3859,2024-03-01,Hospitalization
+962,TR7889,2024-06-02,Hospitalization
+962,TR1645,2024-05-14,ER visit
+962,TR2116,2024-05-06,Hospitalization
+842,TR3550,2024-10-04,ER visit
+974,TR2547,2024-08-24,High blood sugar
+974,TR8121,2024-05-14,High blood sugar
+974,TR6716,2024-07-01,ER visit
+1646,TR3377,2024-02-12,ER visit
+968,TR4776,2024-04-06,ER visit
+1924,TR7020,2024-01-31,High blood sugar
+1924,TR7304,2024-11-04,High blood sugar
+1924,TR8089,2024-08-09,Hospitalization
+1291,TR5158,2024-10-23,Hospitalization
+1291,TR4552,2024-03-19,High blood sugar
+1291,TR5752,2024-10-20,Hospitalization
+102,TR4404,2024-10-12,Hospitalization
+291,TR6853,2024-09-03,ER visit
+291,TR5702,2024-12-12,High blood sugar
+291,TR9681,2024-03-22,ER visit
+1851,TR7306,2024-06-02,High blood sugar
+1851,TR8766,2024-05-04,High blood sugar
+1851,TR4953,2024-09-02,ER visit
+736,TR6316,2024-11-17,High blood sugar
+736,TR4991,2024-01-28,ER visit
+1905,TR8349,2024-04-01,ER visit
+1441,TR2299,2024-03-10,High blood sugar
+1441,TR4348,2024-08-20,High blood sugar
+1497,TR3594,2024-07-24,ER visit
+605,TR6406,2024-01-24,Hospitalization
+605,TR4241,2024-06-29,Hospitalization
+828,TR8266,2024-08-05,High blood sugar
+917,TR3386,2024-11-06,High blood sugar
+917,TR6000,2024-05-22,Hospitalization
+917,TR9372,2024-12-11,High blood sugar
+143,TR8632,2024-12-19,High blood sugar
+711,TR8559,2024-07-21,Hospitalization
+1100,TR4941,2024-09-06,High blood sugar
+1100,TR9626,2024-09-18,Hospitalization
+1100,TR5397,2024-10-18,Hospitalization
+1089,TR3809,2024-02-10,Hospitalization
+1089,TR8146,2024-09-26,High blood sugar
+1089,TR3715,2024-08-14,ER visit
+1679,TR8866,2024-09-06,ER visit
+1679,TR9156,2024-05-11,ER visit
+1679,TR7284,2024-10-02,High blood sugar
+725,TR1852,2024-02-12,High blood sugar
+725,TR1295,2024-05-30,High blood sugar
+725,TR7216,2024-08-14,High blood sugar
+1625,TR7179,2024-03-25,ER visit
+1625,TR7240,2024-11-13,Hospitalization
+1625,TR3992,2024-06-09,High blood sugar
+455,TR2643,2024-05-24,High blood sugar
+455,TR8963,2024-06-11,High blood sugar
+455,TR2217,2024-04-22,Hospitalization
+822,TR1822,2024-09-20,ER visit
+822,TR1299,2024-03-13,High blood sugar
+822,TR1330,2024-05-26,ER visit
+1368,TR1130,2024-02-09,High blood sugar
+1368,TR2675,2024-08-23,ER visit
+1665,TR3206,2024-02-05,High blood sugar
+1665,TR5584,2024-10-31,ER visit
+1665,TR5071,2024-05-07,High blood sugar
+1355,TR3949,2024-01-29,High blood sugar
+1355,TR6970,2024-08-04,ER visit
+1389,TR2633,2024-09-27,ER visit
+1389,TR7482,2024-05-29,Hospitalization
+851,TR6207,2024-07-02,Hospitalization
+1303,TR4432,2024-02-10,Hospitalization
+1001,TR2033,2024-04-17,Hospitalization
+1001,TR2301,2024-12-04,ER visit
+397,TR6296,2024-02-28,Hospitalization
+1989,TR7051,2024-06-03,High blood sugar
+1989,TR8256,2024-07-21,ER visit
+1989,TR2501,2024-04-25,High blood sugar
+1506,TR1942,2024-09-01,Hospitalization
+1478,TR2074,2024-01-24,Hospitalization
+1478,TR8555,2024-12-06,Hospitalization
+1478,TR4122,2024-05-20,ER visit
+19,TR6889,2024-08-18,High blood sugar
+1638,TR9186,2024-01-15,High blood sugar
+1638,TR1111,2024-04-29,ER visit
+1668,TR8295,2024-02-23,Hospitalization
+494,TR4491,2024-08-20,Hospitalization
+1126,TR8881,2024-10-31,ER visit
+1405,TR1725,2024-12-03,High blood sugar
+1405,TR1093,2024-02-12,High blood sugar
+1405,TR5741,2024-02-20,High blood sugar
+1634,TR7778,2024-03-28,High blood sugar
+1634,TR2257,2024-03-21,Hospitalization
+1634,TR3589,2024-10-09,Hospitalization
+1348,TR5277,2024-12-12,ER visit
+971,TR7814,2024-01-01,ER visit
+489,TR9588,2024-04-16,ER visit
+1183,TR5422,2024-06-20,Hospitalization
+1183,TR7985,2024-12-20,Hospitalization
+589,TR3802,2024-01-28,Hospitalization
+589,TR6129,2024-11-28,ER visit
+585,TR5088,2024-05-18,Hospitalization
+781,TR1678,2024-10-04,High blood sugar
+781,TR8716,2024-05-21,Hospitalization
+688,TR1506,2024-02-02,High blood sugar
+1113,TR6553,2024-06-04,High blood sugar
+1705,TR6174,2024-02-12,High blood sugar
+1825,TR2147,2024-05-04,Hospitalization
+1825,TR2843,2024-12-28,ER visit
+1825,TR6373,2024-10-19,High blood sugar
+1609,TR7659,2024-11-17,High blood sugar
+1609,TR3475,2024-01-30,Hospitalization
+1609,TR7655,2024-09-03,Hospitalization
+575,TR5489,2024-04-07,High blood sugar
+575,TR8941,2024-09-10,ER visit
+575,TR8160,2024-11-06,Hospitalization
+704,TR6363,2024-01-26,High blood sugar
+704,TR9231,2024-05-11,ER visit
+1010,TR3452,2024-07-11,Hospitalization
+1010,TR8736,2024-06-11,ER visit
+1244,TR5478,2024-01-05,High blood sugar
+1244,TR3940,2024-03-27,ER visit
+1626,TR5275,2024-07-24,High blood sugar
+1626,TR7337,2024-01-30,Hospitalization
+361,TR9195,2024-05-14,High blood sugar
+361,TR2796,2024-07-31,High blood sugar
+361,TR6529,2024-09-08,Hospitalization
+1093,TR9490,2024-02-24,High blood sugar
+1093,TR9169,2024-03-22,ER visit
+1328,TR2897,2024-02-25,Hospitalization
+1328,TR2591,2024-06-02,ER visit
+1077,TR7047,2024-01-29,Hospitalization
+1077,TR1345,2024-10-11,High blood sugar
+1678,TR9179,2024-10-17,ER visit
+1311,TR6801,2024-06-18,Hospitalization
+1311,TR1688,2024-09-07,ER visit
+1311,TR3791,2024-10-12,Hospitalization
+1171,TR9985,2024-09-08,Hospitalization
+1171,TR6342,2024-07-14,ER visit
+1833,TR5437,2024-05-14,ER visit
+801,TR2497,2024-05-28,ER visit
+801,TR5571,2024-06-02,ER visit
+801,TR5269,2024-03-11,Hospitalization
+814,TR9088,2024-07-26,ER visit
+345,TR9684,2024-01-10,ER visit
+345,TR1992,2024-10-02,ER visit
+345,TR6677,2024-12-24,ER visit
+987,TR6380,2024-02-03,ER visit
+588,TR8180,2024-04-26,ER visit
+744,TR7800,2024-09-19,High blood sugar
+744,TR7729,2024-03-31,High blood sugar
+744,TR5129,2024-09-18,Hospitalization
+303,TR1704,2024-08-15,ER visit
+303,TR3342,2024-05-30,ER visit
+303,TR2028,2024-05-10,Hospitalization
+1672,TR9272,2024-10-15,ER visit
+1672,TR5830,2024-02-29,ER visit
+1562,TR8295,2024-01-03,ER visit
+1895,TR9830,2024-12-03,High blood sugar
+1895,TR8194,2024-02-10,ER visit
+114,TR1722,2024-01-06,High blood sugar
+114,TR9763,2024-08-07,ER visit
+114,TR5336,2024-02-09,ER visit
+1438,TR6897,2024-08-06,Hospitalization
+1806,TR3525,2024-08-29,Hospitalization
+1806,TR4696,2024-12-09,ER visit
+1806,TR8659,2024-11-01,ER visit
+1242,TR2716,2024-07-29,ER visit
+1242,TR1776,2024-12-15,High blood sugar
+1143,TR2990,2024-05-08,ER visit
+1143,TR2368,2024-08-23,Hospitalization
+311,TR1479,2024-01-20,High blood sugar
+311,TR8084,2024-09-10,ER visit
+1217,TR8490,2024-02-11,High blood sugar
+1199,TR9796,2024-02-26,High blood sugar
+1199,TR1089,2024-01-04,High blood sugar
+86,TR5102,2024-08-30,High blood sugar
+86,TR9305,2024-04-01,ER visit
+1519,TR6940,2024-07-07,Hospitalization
+1519,TR8156,2024-08-21,High blood sugar
+517,TR8010,2024-09-28,Hospitalization
+1382,TR1749,2024-09-03,High blood sugar
+1382,TR8010,2024-08-09,Hospitalization
+1984,TR2512,2024-03-08,High blood sugar
+1984,TR3610,2024-11-05,High blood sugar
+669,TR4810,2024-10-10,ER visit
+1015,TR2922,2024-10-27,ER visit
+1015,TR4363,2024-05-12,High blood sugar
+129,TR3474,2024-11-21,Hospitalization
+1365,TR3595,2024-07-04,ER visit
+1032,TR6956,2024-03-31,ER visit
+1032,TR8950,2024-11-14,ER visit
+1912,TR4215,2024-04-23,ER visit
+1912,TR8599,2024-08-04,High blood sugar
+1912,TR1891,2024-05-23,Hospitalization
+892,TR2675,2024-12-13,ER visit
+892,TR1736,2024-03-28,ER visit
+892,TR5384,2024-06-25,Hospitalization
+746,TR8623,2024-12-18,ER visit
+746,TR7407,2024-11-17,Hospitalization
+1360,TR9839,2024-09-30,High blood sugar
+1360,TR2484,2024-01-15,ER visit
+1360,TR3706,2024-03-31,Hospitalization
+308,TR3114,2024-07-26,ER visit
+308,TR9718,2024-02-01,High blood sugar
+1662,TR2573,2024-07-31,Hospitalization
+384,TR9842,2024-01-08,Hospitalization
+384,TR3436,2024-01-20,Hospitalization
+384,TR9042,2024-07-02,ER visit
+151,TR2144,2024-01-20,Hospitalization
+151,TR3759,2024-07-25,Hospitalization
+151,TR7524,2024-01-25,Hospitalization
+1318,TR8498,2024-05-03,High blood sugar
+1318,TR4710,2024-02-01,Hospitalization
+1318,TR6522,2024-07-09,Hospitalization
+1452,TR2730,2024-06-29,Hospitalization
+1452,TR3019,2024-06-11,High blood sugar
+1452,TR8178,2024-07-19,Hospitalization
+1882,TR8136,2024-02-09,ER visit
+1882,TR7772,2024-12-27,Hospitalization
+1202,TR7649,2024-10-20,ER visit
+427,TR7497,2024-10-04,High blood sugar
+427,TR7320,2024-04-08,High blood sugar
+495,TR6894,2024-03-08,Hospitalization
+1208,TR9412,2024-07-11,Hospitalization
+1247,TR3364,2024-04-06,High blood sugar
+1247,TR3427,2024-02-01,High blood sugar
+1063,TR5520,2024-06-16,High blood sugar
+1209,TR1321,2024-01-24,ER visit
+1209,TR5394,2024-07-17,ER visit
+1330,TR8195,2024-11-09,Hospitalization
+217,TR4347,2024-08-25,ER visit
+217,TR9159,2024-11-28,High blood sugar
+217,TR9778,2024-02-19,Hospitalization
+126,TR5710,2024-11-21,ER visit
+1843,TR1833,2024-01-29,Hospitalization
+1240,TR8160,2024-01-03,ER visit
+1240,TR6285,2024-07-18,Hospitalization
+1240,TR5798,2024-10-03,High blood sugar
+242,TR4946,2024-05-27,High blood sugar
+242,TR4791,2024-12-30,High blood sugar
+242,TR1095,2024-01-14,ER visit
+693,TR2015,2024-08-08,Hospitalization
+693,TR6131,2024-04-25,Hospitalization
+276,TR7784,2024-12-31,Hospitalization
+276,TR9743,2024-01-01,ER visit
+276,TR9134,2024-11-07,High blood sugar
+490,TR5520,2024-07-15,High blood sugar
+1036,TR5013,2024-12-15,Hospitalization
+1036,TR7110,2024-08-28,Hospitalization
+1036,TR1087,2024-11-15,ER visit
+1230,TR8659,2024-05-24,Hospitalization
+1230,TR1834,2024-11-08,Hospitalization
+691,TR4974,2024-06-10,ER visit
+691,TR5305,2024-01-30,Hospitalization
+691,TR1241,2024-08-28,High blood sugar
+1009,TR9679,2024-09-07,ER visit
+1185,TR3618,2024-01-13,High blood sugar
+1185,TR7970,2024-08-21,Hospitalization
+1185,TR7034,2024-05-14,Hospitalization
+1910,TR1071,2024-04-06,ER visit
+1981,TR6253,2024-01-25,ER visit
+1981,TR1818,2024-11-18,ER visit
+1981,TR9936,2024-03-01,ER visit
+1781,TR6380,2024-09-08,Hospitalization
+1781,TR8900,2024-06-01,Hospitalization
+485,TR9322,2024-10-04,High blood sugar
+198,TR5632,2024-10-04,High blood sugar
+1059,TR6037,2024-09-05,ER visit
+119,TR3620,2024-07-14,Hospitalization
+1025,TR9214,2024-03-25,ER visit
+1025,TR1043,2024-06-15,ER visit
+1025,TR3683,2024-08-15,ER visit
+797,TR4665,2024-06-10,ER visit
+797,TR1215,2024-04-04,ER visit
+282,TR3294,2024-12-21,Hospitalization
+282,TR6910,2024-10-01,High blood sugar
+1044,TR7058,2024-06-12,ER visit
+1317,TR4088,2024-02-29,Hospitalization
+511,TR5143,2024-03-21,ER visit
+511,TR2320,2024-08-27,Hospitalization
+969,TR9358,2024-08-12,High blood sugar
+1666,TR6661,2024-12-10,High blood sugar
+1666,TR6921,2024-01-07,Hospitalization
+1914,TR2972,2024-04-16,ER visit
+1965,TR5378,2024-11-21,High blood sugar
+1965,TR9403,2024-02-14,ER visit
+1965,TR6879,2024-01-13,ER visit
+1275,TR5743,2024-02-17,Hospitalization
+1275,TR3083,2024-02-22,ER visit
+1275,TR1053,2024-01-12,Hospitalization
+620,TR1683,2024-05-12,Hospitalization
+620,TR7122,2024-05-20,Hospitalization
+1743,TR8009,2024-06-18,High blood sugar
+1391,TR4487,2024-11-05,ER visit
+1391,TR3523,2024-04-20,Hospitalization
+1391,TR7671,2024-08-30,Hospitalization
+156,TR3382,2024-11-15,ER visit
+156,TR5345,2024-07-14,High blood sugar
+156,TR4704,2024-08-17,Hospitalization
+1848,TR4327,2024-08-26,Hospitalization
+1848,TR3471,2024-01-22,Hospitalization
+1848,TR7056,2024-12-11,Hospitalization
+1580,TR1793,2024-04-14,ER visit
+1656,TR7012,2024-01-27,Hospitalization
+1656,TR4255,2024-07-30,High blood sugar
+1521,TR8191,2024-01-24,ER visit
+1521,TR3436,2024-02-11,High blood sugar
+305,TR4335,2024-03-04,ER visit
+305,TR4361,2024-09-01,ER visit
+165,TR2418,2024-06-01,ER visit
+165,TR6127,2024-03-11,High blood sugar
+165,TR2138,2024-10-01,High blood sugar
+1228,TR8049,2024-04-23,Hospitalization
+1228,TR5704,2024-07-18,High blood sugar
+1228,TR8056,2024-04-07,Hospitalization
+687,TR8004,2024-04-16,ER visit
+687,TR4194,2024-06-28,Hospitalization
+1131,TR6017,2024-12-02,High blood sugar
+1145,TR5586,2024-06-10,ER visit
+1145,TR7892,2024-07-09,ER visit
+1145,TR2922,2024-10-09,Hospitalization
+1308,TR9897,2024-01-17,Hospitalization
+1308,TR6236,2024-10-25,High blood sugar
+886,TR7250,2024-05-30,ER visit
+576,TR2766,2024-04-29,Hospitalization
+576,TR8335,2024-09-30,ER visit
+576,TR8846,2024-11-12,High blood sugar
+313,TR4929,2024-04-26,ER visit
+313,TR1759,2024-12-10,Hospitalization
+513,TR1128,2024-04-11,High blood sugar
+972,TR4443,2024-03-20,High blood sugar
+972,TR4637,2024-05-03,ER visit
+1707,TR9604,2024-09-22,Hospitalization
+1707,TR4920,2024-11-19,ER visit
+1707,TR7333,2024-02-23,ER visit
+1800,TR6314,2024-03-15,ER visit
+1300,TR3515,2024-11-08,Hospitalization
+133,TR5235,2024-01-09,ER visit
+133,TR1397,2024-01-03,ER visit
+1281,TR9950,2024-05-05,High blood sugar
+1281,TR7218,2024-08-10,High blood sugar
+1385,TR5967,2024-09-20,High blood sugar
+1385,TR1657,2024-08-27,Hospitalization
+1968,TR3503,2024-11-29,ER visit
+1968,TR1701,2024-07-18,ER visit
+844,TR8603,2024-03-23,High blood sugar
+844,TR8809,2024-06-10,ER visit
+844,TR7856,2024-09-16,Hospitalization
+1802,TR7771,2024-04-13,ER visit
+1802,TR1474,2024-09-14,High blood sugar
+1629,TR8954,2024-04-15,Hospitalization
+1629,TR9682,2024-04-09,ER visit
+592,TR9615,2024-10-11,ER visit
+270,TR4111,2024-04-13,ER visit
+630,TR8543,2024-10-15,Hospitalization
+1731,TR9880,2024-02-17,ER visit
+1034,TR8604,2024-05-30,High blood sugar
+1419,TR8646,2024-01-26,High blood sugar
+1419,TR2626,2024-07-04,High blood sugar
+287,TR7490,2024-12-20,High blood sugar
+287,TR2709,2024-03-11,Hospitalization
+287,TR9306,2024-01-02,High blood sugar
+1327,TR7783,2024-11-16,High blood sugar
+1327,TR7615,2024-04-06,High blood sugar
+1327,TR9640,2024-08-23,Hospitalization
+919,TR9281,2024-03-30,Hospitalization
+919,TR2114,2024-11-28,ER visit
+919,TR9920,2024-08-04,High blood sugar
+301,TR1184,2024-07-17,ER visit
+301,TR7199,2024-01-08,Hospitalization
+301,TR9260,2024-07-23,ER visit
+1700,TR2037,2024-09-25,Hospitalization
+1700,TR8968,2024-03-22,ER visit
+1700,TR1769,2024-10-28,High blood sugar
+460,TR7053,2024-03-24,Hospitalization
+460,TR9917,2024-03-28,Hospitalization
+1448,TR7183,2024-05-16,Hospitalization
+1448,TR9250,2024-06-14,High blood sugar
+1448,TR7918,2024-01-12,High blood sugar
+1473,TR8366,2024-02-08,Hospitalization
+1473,TR3198,2024-11-01,Hospitalization
+1473,TR5677,2024-03-21,High blood sugar
+261,TR8476,2024-12-06,High blood sugar
+1253,TR1137,2024-08-14,High blood sugar
+1253,TR3020,2024-04-21,High blood sugar
+1253,TR2020,2024-01-22,High blood sugar
+1187,TR5331,2024-04-18,High blood sugar
+1187,TR1071,2024-10-13,ER visit
+1187,TR9946,2024-11-12,High blood sugar
+66,TR5217,2024-05-12,High blood sugar
+66,TR8471,2024-09-28,Hospitalization
+28,TR1729,2024-10-20,Hospitalization
+28,TR9748,2024-05-19,ER visit
+28,TR4152,2024-05-06,High blood sugar
+1881,TR6215,2024-08-01,Hospitalization
+1881,TR7179,2024-10-03,Hospitalization
+891,TR3219,2024-08-22,ER visit
+891,TR1981,2024-07-17,High blood sugar
+891,TR2637,2024-04-03,Hospitalization
+1169,TR9263,2024-02-05,High blood sugar
+838,TR7919,2024-01-16,ER visit
+838,TR7922,2024-12-26,ER visit
+838,TR5876,2024-07-31,High blood sugar
+1767,TR8807,2024-06-12,ER visit
+130,TR5975,2024-12-16,Hospitalization
+130,TR1398,2024-04-23,ER visit
+130,TR9170,2024-09-28,ER visit
+1108,TR1141,2024-10-11,High blood sugar
+1108,TR4467,2024-12-25,Hospitalization
+1108,TR9585,2024-08-15,High blood sugar
+231,TR6479,2024-11-24,High blood sugar
+504,TR8189,2024-05-03,High blood sugar
+504,TR3076,2024-02-24,ER visit
+504,TR9616,2024-08-02,ER visit
+14,TR1378,2024-09-11,High blood sugar
+14,TR2315,2024-05-27,ER visit
+14,TR6243,2024-06-19,ER visit
+1647,TR2612,2024-10-03,High blood sugar
+1647,TR8202,2024-04-30,Hospitalization
+381,TR2275,2024-12-31,Hospitalization
+1852,TR2956,2024-03-26,ER visit
+1852,TR6541,2024-09-01,Hospitalization
+1526,TR5425,2024-03-11,Hospitalization
+1526,TR5514,2024-09-03,ER visit
+318,TR5034,2024-05-09,Hospitalization
+318,TR2822,2024-04-10,ER visit
+318,TR9923,2024-09-11,High blood sugar
+553,TR4703,2024-08-18,Hospitalization
+1005,TR6764,2024-01-20,High blood sugar
+1005,TR8824,2024-11-28,High blood sugar
+1005,TR8122,2024-07-28,ER visit
+837,TR9648,2024-01-17,Hospitalization
+293,TR8217,2024-01-08,Hospitalization
+293,TR5493,2024-09-23,Hospitalization
+375,TR5146,2024-07-24,Hospitalization
+375,TR2883,2024-01-07,ER visit
+375,TR8245,2024-06-19,High blood sugar
+2,TR7656,2024-05-30,Hospitalization
+2,TR3275,2024-07-16,Hospitalization
+334,TR8959,2024-11-03,ER visit
+526,TR6187,2024-12-05,Hospitalization
+526,TR6618,2024-08-06,Hospitalization
+526,TR3051,2024-11-19,High blood sugar
+940,TR5926,2024-06-24,Hospitalization
+940,TR5310,2024-03-17,Hospitalization
+1322,TR7912,2024-10-14,High blood sugar
+1322,TR8445,2024-07-24,Hospitalization
+1623,TR3927,2024-11-08,High blood sugar
+478,TR1898,2024-11-06,ER visit
+478,TR3654,2024-08-25,High blood sugar
+478,TR7881,2024-03-10,High blood sugar
+752,TR5445,2024-11-11,Hospitalization
+752,TR8101,2024-01-23,Hospitalization
+100,TR2620,2024-01-13,Hospitalization
+100,TR5256,2024-06-09,Hospitalization
+100,TR4730,2024-02-23,High blood sugar
+1544,TR8180,2024-03-24,ER visit
+1544,TR7670,2024-04-29,Hospitalization
+1544,TR9807,2024-12-09,High blood sugar
+794,TR4876,2024-04-21,ER visit
+794,TR3211,2024-11-11,ER visit
+794,TR9788,2024-04-13,ER visit
+867,TR9597,2024-11-06,High blood sugar
+867,TR3258,2024-07-18,Hospitalization
+867,TR6867,2024-03-20,High blood sugar
+1761,TR7933,2024-05-09,Hospitalization
+1761,TR9208,2024-11-28,ER visit
+1761,TR4059,2024-08-03,ER visit
+911,TR8057,2024-07-30,High blood sugar
+911,TR1989,2024-02-14,ER visit
+911,TR6904,2024-04-26,High blood sugar
+21,TR9146,2024-07-09,Hospitalization
+21,TR1848,2024-05-17,ER visit
+1576,TR4289,2024-06-08,Hospitalization
+1576,TR2297,2024-09-08,ER visit
+1576,TR6003,2024-12-27,Hospitalization
+530,TR7724,2024-03-23,ER visit
+530,TR8881,2024-03-15,Hospitalization
+530,TR6990,2024-04-28,ER visit
+1261,TR7533,2024-11-27,High blood sugar
+1980,TR2264,2024-01-27,Hospitalization
+1292,TR7759,2024-08-07,Hospitalization
+637,TR1595,2024-07-18,High blood sugar
+637,TR8109,2024-10-26,High blood sugar
+1270,TR1594,2024-05-25,High blood sugar
+186,TR1104,2024-02-12,ER visit
+186,TR2742,2024-01-25,High blood sugar
+186,TR7426,2024-08-08,ER visit
+1395,TR6293,2024-12-06,ER visit
+1395,TR6567,2024-06-07,High blood sugar
+1977,TR1634,2024-05-07,High blood sugar
+1977,TR2574,2024-01-28,ER visit
+295,TR5403,2024-09-22,Hospitalization
+295,TR3134,2024-07-23,Hospitalization
+1798,TR5884,2024-09-08,High blood sugar
+1798,TR3560,2024-11-29,Hospitalization
+1798,TR6157,2024-01-03,ER visit
+932,TR3138,2024-12-31,Hospitalization
+1442,TR9297,2024-12-06,ER visit
+1442,TR4235,2024-08-22,High blood sugar
+335,TR4248,2024-09-12,High blood sugar
+578,TR7744,2024-02-25,Hospitalization
+1764,TR7551,2024-07-10,High blood sugar
+1764,TR2736,2024-10-18,High blood sugar
+1536,TR1968,2024-08-17,ER visit
+866,TR7619,2024-09-29,ER visit
+866,TR2932,2024-02-03,ER visit
+866,TR2527,2024-09-10,ER visit
+1141,TR5142,2024-12-08,High blood sugar
+1274,TR3405,2024-11-23,ER visit
+420,TR1367,2024-01-18,ER visit
+420,TR5419,2024-07-27,ER visit
+1641,TR8510,2024-03-16,Hospitalization
+608,TR5017,2024-05-11,ER visit
+608,TR6023,2024-06-07,High blood sugar
+947,TR6544,2024-07-30,High blood sugar
+947,TR8062,2024-03-12,ER visit
+947,TR6834,2024-12-10,Hospitalization
+1713,TR4153,2024-06-12,Hospitalization
+1586,TR9033,2024-09-12,Hospitalization
+1586,TR5315,2024-12-10,Hospitalization
+152,TR7737,2024-02-11,ER visit
+956,TR9328,2024-03-21,ER visit
+532,TR6773,2024-12-24,High blood sugar
+532,TR9806,2024-04-08,High blood sugar
+1406,TR6625,2024-09-12,Hospitalization
+1406,TR9086,2024-07-02,Hospitalization
+1406,TR4068,2024-06-11,High blood sugar
+1388,TR2142,2024-05-13,High blood sugar
+732,TR6294,2024-06-25,Hospitalization
+732,TR9673,2024-03-24,High blood sugar
+732,TR4742,2024-03-25,Hospitalization
+516,TR7543,2024-02-20,ER visit
+805,TR1335,2024-04-28,Hospitalization
+805,TR5032,2024-12-03,ER visit
+404,TR9110,2024-03-09,ER visit
+404,TR5575,2024-08-22,ER visit
+404,TR5706,2024-05-30,High blood sugar
+24,TR3383,2024-04-26,High blood sugar
+957,TR6064,2024-12-25,Hospitalization
+957,TR8480,2024-06-25,ER visit
+957,TR8021,2024-09-25,Hospitalization
+159,TR5626,2024-12-20,ER visit
+159,TR1881,2024-12-28,ER visit
+1749,TR8445,2024-08-29,Hospitalization
+1749,TR5289,2024-03-07,Hospitalization
+862,TR7444,2024-11-21,Hospitalization
+862,TR8877,2024-05-20,Hospitalization
+862,TR9354,2024-03-17,High blood sugar
+1841,TR5846,2024-12-04,ER visit
+1356,TR1166,2024-10-15,ER visit
+903,TR2220,2024-08-18,High blood sugar
+903,TR1527,2024-01-12,ER visit
+353,TR8246,2024-10-20,High blood sugar
+353,TR5777,2024-10-13,ER visit
+353,TR3846,2024-05-29,High blood sugar
+1231,TR3704,2024-09-17,High blood sugar
+1231,TR5057,2024-10-23,ER visit
+1231,TR7213,2024-02-03,ER visit
+93,TR3148,2024-05-12,ER visit
+93,TR3108,2024-03-03,Hospitalization
+93,TR3074,2024-09-14,ER visit
+445,TR9289,2024-07-01,ER visit
+445,TR8697,2024-06-27,ER visit
+35,TR5656,2024-04-02,Hospitalization
+755,TR2170,2024-10-30,ER visit
+755,TR6609,2024-01-01,High blood sugar
+755,TR6959,2024-11-25,High blood sugar
+1738,TR2451,2024-10-15,Hospitalization
+1738,TR9663,2024-07-04,Hospitalization
+924,TR4745,2024-05-13,Hospitalization
+924,TR6746,2024-05-15,Hospitalization
+924,TR6738,2024-07-12,Hospitalization
+1667,TR3414,2024-11-29,ER visit
+1083,TR4351,2024-05-26,High blood sugar
+873,TR1915,2024-05-20,High blood sugar
+873,TR1439,2024-08-27,ER visit
+312,TR7789,2024-01-11,Hospitalization
+312,TR4546,2024-11-29,ER visit
+312,TR4921,2024-02-06,Hospitalization
+1376,TR5791,2024-06-17,High blood sugar
+1376,TR6286,2024-05-02,High blood sugar
+1376,TR9845,2024-08-18,Hospitalization
+549,TR5415,2024-12-01,ER visit
+549,TR1336,2024-06-15,Hospitalization
+549,TR4428,2024-08-29,Hospitalization
+662,TR3556,2024-03-04,High blood sugar
+662,TR3679,2024-09-24,Hospitalization
+662,TR2650,2024-02-07,ER visit
+1747,TR7446,2024-04-03,Hospitalization
+914,TR3493,2024-11-22,High blood sugar
+914,TR9370,2024-02-18,ER visit
+1618,TR5194,2024-06-12,ER visit
+1836,TR9277,2024-09-10,High blood sugar
+1836,TR4562,2024-10-25,High blood sugar
+307,TR8466,2024-11-21,Hospitalization
+307,TR8988,2024-01-27,High blood sugar
+288,TR1463,2024-07-08,High blood sugar
+695,TR7078,2024-01-13,High blood sugar
+695,TR1327,2024-11-26,High blood sugar
+309,TR3132,2024-07-24,ER visit
+309,TR4560,2024-07-16,ER visit
+309,TR8270,2024-04-04,ER visit
+1655,TR5183,2024-04-01,High blood sugar
+1655,TR4312,2024-12-31,Hospitalization
+1757,TR6483,2024-08-06,Hospitalization
+1928,TR1054,2024-03-19,Hospitalization
+1928,TR9606,2024-09-10,Hospitalization
+685,TR9045,2024-05-10,ER visit
+1380,TR9411,2024-09-03,Hospitalization
+750,TR4958,2024-11-24,ER visit
+750,TR9472,2024-08-13,Hospitalization
+750,TR9104,2024-09-12,Hospitalization

@@ -21,89 +21,13 @@ permissions:
   actions: write
 
 jobs:  
-  deploy-s3-lambda:
-    runs-on: ubuntu-latest
-    environment: ${{ github.event.inputs.environment }}
-
-    env:
-      AWS_REGION: ${{ secrets.AWS_REGION }}
-      S3_LAMBDA_STACK_NAME: risk-assessment-s3-lambda-${{ github.event.inputs.environment }}
-
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v2
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ env.AWS_REGION }}
-
-
-      - name: Deploy CloudFormation Stack for s3, lambda, cognito pool 
-        run: |
-          aws cloudformation deploy \
-            --stack-name ${{ env.S3_LAMBDA_STACK_NAME }} \
-            --template-file cloudformation/risk-assessment-s3upload-lambda.yml \
-            --capabilities CAPABILITY_NAMED_IAM \
-            --parameter-overrides \
-              EnvironmentName=${{ github.event.inputs.environment }}
-
-  host-website-to-s3:
-    runs-on: ubuntu-latest
-    needs: deploy-s3-lambda
-    env:
-      AWS_REGION: ${{ secrets.AWS_REGION }}
-      S3_LAMBDA_STACK_NAME: risk-assessment-s3-lambda-${{ github.event.inputs.environment }}
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Set up AWS CLI
-      uses: aws-actions/configure-aws-credentials@v1
-      with:
-        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: ${{ env.AWS_REGION }}  # Replace with your AWS region
-    
-    - name: Retrieve Bucket Name from CloudFormation Stack Outputs
-      run: |
-        BUCKET_NAME=$(aws cloudformation describe-stacks \
-          --stack-name ${{ env.S3_LAMBDA_STACK_NAME}} \
-          --query "Stacks[0].Outputs[?OutputKey=='S3BucketName'].OutputValue" \
-          --output text)
-        echo "S3_BUCKET_NAME=$BUCKET_NAME" >> $GITHUB_ENV
-
-    - name: Replace Cognito Identity Pool ID and S3 Bucket Name in HTML
-      run: |
-        # Replace the placeholders in the HTML file with environment variable values
-        sed -i 's/COGNITO_IDENTITY_POOL_ID/${{ secrets.COGNITO_IDENTITY_POOL_ID }}/g' static_website/index.html
-        sed -i 's/s3-bucket-name/${{ env.S3_BUCKET_NAME }}/g' static_website/index.html
-    
-    - name: Upload HTML file to S3 for static website hosting
-      run: |
-        # Upload the modified HTML file to the S3 bucket
-        aws s3 cp static_website/index.html s3://${{ env.S3_BUCKET_NAME }}/index.html
-    
-    - name: Upload HTML file to S3 for static website hosting
-      run: |
-        # Upload the modified HTML file to the S3 bucket
-        aws s3 cp static_website/error.html s3://${{ env.S3_BUCKET_NAME }}/error.html
-
-    - name: Set up Static Website Hosting
-      run: |
-        # Configure S3 static website hosting settings
-        aws s3 website s3://${{ env.S3_BUCKET_NAME }} --index-document index.html --error-document error.html
-  
-  # deploy-ecr:
+  # deploy-s3-lambda:
   #   runs-on: ubuntu-latest
   #   environment: ${{ github.event.inputs.environment }}
 
   #   env:
   #     AWS_REGION: ${{ secrets.AWS_REGION }}
-  #     AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
-  #     ECR_REPO_NAME: risk-assessment-ecr-repository-${{ github.event.inputs.environment }}
-  #     build-number: ${{ github.event.inputs.build-number }}
+  #     S3_LAMBDA_STACK_NAME: risk-assessment-s3-lambda-${{ github.event.inputs.environment }}
 
   #   steps:
   #     - name: Checkout Code
@@ -116,32 +40,120 @@ jobs:
   #         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
   #         aws-region: ${{ env.AWS_REGION }}
 
-  #     - name: Deploy CloudFormation Stack for ECR
+
+  #     - name: Deploy CloudFormation Stack for s3, lambda, cognito pool 
   #       run: |
   #         aws cloudformation deploy \
-  #           --stack-name ${{ env.ECR_REPO_NAME }} \
-  #           --template-file cloudformation/risk-assessment-ecr-repository.yml \
+  #           --stack-name ${{ env.S3_LAMBDA_STACK_NAME }} \
+  #           --template-file cloudformation/risk-assessment-s3upload-lambda.yml \
   #           --capabilities CAPABILITY_NAMED_IAM \
   #           --parameter-overrides \
-  #             RepositoryName=${{ env.ECR_REPO_NAME }}
+  #             EnvironmentName=${{ github.event.inputs.environment }}
 
-  #     - name: Get ECR Repository URI
-  #       id: ecr-uri
-  #       run: |
-  #         ECR_URI=$(aws ecr describe-repositories --repository-names ${{ env.ECR_REPO_NAME }} --query 'repositories[0].repositoryUri' --output text)
-  #         echo "ECR_URI=$ECR_URI" >> $GITHUB_ENV
+  # host-website-to-s3:
+  #   runs-on: ubuntu-latest
+  #   needs: deploy-s3-lambda
+  #   env:
+  #     AWS_REGION: ${{ secrets.AWS_REGION }}
+  #     S3_LAMBDA_STACK_NAME: risk-assessment-s3-lambda-${{ github.event.inputs.environment }}
+  #   steps:
+  #   - name: Checkout code
+  #     uses: actions/checkout@v2
+  #   - name: Set up AWS CLI
+  #     uses: aws-actions/configure-aws-credentials@v1
+  #     with:
+  #       aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  #       aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  #       aws-region: ${{ env.AWS_REGION }}  # Replace with your AWS region
+    
+  #   - name: Retrieve Bucket Name from CloudFormation Stack Outputs
+  #     run: |
+  #       BUCKET_NAME=$(aws cloudformation describe-stacks \
+  #         --stack-name ${{ env.S3_LAMBDA_STACK_NAME}} \
+  #         --query "Stacks[0].Outputs[?OutputKey=='S3BucketName'].OutputValue" \
+  #         --output text)
+  #       echo "S3_BUCKET_NAME=$BUCKET_NAME" >> $GITHUB_ENV
 
-  #     - name: Login to Amazon ECR
-  #       run: aws ecr get-login-password --region ${{ env.AWS_REGION }} | docker login --username AWS --password-stdin $ECR_URI
+  #   - name: Replace Cognito Identity Pool ID and S3 Bucket Name in HTML
+  #     run: |
+  #       # Replace the placeholders in the HTML file with environment variable values
+  #       sed -i 's/COGNITO_IDENTITY_POOL_ID/${{ secrets.COGNITO_IDENTITY_POOL_ID }}/g' static_website/index.html
+  #       sed -i 's/s3-bucket-name/${{ env.S3_BUCKET_NAME }}/g' static_website/index.html
+    
+  #   - name: Upload HTML file to S3 for static website hosting
+  #     run: |
+  #       # Upload the modified HTML file to the S3 bucket
+  #       aws s3 cp static_website/index.html s3://${{ env.S3_BUCKET_NAME }}/index.html
+    
+  #   - name: Upload HTML file to S3 for static website hosting
+  #     run: |
+  #       # Upload the modified HTML file to the S3 bucket
+  #       aws s3 cp static_website/error.html s3://${{ env.S3_BUCKET_NAME }}/error.html
 
-  #     - name: Build and Tag Docker Image
-  #       run: |
-  #         docker build -t ${{ env.ECR_REPO_NAME }}:latest ./container
-  #         docker tag ${{ env.ECR_REPO_NAME }} $ECR_URI:latest
+  #   - name: Set up Static Website Hosting
+  #     run: |
+  #       # Configure S3 static website hosting settings
+  #       aws s3 website s3://${{ env.S3_BUCKET_NAME }} --index-document index.html --error-document error.html
+  
+  deploy-ecr:
+    runs-on: ubuntu-latest
+    environment: ${{ github.event.inputs.environment }}
 
-  #     - name: Push Docker Image to ECR
-  #       run: |
-  #         docker push $ECR_URI:latest
+    env:
+      AWS_REGION: ${{ secrets.AWS_REGION }}
+      AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
+      ECR_REPO_NAME: risk-assessment-ecr-repository-${{ github.event.inputs.environment }}
+      build-number: ${{ github.event.inputs.build-number }}
+      RISK_MODEL_IMAGE_NAME: risk-assessment-model-${{ github.event.inputs.environment }}
+      WEB_APP_IMAGE_NAME: risk-assessment-webapp-${{ github.event.inputs.environment }}
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Deploy CloudFormation Stack for ECR
+        run: |
+          aws cloudformation deploy \
+            --stack-name ${{ env.ECR_REPO_NAME }} \
+            --template-file cloudformation/risk-assessment-ecr-repository.yml \
+            --capabilities CAPABILITY_NAMED_IAM \
+            --parameter-overrides \
+              RepositoryName=${{ env.ECR_REPO_NAME }}
+
+      - name: Get ECR Repository URI
+        id: ecr-uri
+        run: |
+          ECR_URI=$(aws ecr describe-repositories --repository-names ${{ env.ECR_REPO_NAME }} --query 'repositories[0].repositoryUri' --output text)
+          echo "ECR_URI=$ECR_URI" >> $GITHUB_ENV
+
+      - name: Login to Amazon ECR
+        run: aws ecr get-login-password --region ${{ env.AWS_REGION }} | docker login --username AWS --password-stdin $ECR_URI
+
+      - name: Build and Tag Docker Image for risk model
+        run: |
+          docker build -t ${{ env.RISK_MODEL_IMAGE_NAME }}:latest ./model_container
+          docker tag ${{ env.RISK_MODEL_IMAGE_NAME }}:latest $ECR_URI:risk-assessment-model
+
+      - name: Push Docker Image for risk model to ECR
+        run: |
+          docker push $ECR_URI:risk-assessment-model
+
+      - name: Build and Tag Docker Image for streamlit web app
+        run: |
+          docker build -t ${{ env.WEB_APP_IMAGE_NAME }}:latest ./webapp_container
+          docker tag ${{ env.WEB_APP_IMAGE_NAME }}:latest $ECR_URI:webapp
+
+      - name: Push Docker Image to ECR
+        run: |
+          docker push $ECR_URI:webapp
+
   # deploy-eks:
   #   needs: deploy-ecr
   #   runs-on: ubuntu-latest
@@ -151,7 +163,7 @@ jobs:
   #     AWS_REGION: ${{ secrets.AWS_REGION }}
   #     EKS_CLUSTER_NAME: risk-assessment-eks-cluster-${{ github.event.inputs.environment }}
   #     NODE_INSTANCE_TYPE: "t2.micro"  # Updated default node type
-  #     ECR_IMAGE_URI: ""  # Will be populated dynamically
+  #     RISK_MODEL_ECR_URI: ""  # Will be populated dynamically
 
   #   steps:
   #     - name: Checkout Code
@@ -168,8 +180,8 @@ jobs:
   #       id: ecr-uri
   #       run: |
   #         ECR_URI=$(aws ecr describe-repositories --repository-names risk-assessment-ecr-repository-${{ github.event.inputs.environment }} --query 'repositories[0].repositoryUri' --output text)
-  #         echo "ECR_URI=$ECR_URI" >> $GITHUB_ENV  # Set environment variable
-  #         echo "::set-output name=ECR_URI::$ECR_URI"  # Store as job output
+  #         echo "RISK_MODEL_ECR_URI=$RISK_MODEL_ECR_URI" >> $GITHUB_ENV  # Set environment variable
+  #         echo "::set-output name=RISK_MODEL_ECR_URI::$RISK_MODEL_ECR_URI"  # Store as job output
 
   #     - name: Deploy CloudFormation Stack for EKS
   #       run: |
@@ -180,7 +192,7 @@ jobs:
   #           --parameter-overrides \
   #             ClusterName=${{ env.EKS_CLUSTER_NAME }} \
   #             NodeInstanceType=${{ env.NODE_INSTANCE_TYPE }} \
-  #             ECRImageURI=${{ env.ECR_IMAGE_URI }}
+  #             RISK_MODEL_ECR_URI=${{ env.RISK_MODEL_ECR_URI }}
 
   #     - name: Wait for EKS Cluster to be Ready
   #       run: |
@@ -218,8 +230,8 @@ jobs:
   #     - name: Get ECR Repository URI
   #       id: ecr-uri
   #       run: |
-  #         ECR_URI=$(aws ecr describe-repositories --repository-names risk-assessment-ecr-repository-${{ github.event.inputs.environment }} --query 'repositories[0].repositoryUri' --output text)
-  #         echo "ECR_URI=$ECR_URI" >> $GITHUB_ENV  # Set environment variable
+  #         RISK_MODEL_ECR_URI=$(aws ecr describe-repositories --repository-names risk-assessment-ecr-repository-${{ github.event.inputs.environment }} --query 'repositories[0].repositoryUri' --output text)
+  #         echo "RISK_MODEL_ECR_URI=$RISK_MODEL_ECR_URI" >> $GITHUB_ENV  # Set environment variable
       
   #     - name: Deploy to EKS
   #       run: |

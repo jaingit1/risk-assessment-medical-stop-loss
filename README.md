@@ -32,3 +32,9 @@ kubectl get pods
 
 # manual cleanup
 Load Balancer, Network Interface, vpc 
+
+# Build docker image
+docker build -t streamlit-risk-assessment .\webapp_container\
+
+# Run docker container
+docker run -p 8501:8501 streamlit-risk-assessment

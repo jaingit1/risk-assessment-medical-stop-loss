@@ -40,9 +40,9 @@ jobs:
         run: |
           mkdir -p package
           [ -d cloudformation ] && cp -r cloudformation package/
-          [ -d container ] && cp -r container package/
+          [ -d model_container ] && cp -r model_container package/
           [ -d k8s ] && cp -r k8s package/
-          [ -d static_website ] && cp -r static_website package/
+          [ -d webapp_container ] && cp -r webapp_container package/
           [ -f README.md ] && cp README.md package/
           echo "Contents of package directory:"
           ls -la package

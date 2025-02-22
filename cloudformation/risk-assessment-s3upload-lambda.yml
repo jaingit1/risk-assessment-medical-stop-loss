@@ -1,232 +1,221 @@
-AWSTemplateFormatVersion: '2010-09-09'
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "Complete Risk Assessment System with EKS, ECS, S3, Step Functions, and Lambda."
 
 Parameters:
-  EnvironmentName:
+  EKSClusterName:
     Type: String
-    Description: The environment name (e.g., dev, prod)
-    Default: dev
+    Default: "RiskAssessmentEKSCluster"
+
+  ECSClusterName:
+    Type: String
+    Default: "RiskAssessmentECSCluster"
+
+  ECRModelImageURI:
+    Type: String
+    Description: "ECR Image URI for the risk assessment model API"
+
+  ECRStreamlitImageURI:
+    Type: String
+    Description: "ECR Image URI for the Streamlit web app"
 
 Resources:
-  LambdaExecutionRole:
-    Type: 'AWS::IAM::Role'
-    Description: "IAM role that grants Lambda function necessary permissions to interact with AWS services like S3 and CloudWatch Logs."
+
+  # --- VPC & Networking ---
+  RiskAssessmentVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: "10.0.0.0/16"
+      EnableDnsSupport: true
+      EnableDnsHostnames: true
+
+  PublicSubnet1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref RiskAssessmentVPC
+      CidrBlock: "10.0.1.0/24"
+      MapPublicIpOnLaunch: true
+      AvailabilityZone: !Select [ 0, !GetAZs "" ]
+
+  PublicSubnet2:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref RiskAssessmentVPC
+      CidrBlock: "10.0.2.0/24"
+      MapPublicIpOnLaunch: true
+      AvailabilityZone: !Select [ 1, !GetAZs "" ]
+
+  InternetGateway:
+    Type: AWS::EC2::InternetGateway
+
+  AttachInternetGateway:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId: !Ref RiskAssessmentVPC
+      InternetGatewayId: !Ref InternetGateway
+
+  # --- S3 Bucket for Data Processing ---
+  RiskAssessmentS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: "risk-assessment-data"
+
+  # --- IAM Roles ---
+  ECSExecutionRole:
+    Type: AWS::IAM::Role
     Properties:
       AssumeRolePolicyDocument:
         Version: '2012-10-17'
         Statement:
           - Effect: Allow
             Principal:
-              Service: 'lambda.amazonaws.com'
-            Action: 'sts:AssumeRole'
+              Service:
+                - ecs-tasks.amazonaws.com
+            Action: "sts:AssumeRole"
       Policies:
-        - PolicyName: 'LambdaS3AccessPolicy'
+        - PolicyName: "ECS-S3-StepFunctions-Access"
           PolicyDocument:
-            Version: '2012-10-17'
+            Version: "2012-10-17"
             Statement:
               - Effect: Allow
                 Action:
-                  - 'logs:CreateLogGroup'
-                  - 'logs:CreateLogStream'
-                  - 'logs:PutLogEvents'
-                Resource: 'arn:aws:logs:*:*:*'
+                  - "s3:*"
+                  - "states:*"
+                Resource: "*"
+
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+            Action: "sts:AssumeRole"
+      Policies:
+        - PolicyName: "Lambda-S3-StepFunctions-Access"
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
               - Effect: Allow
                 Action:
-                  - 's3:GetObject'
-                  - 's3:ListBucket'
-                  - 's3:PutObject'
-                Resource:
-                  - !Sub 'arn:aws:s3:::${S3Bucket}'
-                  - !Sub 'arn:aws:s3:::${S3Bucket}/*'
+                  - "s3:GetObject"
+                  - "s3:ListBucket"
+                  - "s3:PutObject"
+                  - "states:StartExecution"
+                Resource: "*"
 
-  LambdaFunction:
-    Type: 'AWS::Lambda::Function'
-    Description: "Lambda function that processes uploaded objects in the S3 bucket."
+  # --- Lambda Function (Trigger Step Functions on S3 Upload) ---
+  S3UploadTriggerLambda:
+    Type: AWS::Lambda::Function
     Properties:
-      FunctionName: !Sub '${EnvironmentName}-S3UploadProcessor'
-      Handler: 'lambda_function.lambda_handler'
+      FunctionName: "TriggerStepFunctionOnUpload"
+      Runtime: python3.9
+      Handler: index.lambda_handler
       Role: !GetAtt LambdaExecutionRole.Arn
       Code:
         ZipFile: |
           import json
           import boto3
-
+          import os
           def lambda_handler(event, context):
-              print("Event: ", event)
-              return {
-                  'statusCode': 200,
-                  'body': json.dumps('Hello from Lambda!')
-              }
-      Runtime: 'python3.9'
+              sfn_client = boto3.client('stepfunctions')
+              bucket_name = event['Records'][0]['s3']['bucket']['name']
+              file_key = event['Records'][0]['s3']['object']['key']
+              response = sfn_client.start_execution(
+                  stateMachineArn=os.environ['STEP_FUNCTION_ARN'],
+                  input=json.dumps({"bucket": bucket_name, "file_key": file_key})
+              )
+              return {"statusCode": 200, "body": json.dumps(response)}
+      Environment:
+        Variables:
+          STEP_FUNCTION_ARN: !Ref RiskAssessmentStepFunction
 
-  S3Bucket:
-    Type: 'AWS::S3::Bucket'
-    Description: "S3 bucket that stores uploaded objects and triggers Lambda function on new object creation."
+  # --- Step Functions Workflow ---
+  RiskAssessmentStepFunction:
+    Type: AWS::StepFunctions::StateMachine
     Properties:
-      BucketName: !Sub '${EnvironmentName}-risk-assessment-bucket'
-      CorsConfiguration:
-        CorsRules:
-          - AllowedOrigins:
-              - '*'
-            AllowedMethods:
-              - PUT
-              - POST
-              - GET
-            AllowedHeaders:
-              - '*'
-      PublicAccessBlockConfiguration:
-        BlockPublicAcls: false
-        BlockPublicPolicy: false
-        IgnorePublicAcls: false
-        RestrictPublicBuckets: false
-        
-      WebsiteConfiguration:
-        IndexDocument: index.html
-        ErrorDocument: error.html
+      RoleArn: !GetAtt LambdaExecutionRole.Arn
+      DefinitionString: !Sub |
+        {
+          "Comment": "Risk Assessment Processing Pipeline",
+          "StartAt": "Preprocess Data",
+          "States": {
+            "Preprocess Data": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:::function:PreprocessLambda",
+              "Next": "Aggregate Data"
+            },
+            "Aggregate Data": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:::function:AggregateLambda",
+              "Next": "Call Prediction API"
+            },
+            "Call Prediction API": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:::function:PredictLambda",
+              "Next": "Store Results in S3"
+            },
+            "Store Results in S3": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:::function:StoreResultsLambda",
+              "End": true
+            }
+          }
+        }
 
-  S3BucketPolicy:
-    Type: 'AWS::S3::BucketPolicy'
+  # --- ECS for Streamlit App ---
+  StreamlitECSCluster:
+    Type: AWS::ECS::Cluster
     Properties:
-      Bucket: !Ref S3Bucket
-      PolicyDocument:
-        Version: '2012-10-17'
-        Statement:
-          - Effect: Allow
-            Principal:
-              AWS: arn:aws:iam::445567073878:user/genpact-training-admin-user
-            Action:
-              - 's3:PutBucketPolicy'
-              - 's3:GetBucketPolicy'
-              - 's3:PutObject'
-              - 's3:GetObject'
-              - 's3:ListBucket'
-            Resource:
-              - !Sub 'arn:aws:s3:::${S3Bucket}'
-              - !Sub 'arn:aws:s3:::${S3Bucket}/*'
-          # Allow public access to the objects in the bucket (for static website access)
-          - Effect: Allow
-            Principal: "*"
-            Action: 's3:GetObject'
-            Resource: !Sub 'arn:aws:s3:::${S3Bucket}/*'
+      ClusterName: !Ref ECSClusterName
 
-
-  CognitoUserPool:
-    Type: 'AWS::Cognito::UserPool'
-    Description: "Cognito User Pool for user authentication in the environment."
+  StreamlitTaskDefinition:
+    Type: AWS::ECS::TaskDefinition
     Properties:
-      UserPoolName: !Sub '${EnvironmentName}-user-pool'
-      Policies:
-        PasswordPolicy:
-          MinimumLength: 8
-          RequireUppercase: true
-          RequireLowercase: true
-          RequireNumbers: true
-          RequireSymbols: false
+      Family: "StreamlitTask"
+      Cpu: "256"
+      Memory: "512"
+      NetworkMode: "awsvpc"
+      RequiresCompatibilities:
+        - FARGATE
+      ExecutionRoleArn: !GetAtt ECSExecutionRole.Arn
+      ContainerDefinitions:
+        - Name: "streamlit-app"
+          Image: !Ref ECRStreamlitImageURI
+          Essential: true
+          PortMappings:
+            - ContainerPort: 8501
+          Environment:
+            - Name: "S3_BUCKET_NAME"
+              Value: !Ref RiskAssessmentS3Bucket
+          LogConfiguration:
+            LogDriver: awslogs
+            Options:
+              awslogs-group: "/ecs/streamlit-app"
+              awslogs-region: !Ref "AWS::Region"
+              awslogs-stream-prefix: "ecs"
 
-  CognitoUserPoolClient:
-    Type: 'AWS::Cognito::UserPoolClient'
-    Description: "Cognito User Pool Client to allow access to the user pool from applications."
+  StreamlitECSService:
+    Type: AWS::ECS::Service
     Properties:
-      ClientName: !Sub '${EnvironmentName}-user-pool-client'
-      UserPoolId: !Ref CognitoUserPool
-      GenerateSecret: false
-
-  CognitoIdentityPool:
-    Type: 'AWS::Cognito::IdentityPool'
-    Description: "Cognito Identity Pool for federated identities that integrates with the user pool for authentication."
-    Properties:
-      IdentityPoolName: !Sub '${EnvironmentName}-identity-pool'
-      AllowUnauthenticatedIdentities: false
-      CognitoIdentityProviders:
-        - ClientId: !Ref CognitoUserPoolClient
-          ProviderName: !GetAtt CognitoUserPool.ProviderName
-
-  CognitoAuthRole:
-    Type: 'AWS::IAM::Role'
-    Description: "IAM role for authenticated users to interact with AWS resources, such as writing to S3."
-    Properties:
-      AssumeRolePolicyDocument:
-        Version: '2012-10-17'
-        Statement:
-          - Effect: Allow
-            Principal:
-              Federated: 'cognito-identity.amazonaws.com'
-            Action: 'sts:AssumeRoleWithWebIdentity'
-            Condition:
-              StringEquals:
-                'cognito-identity.amazonaws.com:aud': !Ref CognitoIdentityPool
-              'ForAnyValue:StringLike':
-                'cognito-identity.amazonaws.com:amr': authenticated
-      Policies:
-        - PolicyName: 'CognitoS3UploadPolicy'
-          PolicyDocument:
-            Version: '2012-10-17'
-            Statement:
-              - Effect: Allow
-                Action:
-                  - 's3:PutObject'
-                  - 's3:PutObjectAcl'
-                Resource:
-                  - !Sub 'arn:aws:s3:::${S3Bucket}/*'
-
-  CognitoUnauthRole:
-    Type: 'AWS::IAM::Role'
-    Description: "IAM role for unauthenticated users to interact with AWS resources."
-    Properties:
-      AssumeRolePolicyDocument:
-        Version: '2012-10-17'
-        Statement:
-          - Effect: Allow
-            Principal:
-              Federated: 'cognito-identity.amazonaws.com'
-            Action: 'sts:AssumeRoleWithWebIdentity'
-            Condition:
-              StringEquals:
-                'cognito-identity.amazonaws.com:aud': !Ref CognitoIdentityPool
-              'ForAnyValue:StringLike':
-                'cognito-identity.amazonaws.com:amr': unauthenticated
-      Policies:
-        - PolicyName: 'CognitoS3UploadPolicy'
-          PolicyDocument:
-            Version: '2012-10-17'
-            Statement:
-              - Effect: Allow
-                Action:
-                  - 's3:PutObject'
-                  - 's3:PutObjectAcl'
-                Resource:
-                  - !Sub 'arn:aws:s3:::${S3Bucket}/*'
-
-  IdentityPoolRoleAttachment:
-    Type: 'AWS::Cognito::IdentityPoolRoleAttachment'
-    Description: "Attaches the IAM roles for authenticated and unauthenticated users to the Cognito Identity Pool."
-    Properties:
-      IdentityPoolId: !Ref CognitoIdentityPool
-      Roles:
-        authenticated: !GetAtt CognitoAuthRole.Arn
-        unauthenticated: !GetAtt CognitoUnauthRole.Arn
-
-  LambdaInvokePermission:
-    Type: 'AWS::Lambda::Permission'
-    Description: "Grant permission for S3 to invoke the Lambda function when a new object is created."
-    Properties:
-      Action: 'lambda:InvokeFunction'
-      FunctionName: !Ref LambdaFunction
-      Principal: 's3.amazonaws.com'
-      SourceArn: !Sub 'arn:aws:s3:::${S3Bucket}'
+      Cluster: !Ref StreamlitECSCluster
+      TaskDefinition: !Ref StreamlitTaskDefinition
+      LaunchType: FARGATE
+      DesiredCount: 1
+      NetworkConfiguration:
+        AwsvpcConfiguration:
+          AssignPublicIp: ENABLED
+          Subnets:
+            - !Ref PublicSubnet1
+            - !Ref PublicSubnet2
 
 Outputs:
+  StreamlitAppURL:
+    Description: "URL of the Streamlit App"
+    Value: !Sub "http://${StreamlitECSService}.elb.amazonaws.com:8501"
+
   S3BucketName:
-    Description: "The name of the S3 bucket created for the environment."
-    Value: !Ref S3Bucket
-  CognitoUserPoolId:
-    Description: "The ID of the Cognito User Pool."
-    Value: !Ref CognitoUserPool
-  CognitoUserPoolClientId:
-    Description: "The ID of the Cognito User Pool Client."
-    Value: !Ref CognitoUserPoolClient
-  CognitoIdentityPoolId:
-    Description: "The ID of the Cognito Identity Pool."
-    Value: !Ref CognitoIdentityPool
-  CognitoAuthRoleArn:
-    Description: "The ARN of the Cognito authenticated IAM role."
-    Value: !GetAtt CognitoAuthRole.Arn
+    Description: "S3 Bucket for File Uploads"
+    Value: !Ref RiskAssessmentS3Bucket
