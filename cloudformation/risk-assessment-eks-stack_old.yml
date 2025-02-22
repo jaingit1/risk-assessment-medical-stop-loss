@@ -1,0 +1,157 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "EKS Cluster for Risk Assessment Model"
+
+Parameters:
+  ClusterName:
+    Type: String
+    Default: "RiskAssessmentEKSCluster"
+  NodeInstanceType:
+    Type: String
+    Default: "t2.micro"
+  ECRImageURI:
+    Type: String
+    Description: "ECR Image URI for the risk assessment model"
+
+Resources:
+
+  RiskAssessmentVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: "10.0.0.0/16"
+      EnableDnsSupport: true
+      EnableDnsHostnames: true
+
+  PublicSubnet1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref RiskAssessmentVPC
+      CidrBlock: "10.0.1.0/24"
+      MapPublicIpOnLaunch: true
+      AvailabilityZone: !Select [ 0, !GetAZs "" ]
+      Tags:
+        - Key: kubernetes.io/role/elb
+          Value: "1"
+
+  PublicSubnet2:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref RiskAssessmentVPC
+      CidrBlock: "10.0.2.0/24"
+      MapPublicIpOnLaunch: true
+      AvailabilityZone: !Select [ 1, !GetAZs "" ]
+      Tags:
+        - Key: kubernetes.io/role/elb
+          Value: "1"
+
+  InternetGateway:
+    Type: AWS::EC2::InternetGateway
+
+  AttachInternetGateway:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId: !Ref RiskAssessmentVPC
+      InternetGatewayId: !Ref InternetGateway
+
+  EKSSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: "Allow traffic to EKS"
+      VpcId: !Ref RiskAssessmentVPC
+
+  EKSClusterRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: 
+                - eks.amazonaws.com
+            Action: 
+              - sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AmazonEKSClusterPolicy
+
+  RiskAssessmentEKSCluster:
+    Type: AWS::EKS::Cluster
+    Properties:
+      Name: !Ref ClusterName
+      RoleArn: !GetAtt EKSClusterRole.Arn
+      ResourcesVpcConfig:
+        SubnetIds:
+          - !Ref PublicSubnet1
+          - !Ref PublicSubnet2
+        SecurityGroupIds:
+          - !Ref EKSSecurityGroup
+
+  # Create a Route Table for the VPC
+  RiskAssessmentRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref RiskAssessmentVPC
+
+  # Create a route in the Route Table to allow internet access
+  RiskAssessmentInternetRoute:
+    Type: AWS::EC2::Route
+    Properties:
+      RouteTableId: !Ref RiskAssessmentRouteTable
+      DestinationCidrBlock: "0.0.0.0/0"
+      GatewayId: !Ref InternetGateway
+
+  # Associate the Route Table with the Public Subnets
+  RiskAssessmentPublicSubnet1RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnet1
+      RouteTableId: !Ref RiskAssessmentRouteTable
+
+  RiskAssessmentPublicSubnet2RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnet2
+      RouteTableId: !Ref RiskAssessmentRouteTable
+
+  # Create Node Group for EKS
+   # Create Node Group for EKS
+  RiskAssessmentNodeGroup:
+    Type: AWS::EKS::Nodegroup
+    Properties:
+      ClusterName: !Ref RiskAssessmentEKSCluster
+      NodegroupName: "risk-assessment-node-group"
+      NodeRole: !GetAtt EKSNodeRole.Arn
+      Subnets:
+        - !Ref PublicSubnet1
+        - !Ref PublicSubnet2
+      InstanceTypes:
+        - !Ref NodeInstanceType
+      ScalingConfig:
+        MinSize: 1
+        MaxSize: 3
+        DesiredSize: 2
+
+  # Create IAM Role for the Node Group
+  EKSNodeRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: 
+                - ec2.amazonaws.com
+            Action:
+              - sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy
+        - arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly
+        - arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy
+
+Outputs:
+  ClusterName:
+    Description: "EKS Cluster Name"
+    Value: !Ref ClusterName
+  EKSApiEndpoint:
+    Description: "EKS API Server Endpoint"
+    Value: !GetAtt RiskAssessmentEKSCluster.Endpoint
