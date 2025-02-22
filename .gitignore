@@ -1,8 +1,8 @@
 # data
 generated_data/
-container/prep_test_input_data/
-container/input_test_data/
-container/output_test_data/
+prep_test_input_data/
+input_test_data/
+output_test_data/
 
 # Python bytecode files
 *.pyc
